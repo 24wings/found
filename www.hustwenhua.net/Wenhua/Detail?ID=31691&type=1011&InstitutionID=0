@@ -1,0 +1,283 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+
+    <!--- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>文华新闻网</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="/css/default.css" rel="stylesheet" />
+
+    <link href="/css/layout.css" rel="stylesheet" />
+
+    <link href="/css/media-queries.css" rel="stylesheet" />
+
+    <link href="/css/flexslider.css" rel="stylesheet" />
+
+    <link href="/css/index.css" rel="stylesheet" />
+    <script src="/js/modernizr.js"></script>
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <!-- 放小logo
+     ================================================== -->
+    <link rel="shortcut icon" href="">
+
+
+    <style type="text/css">
+
+    </style>
+    <script type="text/javascript">
+        $(function () {
+           
+            $.ajax({
+                url: "/All/GetVisitCount",
+                type: "POST",
+                data: {
+
+                },
+                success: function (resTxt) {
+                    $("#totalVisit").html(resTxt);
+                }
+            });
+        })
+    </script>
+</head>
+
+<body style="background: #FFFFFF">
+    <div class="header-news">
+        <div style="background: #FFF">
+            <div class="row">
+                <div class="columns" style="padding:0; width:100%;">
+                    <div class="logo02">
+                        <a href="/Wenhua/Index"><img src="../images/logoBg.jpg"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="background: #065AA9">
+            <div class="row">
+                <nav id="nav-wrap">
+                        
+
+                    <ul id="nav" class="nav">
+
+                        <!--  <li class="current"><a href="index.htm">首页</a></li> -->
+                        <li>
+                            <a href="/News/Index">新闻网首页</a>
+
+                        </li>
+                        <li>
+                            <a href="/More/Index?type=1">文华要闻</a>
+
+                        </li>
+                        <li>
+                            <a href="/More/Index?type=4">综合新闻</a>
+                        </li>
+                        <li>
+                            <a href="/More/Index?type=1011">公告通知</a>
+
+                        </li>
+                        <li>
+                            <a href="/More/Index?type=1010">思政教育</a>
+
+                        </li>
+                        <li>
+                            <a href="/More/Index?type=7">文华撷英</a>
+                        </li>
+                        <li>
+                            <a href="/More/Index?type=1006">媒体文华</a>
+                        </li>
+                        <li>
+                            <a href="/More/Index?type=1007">图说文华</a>
+                        </li>
+                        <li>
+                            <a href="/More/Index?type=1009">视频空间</a>
+                        </li>
+                    </ul> <!-- end #nav -->
+
+                </nav> <!-- end #nav-wrap -->
+            </div>
+        </div>
+
+    </div> <!-- Header End -->
+    <div>
+        
+
+
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+
+    <!--- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Blog Post</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/media-queries.css">
+    <script src="/js/jquery.min.js"></script>
+    <!-- Script
+    ================================================== -->
+    <script src="/js/modernizr.js"></script>
+
+    <!-- Favicons
+     ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <script type="text/javascript">
+        $(function () {
+
+        })
+    </script>
+    <style type="text/css">
+        table, tbody, tfoot, thead, tr, th, td {
+            border: 1px solid black;
+        }
+        span img{
+            margin-left:-40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header
+    ================================================== -->
+    <!-- Header End -->
+    <!-- Page Title
+    ================================================== -->
+     <!-- Page Title End-->
+    <!-- Content
+    ================================================== -->
+    <div>
+
+        <div class="row">
+
+            <div class="news-linknav"><a style="color:black" href="/More/Index?type=1011">公告通知</a><em>></em><a style="color:black" href="#">英属哥伦比亚大学(UBC)2018年暑期翻译课程项目报名通知</a></div>
+            <div class="news-mainContent">
+                     <h2>英属哥伦比亚大学(UBC)2018年暑期翻译课程项目报名通知</h2>
+                    <br />
+                <div class="markFrom">
+                    来源： &nbsp&nbsp&nbsp点击次数：591 次 &nbsp&nbsp&nbsp发布时间：2017-11-24 &nbsp&nbsp&nbsp作者：国际交流处
+                </div>
+                <p style="background: white; text-align: center;"><strong><span style="color: rgb(62, 62, 62); font-size: 19px;"><span style="font-family: 宋体;">英属哥伦比亚大学(UBC)2018年暑期翻译课程项目报名通知</span></span></strong></p><p style="background: white;"><span style="color: rgb(62, 62, 62); font-size: 14px;"><span style="font-family: 宋体;">&nbsp;</span></span></p><p style="background: white;"><strong><span style="font-size: 14px;"><span style="font-family: 宋体;">一、招生对象和入学要求：</span></span></strong></p><p style="background: white; line-height: 27px;"><span style="font-size: 14px;"><span style="font-family: 宋体;">招生对象：全校学生</span></span></p><p style="background: white; line-height: 27px;"><span style="font-size: 14px;"><span style="font-family: 宋体;">入学要求：</span></span></p><p style="background: white; line-height: 27px;"><span style="font-family: Symbol; font-size: 14px;">·</span><span style="font-family: 宋体;"><span style="font-size: 14px;"> 19</span><span style="font-size: 14px;">岁以上</span></span></p><p style="background: white; line-height: 27px;"><span style="font-family: Symbol; font-size: 14px;">·</span><span style="font-family: 宋体;"> <span style="font-size: 14px;">流利的国语和英语口语</span></span></p><p style="background: white; line-height: 27px;"><span style="font-family: Symbol; font-size: 14px;">·</span><span style="font-family: 宋体;"> <span style="font-size: 14px;">扎实的英语背景（建议雅思6.5水平或之上，不需要提供语言成绩）</span></span></p><p style="background: white;"><span style="font-size: 14px;"><span style="font-family: 宋体;">&nbsp;</span></span></p><p style="background: white;"><strong><span style="font-size: 14px;"><span style="font-family: 宋体;">二、项目设置：</span></span></strong></p><p style="background: white;"><span style="font-family: 宋体;"><strong><span style="font-size: 14px;">1. SITI</span></strong><strong><span style="font-size: 14px;">学术型项目</span></strong></span></p><p style="background: white; line-height: 27px;"><span style="font-family: 宋体;"><span style="font-size: 14px;">-</span><span style="font-size: 14px;">为期四周，为学生成为专业口笔译人才打下扎实的基础。项目侧重在讲授翻译技巧、提升中英文水平、通过课堂学习和实地参观深入了解加拿大文化。共包括下列课程：</span></span></p><p style="background: white; line-height: 27px;"><span style="font-family: Symbol; font-size: 14px;">·</span><span style="font-family: 宋体;"><span style="font-size: 14px;">&nbsp; </span><span style="font-size: 14px;">英语口笔译入门</span></span></p><p style="background: white; line-height: 27px;"><span style="font-family: Symbol; font-size: 14px;">·</span><span style="font-family: 宋体;"><span style="font-size: 14px;">&nbsp; </span><span style="font-size: 14px;">跨文化沟通演说技巧 或是 应用英语写作</span></span></p><p style="background: white; line-height: 27px;"><span style="font-family: Symbol; font-size: 14px;">·</span><span style="font-family: 宋体;"><span style="font-size: 14px;">&nbsp; </span><span style="font-size: 14px;">高级翻译</span></span></p><p style="background: white; line-height: 27px;"><span style="font-family: Symbol; font-size: 14px;">·</span><span style="font-family: 宋体;"> <span style="font-size: 14px;">文化体验和口译实操</span></span></p><p style="background: white;"><span style="font-size: 14px;"><span style="font-family: 宋体;">&nbsp;</span></span></p><p style="background: white;"><span style="font-family: 宋体;"><strong><span style="font-size: 14px;">2. SITI</span></strong><strong><span style="font-size: 14px;">体验型项目</span></strong></span></p><p style="background: white; line-height: 27px;"><span style="font-family: 宋体;"><span style="font-size: 14px;">-</span><span style="font-size: 14px;">为期三周，学生将有机会在一个生机勃勃的学习环境中，和志同道合的同学一起，每日演练口笔译技能。该项目适合不同翻译基础的学生，通过实际参观本地机构，学生将亲身感受加拿大文化并了解不列颠哥伦比亚省的商业概貌。共包括下列课程：</span></span></p><p style="background: white; line-height: 27px;"><span style="font-family: Symbol; font-size: 14px;">·</span><span style="font-family: 宋体;"><span style="font-size: 14px;">&nbsp; </span><span style="font-size: 14px;">通过参观本地文化景点和独立探索，深入了解加拿大文化</span></span></p><p style="background: white; line-height: 27px;"><span style="font-family: Symbol; font-size: 14px;">·</span><span style="font-family: 宋体;"><span style="font-size: 14px;">&nbsp; </span><span style="font-size: 14px;">通过讲座和实地参观本地机构，了解不列颠哥伦比亚省的商业概貌，并磨练翻译技巧</span></span></p><p style="background: white; line-height: 27px;"><span style="font-family: Symbol; font-size: 14px;">·</span><span style="font-family: 宋体;"><span style="font-size: 14px;">&nbsp; </span><span style="font-size: 14px;">进一步提升对加拿大文化的理解和在英文环境中的自信</span></span></p><p style="background: white; line-height: 27px;"><span style="font-size: 14px;"><span style="font-family: 宋体;">暑期学习结束，如每门课程成绩达75分以上，UBC将颁发课程结业证书。</span></span></p><p style="background: white;"><span style="font-size: 14px;"><span style="font-family: 宋体;">&nbsp;</span></span></p><p style="background: white;"><strong><span style="font-size: 14px;"><span style="font-family: 宋体;">三、开学日期：</span></span></strong></p><p style="background: white; line-height: 27px;"><span style="font-family: 宋体;"><strong><span style="font-size: 14px;">1.SITI</span></strong><strong><span style="font-size: 14px;">学术型项目（4周）：</span></strong></span></p><p style="background: white; line-height: 27px;"><span style="font-family: 宋体;"><span style="font-size: 14px;">2018</span><span style="font-size: 14px;">年7月6日-8月4日 或是</span></span></p><p style="background: white; line-height: 27px;"><span style="font-family: 宋体;"><span style="font-size: 14px;">2018</span><span style="font-size: 14px;">年7月13日-8月11日</span></span></p><p style="background: white; line-height: 27px;"><span style="font-size: 14px;"><span style="font-family: 宋体;">&nbsp;</span></span></p><p style="background: white; line-height: 27px;"><span style="font-family: 宋体;"><strong><span style="font-size: 14px;">2.SITI</span></strong><strong><span style="font-size: 14px;">体验型项目（3周）：</span></strong></span></p><p style="background: white; line-height: 27px;"><span style="font-family: 宋体;"><span style="font-size: 14px;">2018</span><span style="font-size: 14px;">年7月13日-8月4日 或是</span></span></p><p style="background: white; line-height: 27px;"><span style="font-size: 14px;"><span style="font-family: 宋体;">申请开放时间：2017年11月15日</span></span></p><p style="background: white;"><span style="font-size: 14px;"><span style="font-family: 宋体;">&nbsp;</span></span></p><p style="background: white;"><strong><span style="font-size: 14px;"><span style="font-family: 宋体;">四、申请流程</span></span></strong></p><p style="background: white; line-height: 27px;"><span style="font-family: 宋体;"><span style="font-size: 14px;">1. </span><span style="font-size: 14px;">填写申请表，申请时并支付押金CAD 500</span></span></p><p style="background: white; line-height: 27px;"><span style="font-family: 宋体;"><span style="font-size: 14px;">2. </span><span style="font-size: 14px;">学校5个工作日内出电子版录取信</span></span></p><p style="background: white; line-height: 27px;"><span style="font-family: 宋体;"><span style="font-size: 14px;">3. </span><span style="font-size: 14px;">学生申请签证</span></span></p><p style="background: white; line-height: 27px;"><span style="font-family: 宋体;"><span style="font-size: 14px;">4. 2018</span><span style="font-size: 14px;">年4月16日前支付剩余费用</span></span></p><p style="background: white;"><span style="font-size: 14px;"><span style="font-family: 宋体;">&nbsp;</span></span></p><p style="background: white;"><strong><span style="font-size: 14px;"><span style="font-family: 宋体;">五、费用</span></span></strong></p><p style="background: white; line-height: 27px;"><span style="font-family: 宋体;"><span style="font-size: 14px;">1.SITI </span><span style="font-size: 14px;">学术型项目4周：</span></span></p><p style="background: white; line-height: 27px;"><span style="font-family: 宋体;"><span style="font-size: 14px;">CAD 5200</span><span style="font-size: 14px;">， 2018年3月15日前支付学费优惠价CAD 5100</span></span></p><p style="background: white; line-height: 27px;"><span style="font-size: 14px;"><span style="font-family: 宋体;">&nbsp;</span></span></p><p style="background: white; line-height: 27px;"><span style="font-family: 宋体;"><span style="font-size: 14px;">2.SITI</span><span style="font-size: 14px;">体验型项目3周：</span></span></p><p style="background: white; line-height: 27px;"><span style="font-family: 宋体;"><span style="font-size: 14px;">CAD 3850,2018</span><span style="font-size: 14px;">年3月15日前支付学费优惠价CAD 3750</span></span></p><p style="background: white; line-height: 27px;"><span style="font-size: 14px;"><span style="font-family: 宋体;">&nbsp;</span></span></p><p style="background: white; line-height: 27px;"><span style="font-size: 14px;"><span style="font-family: 宋体;">费用包括：学费、校内住宿、接机送机（项目规定日期）、当地医疗保险及部分文化体验活动</span></span></p><p style="background: white; line-height: 27px;"><span style="font-size: 14px;"><span style="font-family: 宋体;">&nbsp;</span></span></p><p style="background: white; line-height: 27px;"><span style="font-size: 14px;"><span style="font-family: 宋体;">费用不包括：服务费、机票、餐费、旅游保险、签证申请费、当地交通费、自选的社会文化活动费、个人消费等</span></span></p><p><span style="font-family: 宋体;">&nbsp;</span></p><p><strong><span style="font-family: 宋体;">六、咨询报名</span></strong></p><p style="line-height: 27px;"><span style="font-family: 宋体;">地址：国际交流处行政楼B223办公室</span></p><p style="line-height: 27px;"><span style="font-family: 宋体;">电话：027-87582749</span></p><p><span style="font-family: 宋体;">&nbsp;</span></p><p><strong><span style="font-family: 宋体;">学校介绍：</span></strong></p><p style="background: white; text-align: left; line-height: 27px; text-indent: 28px;"><span style="font-family: 宋体;">英属哥伦比亚大学(University of British Columbia，简称UBC)是一世界级顶尖研究型大学，它庞大而又秀丽，坐落于风光如画的温哥华市，同时它也是加拿大最难申请的大学以及淘汰率最高的大学之一。</span></p><p style="background: white; text-align: left; line-height: 27px; text-indent: 28px;"><span style="font-family: 宋体;">UBC</span><span style="font-family: 宋体;">于1908年由麦吉尔大学合作创校，主要有两个校区，</span><a href="https://baike.so.com/doc/5729983-5942722.html" target="_blank"><span style="color: windowtext; font-family: 宋体; text-underline: none;">温哥华</span></a><span style="font-family: 宋体;">校区(总校区)和奥肯纳根校区。UBC是</span><a href="https://baike.so.com/doc/6537882-6751621.html" target="_blank"><span style="color: windowtext; font-family: 宋体; text-underline: none;">不列颠哥伦比亚省</span></a><span style="font-family: 宋体;">历史最悠久的大学，与</span><a href="https://baike.so.com/doc/5352746-5588204.html" target="_blank"><span style="color: windowtext; font-family: 宋体; text-underline: none;">多伦多大学</span></a><span style="font-family: 宋体;">，麦吉尔大学并称加拿大大学&quot;三强&quot;，在经历了百余年的长足发展后，逐渐成为蜚声全球的综合性大学，在加拿大国内的排名中始终保持前三名之列，多次位列北美前十，世界排名保持在35名以内，林学、生态学全球第一，医博类全球第二。</span></p><p style="background: white; text-align: left; line-height: 27px; text-indent: 28px;"><span style="font-family: 宋体;">UBC</span><span style="font-family: 宋体;">被誉为西海岸的明珠，每年都吸引世界大批顶尖的莘莘学子前来就读，尤以科学研究和研究生教育见长，是世界一流的研究型大学。除了多样化的学生、全球性的远瞻眼光及杰出的研究成果外，UBC的温哥华校园还被誉为全北美最漂亮的校园。</span></p><p><span style="font-family: 宋体;">&nbsp;</span></p><p></p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Content End-->
+    <!-- Tweets Section
+    ================================================== -->
+    
+    <!--
+    <li>
+       <span>
+       This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+       Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum
+       <a href="#">http://t.co/CGIrdxIlI3</a>
+       </span>
+       <b><a href="#">3 Days Ago</a></b>
+    </li>
+    -->
+     <!-- Tweet Section End-->
+    <!-- footer
+    ================================================== -->
+    <!-- Footer End-->
+    <!-- Java Script
+    ================================================== -->
+    <script src="/js/jquery-1.10.2.min.js"></script>
+
+    <script>window.jQuery || document.write('<script src="~/js/jquery-1.10.2.min.js"><\/script>')</script>
+
+    <script src="/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="/js/jquery.flexslider.js"></script>
+
+    <script src="/js/doubletaptogo.js"></script>
+
+    <script src="/js/init.js"></script>
+</body>
+</html>
+
+    </div>
+    <div class="fot-bot01 fot-bot01-1">
+        <div class="row">
+            <div class="linksWrap">
+                <h2 class="often-linksTit">联系我们</h2>
+            </div>
+        </div>
+
+        <div class="row row002">
+            <div class="columns connect-us">
+                <ul class="tel-listNew">
+                    <li><em>投稿地址：</em><span>文华学院宣传策划处</span>&nbsp;&nbsp;<span>027-87599739</span></li>
+                    
+                    <li><em>投稿邮箱：</em><span>454440506@qq.com</span>&nbsp;&nbsp;</li>
+                    <li><em>投稿须知：</em><span>1、提交的新闻稿由部门负责人审核，对稿件真实性、客观性负责。</span></li>
+                    <li><em class="visibility-h">投稿须知：</em><span>2、摄影和艺术设计类配图稿件，若需图片处理请联系引航团队。</span></li>
+                    <li><em class="visibility-h">投稿须知：</em><span>3、首页轮播图要求图片像素1380*460以上，并保证图片质量。</span></li>
+                    <li><em class="visibility-h">投稿须知：</em><span>4、新闻网对来稿有修改权，公平对待每一篇投稿，以质论稿。</span></li>
+                </ul>
+            </div>
+            <div class="columns columns-code2">
+                <div class="left">
+                    <div>
+                        <div><a href="#"><img src="../images/文华学院微信.jpg" /></a></div>
+                        <span>文华官方微信</span>
+                    </div>
+                </div>
+                <div class="left">
+                    <div>
+                        <div><a href="#"><img src="../images/文华学院APP.jpg" /></a></div>
+                        <span>文华官方APP</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div id="go-top" style="dimsplay: block;"><a title="Back to Top" href="#">Go To Top</a></div> -->
+    </div>
+    <div class="fot-bot">
+        <div class="row">
+            <div class="copyright-f">
+
+
+                地址：武汉市东湖高新技术开发区文华园路8号  邮政编码：430074　电话：027-87599540 027-87599065              传真：027-87599540
+
+            </div>
+
+
+            <div class="copyright-to">
+
+
+                Copyright文华学院2016  鄂ICP备09023313号 总计访问：<a style="color:white" id="totalVisit"></a> 次 技术支持：<a href="http://yinhang.hustwenhua.net" style="color:white" target="_blank">引航团队</a>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

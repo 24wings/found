@@ -1,0 +1,597 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+
+    <!--- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>文华新闻网</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="/css/default.css" rel="stylesheet" />
+
+    <link href="/css/layout.css" rel="stylesheet" />
+
+    <link href="/css/media-queries.css" rel="stylesheet" />
+
+    <link href="/css/flexslider.css" rel="stylesheet" />
+
+    <link href="/css/index.css" rel="stylesheet" />
+    <script src="/js/modernizr.js"></script>
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <!-- 放小logo
+     ================================================== -->
+    <link rel="shortcut icon" href="">
+
+
+    <style type="text/css">
+
+    </style>
+    <script type="text/javascript">
+        $(function () {
+           
+            $.ajax({
+                url: "/All/GetVisitCount",
+                type: "POST",
+                data: {
+
+                },
+                success: function (resTxt) {
+                    $("#totalVisit").html(resTxt);
+                }
+            });
+        })
+    </script>
+</head>
+
+<body style="background: #FFFFFF">
+    <div class="header-news">
+        <div style="background: #FFF">
+            <div class="row">
+                <div class="columns" style="padding:0; width:100%;">
+                    <div class="logo02">
+                        <a href="/Wenhua/Index"><img src="../images/logoBg.jpg"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="background: #065AA9">
+            <div class="row">
+                <nav id="nav-wrap">
+                        
+
+                    <ul id="nav" class="nav">
+
+                        <!--  <li class="current"><a href="index.htm">首页</a></li> -->
+                        <li>
+                            <a href="/News/Index">新闻网首页</a>
+
+                        </li>
+                        <li>
+                            <a href="/More/Index?type=1">文华要闻</a>
+
+                        </li>
+                        <li>
+                            <a href="/More/Index?type=4">综合新闻</a>
+                        </li>
+                        <li>
+                            <a href="/More/Index?type=1011">公告通知</a>
+
+                        </li>
+                        <li>
+                            <a href="/More/Index?type=1010">思政教育</a>
+
+                        </li>
+                        <li>
+                            <a href="/More/Index?type=7">文华撷英</a>
+                        </li>
+                        <li>
+                            <a href="/More/Index?type=1006">媒体文华</a>
+                        </li>
+                        <li>
+                            <a href="/More/Index?type=1007">图说文华</a>
+                        </li>
+                        <li>
+                            <a href="/More/Index?type=1009">视频空间</a>
+                        </li>
+                    </ul> <!-- end #nav -->
+
+                </nav> <!-- end #nav-wrap -->
+            </div>
+        </div>
+
+    </div> <!-- Header End -->
+    <div>
+        
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+
+    <!--- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Sparrow - Free Responsive HTML5/CSS3 Template</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="/css/NavPager.css" rel="stylesheet" />
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    
+
+    <!-- CSS
+    ================================================== -->
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <script src="/js/video.min.js"></script>
+    <link href="/css/default.css" rel="stylesheet" />
+
+    <link href="/css/layout.css" rel="stylesheet" />
+
+    <link href="/css/media-queries.css" rel="stylesheet" />
+    <link href="/css/index.css" rel="stylesheet" />
+    <link href="/css/video-js.min.css" rel="stylesheet" />
+    <link href="/css/flexslider1.css" rel="stylesheet" />
+    <style>
+        
+
+
+        .flex-control-paging li a{
+            background:#09418e;
+
+        }
+    </style>
+    
+    <!-- Script
+    ================================================== -->
+
+    <script src="/js/modernizr.js"></script>
+
+    <!-- 放小logo
+     ================================================== -->
+    <link rel="shortcut icon" href="">
+
+
+    <style type="text/css">
+        .video-js {
+            width: 200px;
+            height: 158px;
+        }
+
+            .video-js .vjs-big-play-button {
+                top: 50% !important;
+                left: 50% !important;
+                margin-left: -45px !important;
+                margin-top: -30px !important;
+            }
+    </style>
+    <script type="">
+        $(function () {
+            //获取学校要闻
+            $.ajax({
+                url: "/News/GetXueXiaoYaoWen",
+                type: "POST",
+                async: true,
+                data: {
+
+                },
+                success: function (resTxt) {
+                    if (resTxt.length > 0) {
+                        $("#xuexiaoyaowenhref").attr("href", "/More/Index?ID=" + resTxt[0].ID + "&type=" + resTxt[0].ClassID + "");
+                        for (var i = 0; i < resTxt.length; i++) {
+                            var time = ChangeDateFormat(resTxt[i].UpdateTime).toString().split('-');
+                            if (resTxt[i].Title.length > 18)
+                                $("#xuexiaoyaowen").append('<li><a href="/Wenhua/Detail?ID=' + resTxt[i].ID + '&type=' + resTxt[i].ClassID + '" class="left">' + resTxt[i].Title.substring(0, 25) + '</a><span class="right">' + time[2] + '/<em>' + time[1] + '/' + time[0] + '</em></span></li>');
+                            else
+                                $("#xuexiaoyaowen").append('<li><a href="/Wenhua/Detail?ID=' + resTxt[i].ID + '&type=' + resTxt[i].ClassID + '" class="left">' + resTxt[i].Title + '</a><span class="right">' + time[2] + '/<em>' + time[1] + '/' + time[0] + '</em></span></li>');
+                        }
+                    }
+                }
+            });
+            //获取综合新闻
+            $.ajax({
+                url: "/News/GetZongHeXinWen",
+                type: "POST",
+                data: {
+
+                },
+                success: function (resTxt) {
+                    if (resTxt.length > 0) {
+                        $("#zonghexinwenhref").attr("href", "/More/Index?ID=" + resTxt[0].ID + "&type=" + resTxt[0].ClassID + "");
+                        for (var i = 0; i < resTxt.length; i++) {
+                            var time = ChangeDateFormat(resTxt[i].UpdateTime).toString().split('-');
+                            if (resTxt[i].Title.length > 18)
+                                $("#zonghexinxen").append('<li><a href="/Wenhua/Detail?ID=' + resTxt[i].ID + '&type=' + resTxt[i].ClassID + '" class="left">' + resTxt[i].Title.substring(0, 25) + '</a><span class="right">' + time[2] + '/<em>' + time[1] + '/' + time[0] + '</em></span></li>');
+                            else
+                                $("#zonghexinxen").append('<li><a href="/Wenhua/Detail?ID=' + resTxt[i].ID + '&type=' + resTxt[i].ClassID + '" class="left">' + resTxt[i].Title + '</a><span class="right">' + time[2] + '/<em>' + time[1] + '/' + time[0] + '</em></span></li>');
+                        }
+                    }
+                }
+            });
+            //获取公告通知
+            $.ajax({
+                url: "/News/GetGongGaoTongZhi",
+                type: "POST",
+                data: {
+
+                },
+                success: function (resTxt) {
+                    if (resTxt.length > 0) {
+                        $("#xuebuyaowenhref").attr("href", "/More/Index?ID=" + resTxt[0].ID + "&type=" + resTxt[0].ClassID + "");
+                        for (var i = 0; i < resTxt.length; i++) {
+                            var time = ChangeDateFormat(resTxt[i].UpdateTime).toString().split('-');
+                            if (resTxt[i].Title.length > 18)
+                                $("#xuebuyaowen").append('<li><a href="/Wenhua/Detail?ID=' + resTxt[i].ID + '&type=' + resTxt[i].ClassID + '" class="left">' + resTxt[i].Title.substring(0, 25) + '</a><span class="right">' + time[2] + '/<em>' + time[1] + '/' + time[0] + '</em></span></li>');
+                            else
+                                $("#xuebuyaowen").append('<li><a href="/Wenhua/Detail?ID=' + resTxt[i].ID + '&type=' + resTxt[i].ClassID + '" class="left">' + resTxt[i].Title + '</a><span class="right">' + time[2] + '/<em>' + time[1] + '/' + time[0] + '</em></span></li>');
+                        }
+                    }
+                }
+            });
+            //获得思政教育
+            $.ajax({
+                url: "/News/GetSiZhengJiaoYu",
+                type: "POST",
+                data: {
+
+                },
+                success: function (resTxt) {
+                    if (resTxt.length > 0) {
+                        $("#sizhengjiaoyuhref").attr("href", "/More/Index?ID=" + resTxt[0].ID + "&type=" + resTxt[0].ClassID + "");
+                        for (var i = 0; i < resTxt.length; i++) {
+                            var time = ChangeDateFormat(resTxt[i].UpdateTime).toString().split('-');
+                            if (resTxt[i].Title.length > 18)
+                                $("#sizhengjiaoyu").append('<li><a href="/Wenhua/Detail?ID=' + resTxt[i].ID + '&type=' + resTxt[i].ClassID + '" class="left">' + resTxt[i].Title.substring(0, 25) + '</a><span class="right">' + time[2] + '/<em>' + time[1] + '/' + time[0] + '</em></span></li>');
+                            else
+                                $("#sizhengjiaoyu").append('<li><a href="/Wenhua/Detail?ID=' + resTxt[i].ID + '&type=' + resTxt[i].ClassID + '" class="left">' + resTxt[i].Title + '</a><span class="right">' + time[2] + '/<em>' + time[1] + '/' + time[0] + '</em></span></li>');
+                        }
+                    }
+                }
+            });
+            //获取媒体文华
+            $.ajax({
+                url: "/News/GetMeiTiWenHua",
+                type: "POST",
+                data: {
+
+                },
+                success: function (resTxt) {
+                    if (resTxt.length > 0) {
+                        $("#meitiwenhuahref").attr("href", "/More/Index?ID=" + resTxt[0].ID + "&type=" + resTxt[0].ClassID + "");
+                        for (var i = 0; i < resTxt.length; i++) {
+                            var time = ChangeDateFormat(resTxt[i].UpdateTime).toString().split('-');
+                            if (resTxt[i].Title.length > 18)
+                                $("#meitiwenhua").append('<li><a href="/Wenhua/Detail?ID=' + resTxt[i].ID + '&type=' + resTxt[i].ClassID + '" class="left">' + resTxt[i].Title.substring(0, 25) + '</a><span class="right">' + time[2] + '/<em>' + time[1] + '/' + time[0] + '</em></span></li>');
+                            else
+                                $("#meitiwenhua").append('<li><a href="/Wenhua/Detail?ID=' + resTxt[i].ID + '&type=' + resTxt[i].ClassID + '" class="left">' + resTxt[i].Title + '</a><span class="right">' + time[2] + '/<em>' + time[1] + '/' + time[0] + '</em></span></li>');
+                        }
+                    }
+                }
+            });
+            //获取图说文华
+            $.ajax({
+                url: "/News/GetTuShuoWenHua",
+                type: "POST",
+                data: {
+
+                },
+                success: function (resTxt) {
+                    if (resTxt.length > 0) {
+                        $("#tushuowenhuahref").attr("href", "/More/Index?ID=" + resTxt[0].ID + "&type=" + resTxt[0].ClassID + "");
+                        for (var i = 0; i < 3; i++) {
+                            var time = ChangeDateFormat(resTxt[i].UpdateTime).toString().split('-');
+                            if (resTxt[i].Title.length > 18)
+                                $("#tushuowenhua").append('<li style="width:33%;height:100%; padding-right:11px;float:left;margin-right:0"><a href="/Wenhua/Detail?ID=' + resTxt[i].ID + '&type=' + resTxt[i].ClassID + '"><img src="' + resTxt[i].DefaultPicUrl + '" style="width:100%; height:120px;" /></a><a href="/Wenhua/Detail?ID=' + resTxt[i].ID + '&type=' + resTxt[i].ClassID + '"><span style="color:black;margin-left:30px;">' + resTxt[i].Title.substring(0, 18) + '</span></a></li>');
+                            else
+                                $("#tushuowenhua").append('<li style="width:33%;height:100%; padding-right:11px;float:left;margin-right:0"><a href="/Wenhua/Detail?ID=' + resTxt[i].ID + '&type=' + resTxt[i].ClassID + '"><img src="' + resTxt[i].DefaultPicUrl + '" style="width:100%; height:120px;" /></a><a href="<a href="/Wenhua/Detail?ID=' + resTxt[i].ID + '&type=' + resTxt[i].ClassID + '"><span style="color:black;margin-left:30px;">' + resTxt[i].Title + '</span></a></li>');
+                        }
+                    }
+                }
+            });
+            //获取文华撷英
+            $.ajax({
+                url: "/News/GetWenHuaJieYing",
+                type: "POST",
+                data: {
+
+                },
+                success: function (resTxt) {
+                    if (resTxt.length > 0) {
+                        $("#wenhuajieyinghref").attr("href", "/More/Index?ID=" + resTxt[0].ID + "&type=" + resTxt[0].ClassID + "");
+                        for (var i = 0; i < resTxt.length; i++) {
+                            var time = ChangeDateFormat(resTxt[i].UpdateTime).toString().split('-');
+                            if (resTxt[i].Title.length > 18) {
+                                if (resTxt[i].DefaultPicUrl != "")
+                                    $("#wenhuajieying").append('<li><a href="/Wenhua/Detail?ID=' + resTxt[i].ID + '&type=' + resTxt[i].ClassID + '" class="left"><img src="' + resTxt[i].DefaultPicUrl + '"></a></li>');
+                            }
+                            else {
+                                if (resTxt[i].DefaultPicUrl != "")
+                                    $("#wenhuajieying").append('<li><a href="/Wenhua/Detail?ID=' + resTxt[i].ID + '&type=' + resTxt[i].ClassID + '" class="left"><img src="' + resTxt[i].DefaultPicUrl + '"></a></li>');
+                            }
+                        }
+                    }
+                }
+            });
+            //获取视频空间
+            //    $.ajax({
+            //        url: "/News/GetShiPinKongJian",
+            //        type: "POST",
+            //        data: {
+
+            //        },
+            //        success: function (resTxt) {
+            //            if (resTxt.length > 0) {
+            //                $("#shipinkongjianhref").attr("href", "/More/Index?ID=" + resTxt[0].ID + "&type=" + resTxt[0].ClassID + "");
+            //                for (var i = 0; i < 2; i++) {
+            //                    var time = ChangeDateFormat(resTxt[i].UpdateTime).toString().split('-');
+            //                    //if (resTxt[i].Title.length > 18)
+            //                    //    $("#shipinkongjian").append('<li><a href="/Wenhua/VideoDetail?ID=' + resTxt[i].ID + '&type=' + resTxt[i].ClassID + '" class="left">' + resTxt[i].Title.substring(0, 18) + '</a><span class="right">' + time[2] + '/<em>' + time[1] + '/' + time[0] + '</em></span></li>');
+            //                    //else
+            //                    //    $("#shipinkongjian").append('<li><a href="/Wenhua/VideoDetail?ID=' + resTxt[i].ID + '&type=' + resTxt[i].ClassID + '" class="left">' + resTxt[i].Title + '</a><span class="right">' + time[2] + '/<em>' + time[1] + '/' + time[0] + '</em></span></li>');
+            //                    if (resTxt[i].Title.length > 18)
+            //                        $("#shipinkongjian").append('<li style="height:100%;width:50%;height:100%; padding-right:11px;float:left;margin-right:0"><video style="margin:auto" id="video1" class="video-js vjs-default-skin" controls preload="auto" width="200" height="158" poster="" data-setup="{}"><source src="' + resTxt[i].VideoSrc + '" type="video/mp4" /><track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 --><track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 --></video></li>');
+            //                    else
+            //                        $("#shipinkongjian").append('<li style="height:100%;width:50%;height:100%; padding-right:11px;float:left;margin-right:0"><video style="margin:auto" id="video1" class="video-js vjs-default-skin" controls preload="auto" width="200" height="158" poster="" data-setup="{}"><source src="' + resTxt[i].VideoSrc + '" type="video/mp4" /><track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 --><track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 --></video></li>');
+            //                }
+            //            }
+            //        }
+            //    });
+        })
+
+        function Search() {
+            var searchTxt = $("#SearchText").val();
+            if (searchTxt == "") {
+                alert("搜索内容不能为空");
+                return;
+            }
+            location.href = "/News/Search?searchTxt=" + searchTxt;//跳转到站内搜索页面
+        }
+
+        function ChangeDateFormat(jsondate) {
+            jsondate = jsondate.replace("/Date(", "").replace(")/", "");
+            if (jsondate.indexOf("+") > 0) {
+                jsondate = jsondate.substring(0, jsondate.indexOf("+"));
+            }
+            else if (jsondate.indexOf("-") > 0) {
+                jsondate = jsondate.substring(0, jsondate.indexOf("-"));
+            }
+
+            var date = new Date(parseInt(jsondate, 10));
+            var month = date.getMonth() + 1 < 10 ? "0" + (date.getMonth() + 1) : date.getMonth() + 1;
+            var currentDate = date.getDate() < 10 ? "0" + date.getDate() : date.getDate();
+            return currentDate + "-" + month + "-" + date.getFullYear();
+        }
+    </script>
+</head>
+
+<body>
+    <div class="searchArea" style="display:none">
+        <div class="row">
+            <div class="ss search03">
+                <input type="text" value="" id="SearchText" placeholder="搜索" /><button onclick="Search()"></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="flexslider">
+        <ul id="slides" class="slides">
+                    <li>
+                            <a href="/Wenhua/Detail?ID=31788&type=1007"><img src="..\UpImgs\20171128112931589.jpg" height="416" /></a>
+                        <div class="bannerTxt">醉美红枫</div>
+                    </li>
+                    <li>
+                            <a href="/Wenhua/Detail?ID=31455&type=1007"><img src="..\UpImgs\20171101094824931.jpg" height="416" /></a>
+                        <div class="bannerTxt"></div>
+                    </li>
+                    <li>
+                            <a href="/Wenhua/Detail?ID=31454&type=1007"><img src="..\UpImgs\20171101094535748.jpg" height="416" /></a>
+                        <div class="bannerTxt"></div>
+                    </li>
+                    <li>
+                            <a href="/Wenhua/Detail?ID=31555&type=1007"><img src="..\UpImgs\20171105114313383.jpg" height="416" /></a>
+                        <div class="bannerTxt">文华学院第十三届运动会</div>
+                    </li>
+                    <li>
+                            <a href="/Wenhua/Detail?ID=31227&type=1007"><img src="..\UpImgs\20170922103731729.jpg" height="416" /></a>
+                        <div class="bannerTxt">图书馆新设施</div>
+                    </li>
+                    <li>
+                            <a href="/Wenhua/Detail?ID=31049&type=1007"><img src="..\UpImgs\20170621090401252.png" height="416" /></a>
+                        <div class="bannerTxt">欢迎报考文华学院</div>
+                    </li>
+                    <li>
+                            <a href="/Wenhua/Detail?ID=31048&type=1007"><img src="..\UpImgs\20170621085314927.jpg" height="416" /></a>
+                        <div class="bannerTxt">文华学院3D漫游图</div>
+                    </li>
+                    <li>
+                            <a href="/Wenhua/Detail?ID=31011&type=1007"><img src="..\UpImgs\20170613083405159.png" height="416" /></a>
+                        <div class="bannerTxt">智能制造——机器人时代的崛起</div>
+                    </li>
+                    <li>
+                            <a href="/Wenhua/Detail?ID=30525&type=1007"><img src="..\UpImgs\20170326202948219.jpg" height="416" /></a>
+                        <div class="bannerTxt">大美文华： 春</div>
+                    </li>
+                    <li>
+                            <a href="/Wenhua/Detail?ID=30524&type=1007"><img src="..\UpImgs\20170326202701912.jpg" height="416" /></a>
+                        <div class="bannerTxt">大美文华： 春</div>
+                    </li>
+        </ul>
+    </div>
+
+
+
+    <section id="info-mainOf" class="info01 info002">
+        <div class="row">
+            <div class="focus-header">
+
+                <div class="columns" style="margin-top:2.7%">
+                    <h2 class="main-lumpTit" style="padding-top:10px">媒体文华<a id="meitiwenhuahref" href="#">更多 >></a></h2>
+                    <ul id="meitiwenhua" class="inform-list inform-list02"></ul>
+                </div>
+
+                <div class="columns">
+                    <h2 class="main-lumpTit">文华要闻<a href="#" id="xuexiaoyaowenhref">更多 >></a></h2>
+                    <ul id="xuexiaoyaowen" class="inform-list inform-list02"></ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="focus-header">
+                <div class="columns">
+                    <h2 class="main-lumpTit">图说文华<a href="#" id="tushuowenhuahref">更多 >></a></h2>
+                    <ul id="tushuowenhua" class="inform-list inform-list02 inform-listXy"></ul>
+                </div>
+
+                <div class="columns">
+                    <h2 class="main-lumpTit">综合新闻<a href="#" id="zonghexinwenhref">更多 >></a></h2>
+                    <ul id="zonghexinxen" class="inform-list inform-list02"></ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="focus-header">
+
+                <div class="columns">
+                    <h2 class="main-lumpTit">
+                        视频空间 <a href="/More/Index?ID=31804&type=1009 + " id="shipinkongjianhref">更多 >></a>                    </h2>
+                    <ul id="shipinkongjian" class="inform-list inform-list02">
+                                <li style="height:100%;width:50%;height:100%; padding-right:11px;float:left;margin-right:0">
+                                    <video style="margin:auto" id="video1" class="video-js vjs-default-skin" controls preload="metadata" width="200" height="158" poster="" data-setup="{}">
+                                        <source src="/ueditor/net/upload/video/20171130/6364767673673000608999692.mp4" type='video/mp4' />
+                                        <track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+                                        <track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+                                    </video>
+                                </li>
+                                <li style="height:100%;width:50%;height:100%; padding-right:11px;float:left;margin-right:0">
+                                    <video style="margin:auto" id="video1" class="video-js vjs-default-skin" controls preload="metadata" width="200" height="158" poster="" data-setup="{}">
+                                        <source src="/ueditor/net/upload/video/20171127/6364738347931464132334015.mp4" type='video/mp4' />
+                                        <track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+                                        <track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+                                    </video>
+                                </li>
+                    </ul>
+                </div>
+
+                <div class="columns">
+                    <h2 class="main-lumpTit">公告通知<a href="#" id="xuebuyaowenhref">更多 >></a></h2>
+                    <ul id="xuebuyaowen" class="inform-list inform-list02"></ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="focus-header">
+
+                <div class="columns">
+                    <h2 class="main-lumpTit">文华撷英<a href="#" id="wenhuajieyinghref">更多 >></a></h2>
+                    <ul id="wenhuajieying" class="inform-list inform-list02 inform-listXy"></ul>
+                </div>
+
+                <div class="columns">
+                    <h2 class="main-lumpTit">思政教育<a href="#" id="sizhengjiaoyuhref">更多 >></a></h2>
+                    <ul id="sizhengjiaoyu" class="inform-list inform-list02"></ul>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <script>window.jQuery || document.write('<script src="../js/jquery-1.10.2.min.js"><\/script>')</script>
+    <script type="text/javascript" src="../js/jquery-migrate-1.2.1.min.js"></script>
+
+    <script src="../js/jquery.flexslider.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(".flexslider").flexslider({
+                slideshowSpeed: 4000, //展示时间间隔ms
+                animationSpeed: 400, //滚动时间ms
+                touch: true //是否支持触屏滑动
+            });
+
+            $("#mainNews .bor-2 > a").mouseover(function () {
+                $("#mainNews .bor-2 > a").removeClass("active");
+                $(this).addClass("active");
+            });
+        });
+    </script>
+
+</body>
+</html>
+    </div>
+    <div class="fot-bot01 fot-bot01-1">
+        <div class="row">
+            <div class="linksWrap">
+                <h2 class="often-linksTit">联系我们</h2>
+            </div>
+        </div>
+
+        <div class="row row002">
+            <div class="columns connect-us">
+                <ul class="tel-listNew">
+                    <li><em>投稿地址：</em><span>文华学院宣传策划处</span>&nbsp;&nbsp;<span>027-87599739</span></li>
+                    
+                    <li><em>投稿邮箱：</em><span>454440506@qq.com</span>&nbsp;&nbsp;</li>
+                    <li><em>投稿须知：</em><span>1、提交的新闻稿由部门负责人审核，对稿件真实性、客观性负责。</span></li>
+                    <li><em class="visibility-h">投稿须知：</em><span>2、摄影和艺术设计类配图稿件，若需图片处理请联系引航团队。</span></li>
+                    <li><em class="visibility-h">投稿须知：</em><span>3、首页轮播图要求图片像素1380*460以上，并保证图片质量。</span></li>
+                    <li><em class="visibility-h">投稿须知：</em><span>4、新闻网对来稿有修改权，公平对待每一篇投稿，以质论稿。</span></li>
+                </ul>
+            </div>
+            <div class="columns columns-code2">
+                <div class="left">
+                    <div>
+                        <div><a href="#"><img src="../images/文华学院微信.jpg" /></a></div>
+                        <span>文华官方微信</span>
+                    </div>
+                </div>
+                <div class="left">
+                    <div>
+                        <div><a href="#"><img src="../images/文华学院APP.jpg" /></a></div>
+                        <span>文华官方APP</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div id="go-top" style="dimsplay: block;"><a title="Back to Top" href="#">Go To Top</a></div> -->
+    </div>
+    <div class="fot-bot">
+        <div class="row">
+            <div class="copyright-f">
+
+
+                地址：武汉市东湖高新技术开发区文华园路8号  邮政编码：430074　电话：027-87599540 027-87599065              传真：027-87599540
+
+            </div>
+
+
+            <div class="copyright-to">
+
+
+                Copyright文华学院2016  鄂ICP备09023313号 总计访问：<a style="color:white" id="totalVisit"></a> 次 技术支持：<a href="http://yinhang.hustwenhua.net" style="color:white" target="_blank">引航团队</a>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

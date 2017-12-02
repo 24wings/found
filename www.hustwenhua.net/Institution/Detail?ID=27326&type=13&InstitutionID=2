@@ -1,0 +1,306 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+
+    <!--- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>文华学院</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/media-queries.css">
+    <link rel="stylesheet" type="text/css" href="../css/flexslider.css" />
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <!-- Script
+    ================================================== -->
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <link rel="shortcut icon" href="">
+    <script type="text/javascript">
+
+
+
+        function getUrlParam(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+            var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+            if (r != null) return unescape(r[2]); return null; //返回参数值
+        }
+
+        function bumenjianjie()
+        {
+            var InstitutionID = "";
+            if (getUrlParam("InstitutionID") != null)
+                InstitutionID = getUrlParam("InstitutionID");
+            else
+                InstitutionID = getUrlParam("ID");
+            location.href = "/Institution/More?type=1&InstitutionID="+InstitutionID;
+        }
+
+        function zhengcefagui() {
+            var InstitutionID = "";
+            if (getUrlParam("InstitutionID") != null)
+                InstitutionID = getUrlParam("InstitutionID");
+            else
+                InstitutionID = getUrlParam("ID");
+            location.href = "/Institution/More?type=2&InstitutionID=" + InstitutionID;
+        }
+
+        function gonggaotongzhi() {
+            var InstitutionID = "";
+            if (getUrlParam("InstitutionID") != null)
+                InstitutionID = getUrlParam("InstitutionID");
+            else
+                InstitutionID = getUrlParam("ID");
+            location.href = "/Institution/More?type=3&InstitutionID=" + InstitutionID;
+        }
+
+        function xinxifabu() {
+            var InstitutionID = "";
+            if (getUrlParam("InstitutionID") != null)
+                InstitutionID = getUrlParam("InstitutionID");
+            else
+                InstitutionID = getUrlParam("ID");
+            location.href = "/Institution/More?type=4&InstitutionID=" + InstitutionID;
+        }
+
+        function bumenshouye()
+        {
+            var InstitutionID = "";
+            if (getUrlParam("InstitutionID") != null)
+                InstitutionID = getUrlParam("InstitutionID");
+            else
+                InstitutionID = getUrlParam("ID");
+            location.href = "/Institution/Index?ID=" + InstitutionID;
+        }
+
+        $(function () {
+            var InstitutionID = "";
+            if (getUrlParam("InstitutionID") != null)
+                InstitutionID = getUrlParam("InstitutionID");
+            else
+                InstitutionID = getUrlParam("ID");
+            $.ajax({
+                url: "/All/GetVisitCount",
+                type: "POST",
+                data: {
+
+                },
+                success: function (resTxt) {
+                    $("#totalVisit").html(resTxt);
+                }
+            });
+        })
+
+        
+    </script>
+</head>
+<body style="background:#FFFFFF">
+    <!--  -->
+    <!--[if lte IE 8]>
+    <div id="ie6-warning">您正在使用 Internet Explorer 6，在本页面的显示效果可能有差异。建议您升级 <a href="http://windows.microsoft.com/zh-cn/internet-explorer/download-ie/" target="_blank">Internet Explorer </a> 或以下浏览器： <a href="http://www.mozillaonline.com/">Firefox</a> / <a href="http://www.google.com/chrome/?hl=zh-CN">Chrome</a> / <a href="http://www.apple.com.cn/safari/">Safari</a> / <a href="http://www.operachina.com/">Opera</a>
+    </div>
+    <script type="text/javascript">
+    function position_fixed(el, eltop, elleft){
+    // check if this is IE6
+    if(!window.XMLHttpRequest)
+    window.onscroll = function(){
+    el.style.top = (document.documentElement.scrollTop + eltop)+"px";
+    el.style.left = (document.documentElement.scrollLeft + elleft)+"px";
+    }
+    else el.style.position = "fixed";
+    }
+    position_fixed(document.getElementById("ie6-warning"),0, 0);
+    </script>
+    <![endif]-->
+    <!-- Header
+    ================================================== -->
+    <input type="hidden" id="hide">
+   <!-- Header End -->
+
+    
+
+
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+
+    <!--- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Blog Post</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/media-queries.css">
+
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <!-- Script
+    ================================================== -->
+    <script src="/js/modernizr.js"></script>
+    <script src="/js/Institution.js"></script>
+    <!-- Favicons
+     ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <style type="text/css">
+        table, tbody, tfoot, thead, tr, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="hidden" id="hide" />
+    <div class="header">
+        <div style="background: #FFF">
+            <div class="row" style="height:134px; ">
+                <div class="columns" style="padding:0;">
+                    <div class="logo2">
+                        <a href="/Wenhua/Index"><img alt="" src="../images/department_logo.png"></a>
+                    </div>
+                </div>
+                <div class="columns" style="padding:0;">
+                    <div class="logo2" style="padding-top: 64px;padding-left: 18px;">
+                        <a href="javascript:void(0)"><h2 id="headTitle"></h2></a>
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <div class="ss search02">
+                        <input type="text" value="" id="SearchText" placeholder="搜索" /><button onclick="Search()"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="background: #065AA9">
+            <div class="row">
+                <nav id="nav-wrap">
+                    
+
+                    <ul id="nav" class="nav"></ul> <!-- end #nav -->
+
+                </nav> <!-- end #nav-wrap -->
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="row">
+            <div class="news-linknav"><a href="/Institution/More?type=13&InstitutionID=2" style="color:black" id="TitleHref">党建专题</a><em>></em><a href="#" style="color:black">【转载】人民日报：“金钱政治”下的虚伪新闻观</a></div>
+            <div class="news-mainContent">
+                    <h2>【转载】人民日报：“金钱政治”下的虚伪新闻观</h2>
+                    <br />
+                <div class="markFrom">
+                    来源： &nbsp&nbsp&nbsp点击次数：8017 次 &nbsp&nbsp&nbsp发布时间：2016-06-05 &nbsp&nbsp&nbsp编辑：
+                </div>
+                <p>原标题：“金钱政治”下的虚伪新闻观（钟声）</p><p style="margin-top: 10px; margin-bottom: 10px; padding: 0px; font-size: 14px; white-space: normal; line-height: 25px; font-family: 宋体; word-wrap: break-word; color: rgb(51, 51, 51); font-stretch: normal; background-color: rgb(255, 255, 255);">　　美国民众抗议活动遭到主流媒体的漠视。华盛顿标榜的新闻自由、媒体独立，不过是公开的谎言</p><p style="margin-top: 10px; margin-bottom: 10px; padding: 0px; font-size: 14px; white-space: normal; line-height: 25px; font-family: 宋体; word-wrap: break-word; color: rgb(51, 51, 51); font-stretch: normal; background-color: rgb(255, 255, 255);">　　美国民众发起的“民主之春”运动直指“金钱政治”，国会大厦前千余名示威者遭警方逮捕，创下历史新高。令示威者感到愤怒的是，美国主流媒体对这一切集体失声。示威人群中不时发出“CNN（美国有线电视新闻网）在哪里”的质问。</p><p style="margin-top: 10px; margin-bottom: 10px; padding: 0px; font-size: 14px; white-space: normal; line-height: 25px; font-family: 宋体; word-wrap: break-word; color: rgb(51, 51, 51); font-stretch: normal; background-color: rgb(255, 255, 255);">　　4月19日，CNN倒是出现了难得一见的相关报道。但是，报道无涉民众对“金钱政治”的抗议，而是聚焦两位冰淇淋行业大亨参加抗议活动并遭逮捕以及两人一直以来对某位总统候选人的支持。</p><p style="margin-top: 10px; margin-bottom: 10px; padding: 0px; font-size: 14px; white-space: normal; line-height: 25px; font-family: 宋体; word-wrap: break-word; color: rgb(51, 51, 51); font-stretch: normal; background-color: rgb(255, 255, 255);">　　当其他国家出现类似政治运动时，美国主流媒体向来闹腾得厉害，此次何以对自家眼皮下的新闻如此心不在焉、避实就虚？对美国媒体有较深了解的人都知道，华盛顿极力标榜的所谓新闻自由、媒体独立不过是公开的谎言，每一次亢奋或失声都有其内在逻辑。美国主流媒体对“民主之春”的漠视，同几年前对“占领华尔街”运动的冷处理别无二致。</p><p style="margin-top: 10px; margin-bottom: 10px; padding: 0px; font-size: 14px; white-space: normal; line-height: 25px; font-family: 宋体; word-wrap: break-word; color: rgb(51, 51, 51); font-stretch: normal; background-color: rgb(255, 255, 255);">　　“美国社会当前的问题是系统性的，金钱无孔不入，掌握了最大影响力。”美国媒体早已成为这一“系统性问题”的一部分。长期以来，多数自称独立的美国媒体，从未独立于资本力量。经过上世纪90年代的“放松垄断管制”和“跨媒体、集团化”结构重组，再加上近年来数字化阅读带来的转型压力，美国主流媒体对资本的依附程度越来越高。资本带来的是“生意”逻辑，对内容生产的影响是全方位的。媒体所谓为公共利益服务原则给大资本利益让路，早已不是什么新闻。美国法学家欧文·费斯在《言论自由的反讽》一书中指出，美国版新闻自由造成的后果往往是强势的人有说话权利，弱势的人说话权利形式上是有的，但是别人听不到。</p><p style="margin-top: 10px; margin-bottom: 10px; padding: 0px; font-size: 14px; white-space: normal; line-height: 25px; font-family: 宋体; word-wrap: break-word; color: rgb(51, 51, 51); font-stretch: normal; background-color: rgb(255, 255, 255);">　　有数据表明，美国主流媒体是今年总统选举的利益攸关方和大赢家。媒体分析机构坎塔尔副主席伊丽莎白·维尔纳测算，今年大选各位候选人花在电视政治广告的支出将达到44亿美元。同时，媒体纷纷给足版面、时段，放大某些候选人的出格言论以博取受众眼球，进而抬升商业广告价位。如此之深地陷入“金钱政治”，美国主流媒体又怎么会有足够的勇气和良知去面对国会大厦前的抗议者？</p><p style="margin-top: 10px; margin-bottom: 10px; padding: 0px; font-size: 14px; white-space: normal; line-height: 25px; font-family: 宋体; word-wrap: break-word; color: rgb(51, 51, 51); font-stretch: normal; background-color: rgb(255, 255, 255);">　　同样需要指出的是，美国政府面对媒体时，全然没有其对外宣称的那般“超脱”。“软干预”是一种常用方式。据《纽约时报》一位编辑透露，当美国总统不希望某件事见报时，白宫新闻秘书会给媒体打招呼；如果某家媒体“不听话”，其负责人将无缘“总统早餐会”，采访总统的申请也将石沉大海。必要时采取的“硬手段”更是毫不含糊。因对弗格森枪击案的抗议，至少有15名新闻记者被捕。2013年曝出，美国政府秘密窃取了100多名美联社记者电话通信记录。</p><p style="margin-top: 10px; margin-bottom: 10px; padding: 0px; font-size: 14px; white-space: normal; line-height: 25px; font-family: 宋体; word-wrap: break-word; color: rgb(51, 51, 51); font-stretch: normal; background-color: rgb(255, 255, 255);">　　空口袋立不起来。不管美国如何起劲地要将貌似高大上的新闻观打造成软实力金字招牌，但只要“金钱政治”弊端不除，资本的力量就不会手软，将一次又一次让金字招牌现形为遮羞布。</p><p><br/></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/jquery-1.10.2.min.js"></script>
+
+    <script>window.jQuery || document.write('<script src="~/js/jquery-1.10.2.min.js"><\/script>')</script>
+
+   
+    <script src="/js/jquery.flexslider.js"></script>
+
+    <script src="/js/doubletaptogo.js"></script>
+
+    <script src="/js/init.js"></script>
+</body>
+</html>
+
+
+    <div class="fot-bot01">
+        <div class="row">
+            <div class="linksWrap">
+                <h2 class="often-linksTit">常用链接</h2>
+            </div>
+        </div>
+
+        <div class="row row002">
+            <div class="columns col-links">
+                <ul class="left">
+                    <li><a target="_blank" href="http://whlib.hustwenhua.net">图书馆</a></li>
+                    <li><a target="_blank" href="http://jwweb.hustwenhua.net">教务在线</a></li>
+                    <li><a target="_blank" href="http://hf.hustwenhua.net">红枫文化节</a></li>
+
+                    <li><a href="http://www.hustwenhua.net/Institution/Index?ID=6">学工在线</a></li>
+                </ul>
+                <ul class="left">
+                    <li><a href="../html/mailbox.html">学校信箱</a></li>
+                    <li><a href="#">文华青年</a></li>
+                    <li><a href="http://www.hustwenhua.net/Institution/Index?ID=7">收费公示</a></li>
+                    <li><a href="../html/wenhua_location.html">交通导航</a></li>
+                </ul>
+                <ul class="left">
+                    <li><a href="#">门户登入</a></li>
+                    
+                    <li><a target="_blank" href="http://ditu.wenhua.cc">文华漫游</a></li>
+                    <li><a target="_blank" href="http://sns.hustwenhua.net">互动文华</a></li>
+                    <li><a href="http://media.hustwenhua.net">文华媒体</a></li>
+                </ul>
+            </div>
+            <div class="columns columns-code2">
+                <div class="left">
+                    <div>
+                        <div><a href="#"><img src="../images/文华学院微信.jpg" /></a></div>
+                        <span>文华官方微信</span>
+                    </div>
+                </div>
+                <div class="left">
+                    <div>
+                        <div><a href="#"><img src="../images/文华学院APP.jpg" /></a></div>
+                        <span>文华官方APP</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div id="go-top" style="dimsplay: block;"><a title="Back to Top" href="#">Go To Top</a></div> -->
+    </div>
+
+    <div class="fot-bot">
+        <div class="row">
+            <div class="copyright-f">
+
+
+                地址：武汉市东湖高新技术开发区文华园路8号  邮政编码：430074　电话：027-87599540 027-87599065              传真：027-87599540
+
+            </div>
+
+
+            <div class="copyright-to">
+
+
+                Copyright文华学院2016  鄂ICP备09023313号 总计访问：<a style="color:white" id="totalVisit"></a> 次 技术支持：<a href="http://yinhang.hustwenhua.net" style="color:white" target="_blank">引航团队</a>
+
+            </div>
+
+        </div>
+
+    </div>

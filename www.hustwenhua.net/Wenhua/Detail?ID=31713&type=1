@@ -1,0 +1,284 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+
+    <!--- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>文华新闻网</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="/css/default.css" rel="stylesheet" />
+
+    <link href="/css/layout.css" rel="stylesheet" />
+
+    <link href="/css/media-queries.css" rel="stylesheet" />
+
+    <link href="/css/flexslider.css" rel="stylesheet" />
+
+    <link href="/css/index.css" rel="stylesheet" />
+    <script src="/js/modernizr.js"></script>
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <!-- 放小logo
+     ================================================== -->
+    <link rel="shortcut icon" href="">
+
+
+    <style type="text/css">
+
+    </style>
+    <script type="text/javascript">
+        $(function () {
+           
+            $.ajax({
+                url: "/All/GetVisitCount",
+                type: "POST",
+                data: {
+
+                },
+                success: function (resTxt) {
+                    $("#totalVisit").html(resTxt);
+                }
+            });
+        })
+    </script>
+</head>
+
+<body style="background: #FFFFFF">
+    <div class="header-news">
+        <div style="background: #FFF">
+            <div class="row">
+                <div class="columns" style="padding:0; width:100%;">
+                    <div class="logo02">
+                        <a href="/Wenhua/Index"><img src="../images/logoBg.jpg"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="background: #065AA9">
+            <div class="row">
+                <nav id="nav-wrap">
+                        
+
+                    <ul id="nav" class="nav">
+
+                        <!--  <li class="current"><a href="index.htm">首页</a></li> -->
+                        <li>
+                            <a href="/News/Index">新闻网首页</a>
+
+                        </li>
+                        <li>
+                            <a href="/More/Index?type=1">文华要闻</a>
+
+                        </li>
+                        <li>
+                            <a href="/More/Index?type=4">综合新闻</a>
+                        </li>
+                        <li>
+                            <a href="/More/Index?type=1011">公告通知</a>
+
+                        </li>
+                        <li>
+                            <a href="/More/Index?type=1010">思政教育</a>
+
+                        </li>
+                        <li>
+                            <a href="/More/Index?type=7">文华撷英</a>
+                        </li>
+                        <li>
+                            <a href="/More/Index?type=1006">媒体文华</a>
+                        </li>
+                        <li>
+                            <a href="/More/Index?type=1007">图说文华</a>
+                        </li>
+                        <li>
+                            <a href="/More/Index?type=1009">视频空间</a>
+                        </li>
+                    </ul> <!-- end #nav -->
+
+                </nav> <!-- end #nav-wrap -->
+            </div>
+        </div>
+
+    </div> <!-- Header End -->
+    <div>
+        
+
+
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+
+    <!--- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Blog Post</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/media-queries.css">
+    <script src="/js/jquery.min.js"></script>
+    <!-- Script
+    ================================================== -->
+    <script src="/js/modernizr.js"></script>
+
+    <!-- Favicons
+     ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <script type="text/javascript">
+        $(function () {
+
+        })
+    </script>
+    <style type="text/css">
+        table, tbody, tfoot, thead, tr, th, td {
+            border: 1px solid black;
+        }
+        span img{
+            margin-left:-40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header
+    ================================================== -->
+    <!-- Header End -->
+    <!-- Page Title
+    ================================================== -->
+     <!-- Page Title End-->
+    <!-- Content
+    ================================================== -->
+    <div>
+
+        <div class="row">
+
+            <div class="news-linknav"><a style="color:black" href="/More/Index?type=1">文华要闻</a><em>></em><a style="color:black" href="#">省委宣讲团学习贯彻党的十九大精神宣讲报告会在我校举行 </a></div>
+            <div class="news-mainContent">
+                    <h2 style="border-bottom:none">省委宣讲团学习贯彻党的十九大精神宣讲报告会在我校举行 </h2>
+                    <h2 style="font-size:20px;">             </h2>
+                    <br />
+                <div class="markFrom">
+                    来源： &nbsp&nbsp&nbsp点击次数：456 次 &nbsp&nbsp&nbsp发布时间：2017-11-25 &nbsp&nbsp&nbsp作者：本网讯（文新社实习记者 冯雨欣 杨伟军 瞿梦微 刘佳雯/文）
+                </div>
+                <p style=";text-align:justify;text-justify:inter-ideograph"><span style="font-family: 宋体;font-size: 19px"><span style="font-family:宋体">&nbsp;&nbsp;</span></span></p><p style="white-space: normal;"><span style="font-family: 宋体; font-size: 19px;">&nbsp; &nbsp; 为学习贯彻党的“十九大”精神，11月24日下午，</span><span style="font-family: 宋体; font-size: 19px;">“十九大”精神宣讲报告会于学术报告厅举行。湖北省委宣讲团成员唐忠义</span><span style="font-family: 宋体; font-size: 19px;">作为</span><span style="font-family: 宋体; font-size: 19px;">主讲人</span><span style="font-family: 宋体; font-size: 19px;">讲解了新时代中国特色社会主义的伟大纲领</span><span style="font-family: 宋体; font-size: 19px;">。我校全体党政班子成员、学校科级（含副科）以上干部、部分专任教师、学生党员和优秀学生干部聆听了宣讲会。学术报告厅座无虚席、秩序井然、听讲认真、反响热烈。</span></p><p style="text-align: center;"><span style="font-family: 宋体;font-size: 19px"><span style="font-family:宋体"><img src="/ueditor/net/upload/image/20171126/6364733299058585122524219.jpg" title="_MG_7998_副本.jpg" alt="_MG_7998_副本.jpg"/></span></span></p><p><span style="font-family: 宋体; font-size: 19px;">&nbsp; &nbsp; 唐忠义</span><span style="font-family: 宋体; font-size: 19px;">从“五个重大”开始了他的宣讲，即</span><span style="font-family: 宋体; font-size: 19px;">深刻认识“十九大”的重大意义、全面把握重大判断、深入学习重大理论、准确理解重大使命和全面贯彻重大部署。</span><span style="font-family: 宋体; font-size: 19px;">他指出，“十九大”是我们党在新时代开启新征程、续写新篇章的政治宣言和行动纲领。习近平</span><span style="font-family: 宋体; font-size: 19px;">总书记提出</span><span style="font-family: 宋体; font-size: 19px;">的新时代中国特色社会主义思想，是新时代中党和国家事业发展的理论指导和行动指南。</span><br/></p><p style="white-space: normal;"><span style="font-family: 宋体; font-size: 19px;">&nbsp; &nbsp; 他</span><span style="font-family: 宋体; font-size: 19px;">还对“十九大”上习近平总书记提出的要求做了深入讲解</span><span style="font-family: 宋体; font-size: 19px;">，</span><span style="font-family: 宋体; font-size: 19px;">指出通过学习“十九大”，</span><span style="font-family: 宋体; font-size: 19px;">要清楚“十九大”提出的奋斗目标和历史使命；要理解“两个一百年”奋斗目标的战略部署，分两步建设社会主义现代化强国；要坚持“五位一体”总布局和“四个全面”战略布局，建设新时代中国特色社会主义；要推进党的建设伟大工程，保障和发展新时代中国特色社会主义；要牢固把握新时代党的建设总要求，始终坚持和加强党的全面领导，坚持把党的政治建设摆在首位，始终牢记全面从严治党永远在路上。</span></p><p style="white-space: normal;"><span style="font-family: 宋体; font-size: 19px;">&nbsp; &nbsp; 报告最后，唐忠义提出，希望大家按照</span><span style="font-family: 宋体; font-size: 19px;">习近平</span><span style="font-family: 宋体; font-size: 19px;">总书记的要求，把学习宣传贯彻党的“十九大”精神同学习马克思主义基本原理贯通起来，同把握党的“十九大”作出的各项战略部署贯通起来，深化认识党的“十九大”关于党和国家事业各项战略部署的整体性、关联性、协同性。希望大家在学习中深化认识，在实干中勇于创造，为夺取新时代中国特色社会主义伟大胜利作出新的更大的贡献</span><span style="font-family: 宋体; font-size: 19px;">。</span><span style="font-family: 宋体; font-size: 19px;">&nbsp;</span></p><p style="text-align: center;"><span style="font-family: 宋体;font-size: 19px"><img src="/ueditor/net/upload/image/20171126/6364733300445264436874076.jpg" title="DSC_5178_副本.jpg" alt="DSC_5178_副本.jpg"/></span></p><p style=";text-align:justify;text-justify:inter-ideograph"><span style="font-family: 宋体; font-size: 19px;">&nbsp; &nbsp; 于清双对此次会议做了总结，他说道：“我们一定要贯彻</span><span style="font-family: 宋体; font-size: 19px;">落实</span><span style="font-family: 宋体; font-size: 19px;">好党的‘十九大’精神，</span><span style="font-family: 宋体; font-size: 19px;">学习习近平总书记提出的新时代中国特色社会主义纲领，</span><span style="font-family: 宋体; font-size: 19px;">要让每一个学生都能感到生活在这个时代</span><span style="font-family: 宋体; font-size: 19px;">的</span><span style="font-family: 宋体; font-size: 19px;">骄傲和自豪。”</span><br/></p><p style="white-space: normal;"><span style="font-family: 宋体; font-size: 19px;">&nbsp; &nbsp; 此次会议唐忠义从多个角度对“十九大”精神进行了解读，重点讲解了习近平总书记提出的新时代中国特色社会主义纲领，让我校领导及学生对党的思想发展路线有了更清晰，更全面的认识，更便于我校一心一意跟党走，在党的思想部署下全面开展学生工作。</span></p><p><strong><span style="font-family: 仿宋;font-size: 19px"><span style="font-family:仿宋">相关链接：</span></span></strong></p><p><span style="font-family: 仿宋;font-size: 19px"><span style="font-family:仿宋">&nbsp; &nbsp; 唐忠义：武汉科技大学马克思主义学院院长，湖北省意识形态安全研究中心主任，教授，研究生导师，主要从事社会主义经济理论与政治文明、地方政府与公共政策等研究。兼任中共湖北省委宣讲团和武汉市委宣讲团成员、省委讲师团特聘教授，省公务员局特聘专家。</span></span><span style="font-family: 仿宋;font-size: 19px"><br/></span></p><p style="text-indent: 37px;"><span style="font-family: 宋体; font-size: 16px;">（文字编辑：郭伦 罗丹霓）</span></p><p style="text-indent: 37px;"><span style="font-family: 宋体, SimSun;">（图片编辑：向芷薇 郑锐婕 夏文静）</span></p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Content End-->
+    <!-- Tweets Section
+    ================================================== -->
+    
+    <!--
+    <li>
+       <span>
+       This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+       Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum
+       <a href="#">http://t.co/CGIrdxIlI3</a>
+       </span>
+       <b><a href="#">3 Days Ago</a></b>
+    </li>
+    -->
+     <!-- Tweet Section End-->
+    <!-- footer
+    ================================================== -->
+    <!-- Footer End-->
+    <!-- Java Script
+    ================================================== -->
+    <script src="/js/jquery-1.10.2.min.js"></script>
+
+    <script>window.jQuery || document.write('<script src="~/js/jquery-1.10.2.min.js"><\/script>')</script>
+
+    <script src="/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="/js/jquery.flexslider.js"></script>
+
+    <script src="/js/doubletaptogo.js"></script>
+
+    <script src="/js/init.js"></script>
+</body>
+</html>
+
+    </div>
+    <div class="fot-bot01 fot-bot01-1">
+        <div class="row">
+            <div class="linksWrap">
+                <h2 class="often-linksTit">联系我们</h2>
+            </div>
+        </div>
+
+        <div class="row row002">
+            <div class="columns connect-us">
+                <ul class="tel-listNew">
+                    <li><em>投稿地址：</em><span>文华学院宣传策划处</span>&nbsp;&nbsp;<span>027-87599739</span></li>
+                    
+                    <li><em>投稿邮箱：</em><span>454440506@qq.com</span>&nbsp;&nbsp;</li>
+                    <li><em>投稿须知：</em><span>1、提交的新闻稿由部门负责人审核，对稿件真实性、客观性负责。</span></li>
+                    <li><em class="visibility-h">投稿须知：</em><span>2、摄影和艺术设计类配图稿件，若需图片处理请联系引航团队。</span></li>
+                    <li><em class="visibility-h">投稿须知：</em><span>3、首页轮播图要求图片像素1380*460以上，并保证图片质量。</span></li>
+                    <li><em class="visibility-h">投稿须知：</em><span>4、新闻网对来稿有修改权，公平对待每一篇投稿，以质论稿。</span></li>
+                </ul>
+            </div>
+            <div class="columns columns-code2">
+                <div class="left">
+                    <div>
+                        <div><a href="#"><img src="../images/文华学院微信.jpg" /></a></div>
+                        <span>文华官方微信</span>
+                    </div>
+                </div>
+                <div class="left">
+                    <div>
+                        <div><a href="#"><img src="../images/文华学院APP.jpg" /></a></div>
+                        <span>文华官方APP</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div id="go-top" style="dimsplay: block;"><a title="Back to Top" href="#">Go To Top</a></div> -->
+    </div>
+    <div class="fot-bot">
+        <div class="row">
+            <div class="copyright-f">
+
+
+                地址：武汉市东湖高新技术开发区文华园路8号  邮政编码：430074　电话：027-87599540 027-87599065              传真：027-87599540
+
+            </div>
+
+
+            <div class="copyright-to">
+
+
+                Copyright文华学院2016  鄂ICP备09023313号 总计访问：<a style="color:white" id="totalVisit"></a> 次 技术支持：<a href="http://yinhang.hustwenhua.net" style="color:white" target="_blank">引航团队</a>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

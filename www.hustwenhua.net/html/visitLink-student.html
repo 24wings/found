@@ -1,0 +1,283 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>学生</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="../css/default.css">
+	<link rel="stylesheet" href="../css/layout.css">
+   <link rel="stylesheet" href="../css/media-queries.css">
+   <link rel="stylesheet" type="text/css" href="../css/flexslider.css" />
+   <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/VisitLink.js"></script>
+   <!-- Script
+   ================================================== -->
+  <!--  <script type="text/javascript" src="js/jquery.min.js">
+   	
+   </script> -->
+
+   <!-- 放小logo
+	================================================== -->
+	<link rel="shortcut icon" href="" > 
+
+
+	<style type="text/css">
+	</style>
+    
+</head>
+
+<body style="background:#FFF">
+   <!-- Header
+   ================================================== -->
+   <div class="header">
+      <div class="row" style="height:134px">
+         <div class="columns" style="padding:0;">
+            <div class="logo2">
+               <a href="/Wenhua/Index"><img alt="" src="../images/logo.jpg"></a>
+            </div>
+		</div>
+		<div class="columns">
+			<div class="top-nav" id="top-nav">
+            	<a href="visitLink-student.html">学生</a>
+            	<a href="visitLink-staffTeacher.html">教职工</a>
+            	<a href="visitLink-schoolfellow.html">校友</a>
+            	<a href="visitLink-visitor.html">访客</a>
+                <a href="#">旧版入口</a>
+            </div>
+			<div class="ss">
+                <input type="text" value="" id="SearchText" placeholder="搜索" /><button onclick="Search()"></button>
+			</div>
+		</div>
+	</div>
+       <div class="row">
+           <nav id="nav-wrap">
+               <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+               <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+               <ul id="nav" class="nav">
+
+                   <!--  <li class="current"><a href="index.htm">首页</a></li> -->
+                   <li>
+                       <a href="/Wenhua/Index">文华首页</a>
+
+                   </li>
+                   <li>
+                       <a href="#">文华概况</a>
+                       <ul class="select-bot">
+                           <li><a href="/Wenhua/Introduct">学校简介</a></li>
+                           <li><a href="/Wenhua/History">学校标识</a></li>
+                           <li><a href="/Wenhua/Leader">领导介绍</a></li>
+                           <li><a href="/Wenhua/SchoolView">校园风光</a></li>
+                           <li><a href="/Wenhua/SchoolHistory">文华校史</a></li>
+                       </ul>
+                   </li>
+                   <li>
+                       <a href="#">学部设置</a>
+                       <ul class="select-bot">
+                           <li><a href="#">基础学部</a></li>
+                           <li><a target="_blank" href="http://wyweb.hustwenhua.net/">外语学部</a></li>
+                           <li><a target="_blank" href="http://jingguan.hustwenhua.net/index.html">经济管理学部</a></li>
+                           <li><a target="_blank" href="http://xinxi.hustwenhua.net">信息科学与技术学部</a></li>
+                           <li><a target="_blank" href="http://renwen.hustwenhua.net/">人文社会科学学部</a></li>
+                           <li><a target="_blank" href="http://jidian.hustwenhua.net/index.html">机械与电气工程学部</a></li>
+                           <li><a target="_blank" href="http://cj.hustwenhua.net/">城市建设工程学部</a></li>
+                           <li><a href="#">继续教育学部</a></li>
+                       </ul>
+                   </li>
+                   <li>
+                       <a href="#">机构设置</a>
+                       <ul id="Institution" class="select-bot"></ul>
+                   </li>
+                   <li>
+                       <a href="#">师资队伍</a>
+                       <ul class="select-bot">
+                           <li><a href="/TeacherTeam/TeacherIntroduct">师资介绍</a></li>
+                           <li><a href="/TeacherTeam/KeyTeacher">骨干教师</a></li>
+                           <li><a href="/TeacherTeam/FamousTeacher">教学名师</a></li>
+                           <li><a id="rencaizhaopin" href="#">人才招聘</a></li>
+                       </ul>
+                   </li>
+                   <li>
+                       <a href="#">教育教学</a>
+                       <ul class="select-bot">
+                           <li><a target="_blank" href="http://jwweb.hustwenhua.net" />本科生教学</a></li>
+                           <li><a href="/EducationTeach/Index?typeName=个性化教育">个性化教育</a></li>
+                           <li><a href="/EducationTeach/Index?typeName=潜能教育">潜能教育</a></li>
+                           <li><a href="/EducationTeach/Index?typeName=立志教育">立志教育</a></li>
+                       </ul>
+                   </li>
+
+                   <li>
+                       <a target="_blank" href="http://kjc.hustwenhua.net/index.html">科学研究</a>
+                   </li>
+                   <li>
+                       <a href="#">招生就业</a>
+                       <ul class="select-bot">
+                           <li><a target="_blank" href="http://zhaosheng.hustwenhua.net/">招生</a></li>
+                           <li><a target="_blank" href="http://www2.hustwenhua.net/jgsz/xsgzc/jyxxw/">就业</a></li>
+                       </ul>
+                   </li>
+                   <li>
+                   <li>
+                       <a id="hezuojiaoliu" href="#">合作交流</a>
+                   </li>
+
+                <li>
+                        <a target="_blank" href="http://cxcy.hustwenhua.net">创新创业</a>
+                    </li>
+               </ul> <!-- end #nav -->
+
+           </nav> <!-- end #nav-wrap -->
+       </div>
+	
+   </div> <!-- Header End -->
+
+
+   <div class="flexslider">
+  		<ul class="slides">
+    		<li><a href="#"><img src="../images/banner777.jpg" height="416" /></a>
+				
+    		</li>
+  		</ul>
+	</div>
+    <div style="padding-bottom:100px;">
+        <div class="row samllNav">
+          
+        </div>
+        <div class="row">
+            <div class="columns three leftNav">
+                <ul>
+                    <li class="active"><a href="javascript:void(0)" id="xuesheng">学生</a></li>
+                    <li><a href="javascript:void(0)" id="jiaozhigong">教职工</a></li>
+                    <li><a href="javascript:void(0)" id="xiaoyou">校友</a></li>
+                    <li><a href="javascript:void(0)" id="fangke">访客</a></li>
+                </ul>
+            </div>
+            <div class="columns nine">
+                <h2 class="nav020-tit"><span id="linkTitle">学生<span></h2>
+                <div class="student-type">
+                    <ul id="linkContent">
+                        <li><a target="_blank" href="http://whlib.hustwenhua.net">图书馆</a></li>
+                        <li><a target="_blank" href="http://jw1.hustwenhua.net">教务管理系统</a></li>
+                        <li><a target="_blank" href="http://www.hustwenhua.net/Institution/Index?ID=6">学工在线</a></li>
+                        <li><a target="_blank" href="http://xlzx.xn.hustwenhua.net/">心理咨询中心</a></li>
+                      
+                        <li><a target="_blank" href="http://zhaosheng.hustwenhua.net/">招生网</a></li>
+                        <li><a target="_blank" href="http://zsb.hustwenhua.net">专升本报名系统</a></li>
+                        <li><a target="_blank" href="http://pay.hustwenhua.net">缴费平台</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+   <div class="fot-bot01">
+	<div class="row">
+		<div class="linksWrap">
+			<h2 class="often-linksTit">常用链接</h2>
+		</div>
+	</div>
+
+	<div class="row row002">
+		 <div class="columns col-links">
+                <ul class="left">
+                    <li><a target="_blank" href="http://whlib.hustwenhua.net">图书馆</a></li>
+                    <li><a target="_blank" href="http://jwweb.hustwenhua.net">教务在线</a></li>
+                    <li><a target="_blank" href="http://hf.hustwenhua.net">红枫文化节</a></li>
+
+                    <li><a href="http://www.hustwenhua.net/Institution/Index?ID=6">学工在线</a></li>
+                </ul>
+                <ul class="left">
+                    <li><a href="http://www.hustwenhua.net/html/mailbox.html">学校信箱</a></li>
+                    <li><a target="_blank" href="http://pinggu.hustwenhua.net">教学评估</a></li>
+                    <li><a href="http://www.hustwenhua.net/Institution/Index?ID=7">收费公示</a></li>
+                    <li><a href="http://www.hustwenhua.net/html/wenhua_location.html">交通导航</a></li>
+                </ul>
+                <ul class="left">
+                    <li><a target="_blank"  href="http://jpkc.hustwenhua.net">精品课程</a></li>
+                    
+                    <li><a target="_blank" href="http://ditu.wenhua.cc">文华漫游</a></li>
+                    <li><a target="_blank" href="http://sns.hustwenhua.net">互动文华</a></li>
+                    <li><a href="http://media.hustwenhua.net">文华媒体</a></li>
+                </ul>
+            </div>
+        <div class="columns columns-code2">
+            <div class="left">
+                <div>
+                    <div><a href="#"><img src="../images/文华学院微信.jpg" /></a></div>
+                    <span>文华官方微信</span>
+                </div>
+            </div>
+            <div class="left">
+                <div>
+                    <div><a href="#"><img src="../images/文华学院APP.jpg" /></a></div>
+                    <span>文华官方APP</span>
+                </div>
+            </div>
+        </div>
+	</div>
+     <!-- <div id="go-top" style="dimsplay: block;"><a title="Back to Top" href="#">Go To Top</a></div> -->
+</div>
+
+<div class="fot-bot">
+	<div class="row">
+		<div class="copyright-f" >
+	        
+	         
+	         	地址：武汉市东湖高新技术开发区文华园路8号  邮政编码：430074　电话：027-87599540 027-87599065              传真：027-87599540
+	         
+                 </div>
+
+
+        <div class="copyright-to">
+
+
+            Copyright文华学院2016  鄂ICP备09023313号 总计访问：<a style="color:white" id="totalVisit"></a> 次 技术支持：<a href="http://yinhang.hustwenhua.net" style="color:white" target="_blank">引航团队</a>
+
+        </div>
+	        
+  	</div>
+	 
+</div>
+   <!-- Footer End-->
+
+   <!-- Java Script
+   ================================================== -->
+   <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+   <script>window.jQuery || document.write('<script src="../js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="../js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="../js/jquery.flexslider.js"></script>
+   <!-- <script src="js/doubletaptogo.js"></script> -->
+   <!-- <script src="js/init.js"></script> -->
+   <script type="text/javascript">
+   		$(".select-bot").mouseover(function(){
+   			$(this).parent().addClass("active");
+   		})
+   		$(".select-bot").mouseout(function(){
+   			$(this).parent().removeClass("active");
+   		})
+   </script>
+
+<!-- 
+<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div> -->
+</body>
+</html>

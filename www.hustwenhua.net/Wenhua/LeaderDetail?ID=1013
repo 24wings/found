@@ -1,0 +1,413 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+
+    <!--- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>文华学院</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <meta name="renderer" content="webkit">
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/media-queries.css">
+    <link href="/css/index.css" rel="stylesheet" />
+    <!-- Script
+    ================================================== -->
+    <script src="/js/modernizr.js"></script>
+    <!-- Favicons
+     ================================================== -->
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <style type="text/css">
+        #ie6-warning {
+            background: rgb(255,255,225) url("") no-repeat scroll 3px center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 12px;
+            color: #333;
+            width: 97%;
+            padding: 2px 15px 2px 23px;
+            text-align: left;
+        }
+
+            #ie6-warning a {
+                text-decoration: none;
+            }
+    </style>
+    <script type="text/javascript">
+        function Search() {
+            var searchTxt = $("#SearchText").val();
+            if (searchTxt == "") {
+                alert("搜索内容不能为空");
+                return;
+            }
+            location.href = "/Wenhua/Search?searchTxt=" + searchTxt;//跳转到站内搜索页面
+        }
+    </script>
+</head>
+
+
+<body>
+    <div class="header">
+
+        <div class="row" style="height:134px">
+            <div class="columns" style="padding:0;">
+                <div class="logo2">
+                    <a href="/Wenhua/Index"><img alt="" src="../images/logo.jpg"></a>
+                </div>
+            </div>
+            <div class="columns topNavList">
+                <div class="top-nav" id="top-nav">
+                    <a href="/html/visitLink-student.html">学生</a>
+                    <a href="/html/visitLink-staffTeacher.html">教职工</a>
+                    <a href="/html/visitLink-schoolfellow.html">校友</a>
+                    <a href="/html/visitLink-visitor.html">访客</a>
+                    
+                </div>
+                <div class="ss">
+                    <input type="text" value="" id="SearchText" placeholder="搜索" /><button onclick="Search()"></button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div id="nav-wrap">
+                <a class="mobile-btn" href="#nav-wrap" title="Show navigation"></a>
+                <a class="mobile-btn" href="#" title="Hide navigation"></a>
+                <ul id="nav" class="nav">
+                    <!--  <li class="current"><a href="index.htm">首页</a></li> -->
+                    <li>
+                        <a href="/Wenhua/Index">文华首页</a>
+                    </li>
+                    <li>
+                        <a href="#">文华概况</a>
+                        <ul class="select-bot">
+                            <li><a href="/Wenhua/Introduct">学校简介</a></li>
+                            <li><a href="/Wenhua/History">学校标识</a></li>
+                            <li><a href="/Wenhua/Leader">领导介绍</a></li>
+                            <li><a href="/Wenhua/SchoolView">校园风光</a></li>
+                            <li><a target="_blank" href="http://media.hustwenhua.net">文华媒体</a></li>
+                            <li><a href="/Wenhua/SchoolHistory">文华校史</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">学部设置</a>
+                        <ul class="select-bot">
+                            <li><a href="#">基础学部</a></li>
+                            <li><a target="_blank" href="http://wyweb.hustwenhua.net/">外语学部</a></li>
+                            <li><a target="_blank" href="http://jingguan.hustwenhua.net/index.html">经济管理学部</a></li>
+                            <li><a target="_blank" href="http://xinxi.hustwenhua.net">信息科学与技术学部</a></li>
+                            <li><a target="_blank" href="http://renwen.hustwenhua.net/">人文社会科学学部</a></li>
+                            <li><a target="_blank" href="http://jidian.hustwenhua.net/index.html">机械与电气工程学部</a></li>
+                            <li><a target="_blank" href="http://cj.hustwenhua.net/">城市建设工程学部</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">机构设置</a>
+                        <ul id="Institution" class="select-bot">
+                                        <li><a href="/Institution/Index?ID=1">董事会</a></li>
+                                        <li><a href="/Institution/Index?ID=2">党委办公室</a></li>
+                                        <li><a href="/Institution/Index?ID=3">校长办公室</a></li>
+                                        <li><a href="/Institution/Index?ID=23">纪委、监察、审计处</a></li>
+                                        <li><a href="/Institution/Index?ID=19">校工会</a></li>
+                                        <li><a href="/Institution/Index?ID=4">宣传策划处</a></li>
+                                        <li><a href="/Institution/Index?ID=6">学生工作处（部）</a></li>
+                                        <li><a href="/Institution/Index?ID=21">校团委</a></li>
+                                        <li><a href="/Institution/Index?ID=17">人力资源处（部）</a></li>
+                                        <li><a href="/Institution/Index?ID=25">教师教学发展中心</a></li>
+                                        <li><a href="/Institution/Index?ID=30">学术委员会</a></li>
+                                        <li><a target="_blank" href="http://ir.hustwenhua.net/">院校研究所</a></li>
+                                        <li><a target="_blank" href="http://jwweb.hustwenhua.net/">教务处</a></li>
+                                        <li><a href="/Institution/Index?ID=18">招生就业处</a></li>
+                                        <li><a target="_blank" href="http://kjc.hustwenhua.net/index.html">科学研究与技术开发处</a></li>
+                                        <li><a href="/Institution/Index?ID=12">国际交流处</a></li>
+                                        <li><a href="/Institution/Index?ID=11">资产管理处</a></li>
+                                        <li><a href="/Institution/Index?ID=7">财务处</a></li>
+                                        <li><a href="/Institution/Index?ID=8">后勤保卫处</a></li>
+                                        <li><a href="/Institution/Index?ID=10">信息化管理中心</a></li>
+                                        <li><a href="/Institution/Index?ID=20">图书馆</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">师资队伍</a>
+                        <ul class="select-bot">
+                            <li><a href="/TeacherTeam/TeacherIntroduct">师资介绍</a></li>
+                            <li><a href="/TeacherTeam/KeyTeacher">骨干教师</a></li>
+                            <li><a href="/TeacherTeam/FamousTeacher">教学名师</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">教育教学</a>
+                        <ul class="select-bot">
+                            <li><a target="_blank" href="http://jwweb.hustwenhua.net" />本科生教学</a></li>
+                            <li><a href="/EducationTeach/Index?typeName=个性化教育">个性化教育</a></li>
+                            <li><a href="/EducationTeach/Index?typeName=潜能教育">潜能教育</a></li>
+                            <li><a href="/EducationTeach/Index?typeName=立志教育">立志教育</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a target="_blank" href="http://kjc.hustwenhua.net/index.html">科学研究</a>
+                    </li>
+                    <li>
+                        <a href="#">招生就业</a>
+                        <ul class="select-bot">
+                            <li><a target="_blank" href="http://zhaosheng.hustwenhua.net/">招生</a></li>
+                            <li><a target="_blank" href="http://www.hustwenhua.net/Institution/Index?ID=18">就业</a></li>
+                        </ul>
+                    </li>               
+                    <li>
+                                    <a id="hezuojiaoliu" href="/Institution/Index?ID=12">合作交流</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://cxcy.hustwenhua.net">创新创业</a>
+                    </li>
+
+                    
+</ul> <!-- end #nav -->
+            </div> <!-- end #nav-wrap -->
+        </div>
+
+    </div>
+
+
+    <div>
+        
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+
+    <!--- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Sparrow - Free Responsive HTML5/CSS3 Template</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+
+    <link href="/css/default.css" rel="stylesheet" />
+
+    <link href="/css/layout.css" rel="stylesheet" />
+
+    <link href="/css/media-queries.css" rel="stylesheet" />
+
+    <link href="/css/flexslider.css" rel="stylesheet" />
+
+    <link href="/css/index.css" rel="stylesheet" />
+    <!-- Script
+    ================================================== -->
+
+    <script src="/js/modernizr.js"></script>
+
+    <!-- 放小logo
+     ================================================== -->
+    <link rel="shortcut icon" href="">
+
+
+    <style type="text/css">
+        body {
+            background: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header
+    ================================================== -->
+    <!-- Header End -->
+    <!-- 轮播 -->
+
+    <div class="flexslider">
+        <div class="flexslider">
+            <ul class="slides">
+                <li>
+                    <a href="#"><img src="../images/banner777.jpg" height="416" /></a>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <div class="row">
+            
+            <div class="news-mainContent">
+                <h2>名誉校长 -- 张勇传</h2>
+                    <div><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 18px; padding: 0px; border: 0px; outline: 0px; font-size: 15px; vertical-align: baseline; font-family: &#39;Microsoft yahei&#39;; line-height: 30px; white-space: normal; text-align: center; background: rgb(255, 255, 255);"><span style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; background: transparent;"><img src="/ueditor/net/upload/image/20160622/6360221143644782114981302.jpg" title="1273461859441.jpg" alt="1273461859441.jpg"/></span></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 18px; padding: 0px; border: 0px; outline: 0px; font-size: 15px; vertical-align: baseline; font-family: &#39;Microsoft yahei&#39;; line-height: 30px; white-space: normal; background: rgb(255, 255, 255);"><span style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; background: transparent;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;张勇传，中国工程院院士，著名水利水电工程学家。现任华中科技大学学术委员会副主任，２００３年至２０１０年任华中科技大学文华学院院长。</span></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 18px; padding: 0px; border: 0px; outline: 0px; font-size: 15px; vertical-align: baseline; font-family: &#39;Microsoft yahei&#39;; line-height: 30px; white-space: normal; background: rgb(255, 255, 255);"><span style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; background: transparent;">　　张勇传院士早年毕业于华中工学院（华中科技大学前身），后留校任教至今，参与并推动了华中科技大学的全面崛起。</span></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 18px; padding: 0px; border: 0px; outline: 0px; font-size: 15px; vertical-align: baseline; font-family: &#39;Microsoft yahei&#39;; line-height: 30px; white-space: normal; background: rgb(255, 255, 255);"><span style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; background: transparent;">　　张勇传院士在水电领域的理论和科研上取得了重大的突破和创新，为现代水电能源理论的创立和发展做出了重要贡献。</span></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 18px; padding: 0px; border: 0px; outline: 0px; font-size: 15px; vertical-align: baseline; font-family: &#39;Microsoft yahei&#39;; line-height: 30px; white-space: normal; background: rgb(255, 255, 255);"><span style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; background: transparent;">　　２００３年，为培养具有创新和创业能力、适应社会需要的高素质专业人才，张勇传院士欣然出任华中科技大学文华学院院长，开创中国高教史上院士担任独立学院院长的先河。</span></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 18px; padding: 0px; border: 0px; outline: 0px; font-size: 15px; vertical-align: baseline; font-family: &#39;Microsoft yahei&#39;; line-height: 30px; white-space: normal; background: rgb(255, 255, 255);"><span style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; background: transparent;">　　张勇传院士十分关爱文华学子，经常与学生一起交流治学做人思想，多次举办人文讲座，谆谆教诲，令文华学子受益匪浅。</span></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 18px; padding: 0px; border: 0px; outline: 0px; font-size: 15px; vertical-align: baseline; font-family: &#39;Microsoft yahei&#39;; line-height: 30px; white-space: normal; background: rgb(255, 255, 255);"><span style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; background: transparent;">　　２０１０年１１月，华中科技大学文华学院董事会聘任张勇传为名誉院长。</span></p><p><span style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; background: transparent;"><br/></span></p><p><br/></p></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+    <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <script src="/js/jquery.flexslider.js"></script>
+
+    <script src="/js/doubletaptogo.js"></script>
+
+    <script src="/js/init.js"></script>
+    <script type="text/javascript">
+        $(".select-bot").mouseover(function () {
+            $(this).parent().addClass("active");
+        })
+        $(".select-bot").mouseout(function () {
+            $(this).parent().removeClass("active");
+        })
+        $(".ss input[type='text']").focus(function () {
+            $(this).css("background", "#FFF");
+        })
+
+
+        $(function () {
+            $(".flexslider").flexslider({
+                slideshowSpeed: 4000, //展示时间间隔ms
+                animationSpeed: 400, //滚动时间ms
+                touch: true //是否支持触屏滑动
+            });
+        });
+    </script>
+
+
+    <div style="display:none">
+        <script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script>
+    </div>
+</body>
+</html>
+    </div>
+
+    <div class="fot-bot01">
+        <div class="row">
+            <div class="linksWrap">
+                <h2 class="often-linksTit">常用链接</h2>
+            </div>
+        </div>
+
+        <div class="row row002">
+            <div class="columns col-links">
+                <ul class="left">
+                    <li><a target="_blank" href="http://whlib.hustwenhua.net">图书馆</a></li>
+                    <li><a target="_blank" href="http://jwweb.hustwenhua.net">教务在线</a></li>
+                    <li><a target="_blank" href="http://hf.hustwenhua.net">红枫文化节</a></li>
+
+                    <li><a href="http://www.hustwenhua.net/Institution/Index?ID=6">学工在线</a></li>
+                </ul>
+                <ul class="left">
+                    <li><a href="http://www.hustwenhua.net/html/mailbox.html">学校信箱</a></li>
+                    <li><a target="_blank" href="http://pinggu.hustwenhua.net">教学评估</a></li>
+                    <li><a href="http://www.hustwenhua.net/Institution/Index?ID=7">收费公示</a></li>
+                    <li><a href="http://www.hustwenhua.net/html/wenhua_location.html">交通导航</a></li>
+                </ul>
+                <ul class="left">
+                    <li><a target="_blank"  href="http://jpkc.hustwenhua.net">精品课程</a></li>
+                    
+                    <li><a target="_blank" href="http://ditu.wenhua.cc">文华漫游</a></li>
+                    <li><a target="_blank" href="http://sns.hustwenhua.net">互动文华</a></li>
+                    <li><a href="http://media.hustwenhua.net">文华媒体</a></li>
+                </ul>
+            </div>
+            <div class="columns columns-code2">
+                <div class="left">
+                    <div>
+                        <div><a href="#"><img src="../images/文华学院微信.jpg" /></a></div>
+                        <span>文华官方微信</span>
+                    </div>
+                </div>
+                <div class="left">
+                    <div>
+                        <div><a href="#"><img src="../images/文华学院APP.jpg" /></a></div>
+                        <span>文华官方APP</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div id="go-top" style="dimsplay: block;"><a title="Back to Top" href="#">Go To Top</a></div> -->
+    </div>
+
+    <div class="fot-bot">
+        <div class="row">
+            <div class="copyright-f">
+
+
+                地址：武汉市东湖高新技术开发区文华园路8号  邮政编码：430074　电话：027-87599540 027-87599065              传真：027-87599540
+
+            </div>
+
+
+            <div class="copyright-to">
+
+
+                Copyright文华学院2016  鄂ICP备09023313号 <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42011102000272" style="color:white" target="_blank">鄂公网安备42011102000272号</a> 总计访问：717029次 <div style="display:none"> <script src="http://s11.cnzz.com/z_stat.php?id=1261559137&web_id=1261559137" language="JavaScript"></script> </div>技术支持：<a href="http://yinhang.hustwenhua.net" style="color:white" target="_blank">引航团队</a>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="/js/jquery-1.10.2.min.js"></script>
+
+    <script>window.jQuery || document.write('<script src="~/js/jquery-1.10.2.min.js"><\/script>')</script>
+
+    <script src="/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="/js/jquery.flexslider.js"></script>
+
+    <script src="/js/doubletaptogo.js"></script>
+
+    <script src="/js/init.js"></script>
+    <script type="text/javascript">
+        $(".select-bot").mouseover(function () {
+            $(this).parent().addClass("active");
+        })
+        $(".select-bot").mouseout(function () {
+            $(this).parent().removeClass("active");
+        })
+        $(".ss input[type='text']").focus(function () {
+            $(this).css("background", "#FFF");
+        })
+
+
+        $(function () {
+            $(".flexslider").flexslider({
+                slideshowSpeed: 4000, //展示时间间隔ms
+                animationSpeed: 400, //滚动时间ms
+                touch: true //是否支持触屏滑动
+            });
+        });
+    </script>
+
+
+</body>
+</html>

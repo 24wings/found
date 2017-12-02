@@ -1,0 +1,329 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+
+    <!--- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>文华学院</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/media-queries.css">
+    <link rel="stylesheet" type="text/css" href="../css/flexslider.css" />
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <!-- Script
+    ================================================== -->
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <link rel="shortcut icon" href="">
+    <script type="text/javascript">
+
+
+
+        function getUrlParam(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+            var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+            if (r != null) return unescape(r[2]); return null; //返回参数值
+        }
+
+        function bumenjianjie()
+        {
+            var InstitutionID = "";
+            if (getUrlParam("InstitutionID") != null)
+                InstitutionID = getUrlParam("InstitutionID");
+            else
+                InstitutionID = getUrlParam("ID");
+            location.href = "/Institution/More?type=1&InstitutionID="+InstitutionID;
+        }
+
+        function zhengcefagui() {
+            var InstitutionID = "";
+            if (getUrlParam("InstitutionID") != null)
+                InstitutionID = getUrlParam("InstitutionID");
+            else
+                InstitutionID = getUrlParam("ID");
+            location.href = "/Institution/More?type=2&InstitutionID=" + InstitutionID;
+        }
+
+        function gonggaotongzhi() {
+            var InstitutionID = "";
+            if (getUrlParam("InstitutionID") != null)
+                InstitutionID = getUrlParam("InstitutionID");
+            else
+                InstitutionID = getUrlParam("ID");
+            location.href = "/Institution/More?type=3&InstitutionID=" + InstitutionID;
+        }
+
+        function xinxifabu() {
+            var InstitutionID = "";
+            if (getUrlParam("InstitutionID") != null)
+                InstitutionID = getUrlParam("InstitutionID");
+            else
+                InstitutionID = getUrlParam("ID");
+            location.href = "/Institution/More?type=4&InstitutionID=" + InstitutionID;
+        }
+
+        function bumenshouye()
+        {
+            var InstitutionID = "";
+            if (getUrlParam("InstitutionID") != null)
+                InstitutionID = getUrlParam("InstitutionID");
+            else
+                InstitutionID = getUrlParam("ID");
+            location.href = "/Institution/Index?ID=" + InstitutionID;
+        }
+
+        $(function () {
+            var InstitutionID = "";
+            if (getUrlParam("InstitutionID") != null)
+                InstitutionID = getUrlParam("InstitutionID");
+            else
+                InstitutionID = getUrlParam("ID");
+            $.ajax({
+                url: "/All/GetVisitCount",
+                type: "POST",
+                data: {
+
+                },
+                success: function (resTxt) {
+                    $("#totalVisit").html(resTxt);
+                }
+            });
+        })
+
+        
+    </script>
+</head>
+<body style="background:#FFFFFF">
+    <!--  -->
+    <!--[if lte IE 8]>
+    <div id="ie6-warning">您正在使用 Internet Explorer 6，在本页面的显示效果可能有差异。建议您升级 <a href="http://windows.microsoft.com/zh-cn/internet-explorer/download-ie/" target="_blank">Internet Explorer </a> 或以下浏览器： <a href="http://www.mozillaonline.com/">Firefox</a> / <a href="http://www.google.com/chrome/?hl=zh-CN">Chrome</a> / <a href="http://www.apple.com.cn/safari/">Safari</a> / <a href="http://www.operachina.com/">Opera</a>
+    </div>
+    <script type="text/javascript">
+    function position_fixed(el, eltop, elleft){
+    // check if this is IE6
+    if(!window.XMLHttpRequest)
+    window.onscroll = function(){
+    el.style.top = (document.documentElement.scrollTop + eltop)+"px";
+    el.style.left = (document.documentElement.scrollLeft + elleft)+"px";
+    }
+    else el.style.position = "fixed";
+    }
+    position_fixed(document.getElementById("ie6-warning"),0, 0);
+    </script>
+    <![endif]-->
+    <!-- Header
+    ================================================== -->
+    <input type="hidden" id="hide">
+   <!-- Header End -->
+
+    
+
+
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+
+    <!--- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Blog Post</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/media-queries.css">
+
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <!-- Script
+    ================================================== -->
+    <script src="/js/modernizr.js"></script>
+    <script src="/js/Institution.js"></script>
+    <!-- Favicons
+     ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <style type="text/css">
+        table, tbody, tfoot, thead, tr, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="hidden" id="hide" />
+    <div class="header">
+        <div style="background: #FFF">
+            <div class="row" style="height:134px; ">
+                <div class="columns" style="padding:0;">
+                    <div class="logo2">
+                        <a href="/Wenhua/Index"><img alt="" src="../images/department_logo.png"></a>
+                    </div>
+                </div>
+                <div class="columns" style="padding:0;">
+                    <div class="logo2" style="padding-top: 64px;padding-left: 18px;">
+                        <a href="javascript:void(0)"><h2 id="headTitle"></h2></a>
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <div class="ss search02">
+                        <input type="text" value="" id="SearchText" placeholder="搜索" /><button onclick="Search()"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="background: #065AA9">
+            <div class="row">
+                <nav id="nav-wrap">
+                    
+
+                    <ul id="nav" class="nav"></ul> <!-- end #nav -->
+
+                </nav> <!-- end #nav-wrap -->
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="row">
+            <div class="news-linknav"><a href="/Institution/More?type=113&InstitutionID=6" style="color:black" id="TitleHref">学工新闻</a><em>></em><a href="#" style="color:black">新学期首次周日晚点名提纲</a></div>
+            <div class="news-mainContent">
+                    <h2 style="border-bottom:none">新学期首次周日晚点名提纲</h2>
+                    <h2 style="font-size:25px;"> </h2>
+                    <br />
+                <div class="markFrom">
+                    来源： &nbsp&nbsp&nbsp点击次数：7129 次 &nbsp&nbsp&nbsp发布时间：2009-12-23 &nbsp&nbsp&nbsp编辑：学生工作处
+                </div>
+                <DIV><B>&nbsp;&nbsp;&nbsp; 一、&nbsp; </B><B>通报学院暑期工作要点</B><B></B></DIV>
+<DIV><B>&nbsp;&nbsp;&nbsp; </B>1、学院暑期研讨会的讨论要点。例如学生个性化培养方案的探讨和典型事例的交流；“潜能导师”制的实施探讨等；</DIV>
+<DIV><B>&nbsp;&nbsp;&nbsp; </B>2、基础建设。例如投资2000万建设实验室，投资2亿元左右进行实训大楼、图书馆建设等；</DIV>
+<DIV><B>&nbsp;&nbsp;&nbsp; </B>3、进一步改善同学们的学习、生活条件。例如宿舍的维修，食堂、澡堂、开水房等基础设施的完善等；<BR></DIV>
+<DIV><B><B>&nbsp;&nbsp;&nbsp; </B>二、&nbsp;&nbsp;</B><B>学生思想教育工作</B><B></B></DIV>
+<DIV>新学期，新学风。鼓励学生在新的学期树立新的风貌，在新的起点创造新的辉煌。<BR></DIV>
+<DIV><B><B>&nbsp;&nbsp;&nbsp; </B>三、&nbsp;</B><B>日常工作布置</B><B></B></DIV>
+<DIV><B>&nbsp;&nbsp;&nbsp; </B>1、返校情况</DIV>
+<DIV><B>&nbsp;&nbsp;&nbsp; </B>（1）统计返校学生情况，了解掌握未按期返校学生的原因，于8月31日上午10时将未返校学生名单报学生工作处；</DIV>
+<DIV><B>&nbsp;&nbsp;&nbsp; </B>（2）统计学生的报到缴费注册、购买教材等情况；</DIV>
+<DIV><B>&nbsp;&nbsp;&nbsp; </B>2、宿舍及安全教育</DIV>
+<DIV><B>&nbsp;&nbsp;&nbsp; </B>（1）要求学生清扫宿舍，搞好卫生，建设健康文明的宿舍文化，创造良好的学习生活环境。注意用电安全，遵守学生公寓管理规定,严禁学生在宿舍内使用大功率电器,消除安全隐患；</DIV>
+<DIV><B>&nbsp;&nbsp;&nbsp; </B>（2）提醒同学们保管好自己的贵重物品，随身不要携带过多现金，用于交纳学费的应尽早缴清，避免被盗；</DIV>
+<DIV><B>&nbsp;&nbsp;&nbsp; </B>3、学习、考试情况</DIV>
+<DIV><B>&nbsp;&nbsp;&nbsp; </B>（1）发放课表，提醒学生上课的时间。强调早晚自习、课堂的纪律问题；</DIV>
+<DIV><B>&nbsp;&nbsp;&nbsp; </B>（2）上学期成绩分析，对进步的同学鼓励表扬，对落后的同学重点关注；</DIV>
+<DIV><B>&nbsp;&nbsp;&nbsp; </B>（3）提醒需要补考的同学按时参加考试，并强调考风考纪；</DIV>
+<DIV><B>&nbsp;&nbsp;&nbsp; </B>4、其他</DIV>
+<DIV><B>&nbsp;&nbsp;&nbsp; </B>（1）暑期社会实践成果的整理；</DIV>
+<DIV><B>&nbsp;&nbsp;&nbsp; </B>（2）更新学生综合信息表，要求联系方式更换的学生及时上报；</DIV>
+<DIV><B>&nbsp;&nbsp;&nbsp; </B>（3）校园一卡通的办理缴费通知。<BR></DIV>
+<DIV><B><B>&nbsp;&nbsp;&nbsp; </B>四、</B><B>&nbsp; </B><B>暑期生活交流</B><B></B></DIV>
+<DIV><B>&nbsp;&nbsp;&nbsp; </B>可由学生自己谈一下暑期生活的收获，分享经历、体验，交流新学期规划。</DIV>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/jquery-1.10.2.min.js"></script>
+
+    <script>window.jQuery || document.write('<script src="~/js/jquery-1.10.2.min.js"><\/script>')</script>
+
+   
+    <script src="/js/jquery.flexslider.js"></script>
+
+    <script src="/js/doubletaptogo.js"></script>
+
+    <script src="/js/init.js"></script>
+</body>
+</html>
+
+
+    <div class="fot-bot01">
+        <div class="row">
+            <div class="linksWrap">
+                <h2 class="often-linksTit">常用链接</h2>
+            </div>
+        </div>
+
+        <div class="row row002">
+            <div class="columns col-links">
+                <ul class="left">
+                    <li><a target="_blank" href="http://whlib.hustwenhua.net">图书馆</a></li>
+                    <li><a target="_blank" href="http://jwweb.hustwenhua.net">教务在线</a></li>
+                    <li><a target="_blank" href="http://hf.hustwenhua.net">红枫文化节</a></li>
+
+                    <li><a href="http://www.hustwenhua.net/Institution/Index?ID=6">学工在线</a></li>
+                </ul>
+                <ul class="left">
+                    <li><a href="../html/mailbox.html">学校信箱</a></li>
+                    <li><a href="#">文华青年</a></li>
+                    <li><a href="http://www.hustwenhua.net/Institution/Index?ID=7">收费公示</a></li>
+                    <li><a href="../html/wenhua_location.html">交通导航</a></li>
+                </ul>
+                <ul class="left">
+                    <li><a href="#">门户登入</a></li>
+                    
+                    <li><a target="_blank" href="http://ditu.wenhua.cc">文华漫游</a></li>
+                    <li><a target="_blank" href="http://sns.hustwenhua.net">互动文华</a></li>
+                    <li><a href="http://media.hustwenhua.net">文华媒体</a></li>
+                </ul>
+            </div>
+            <div class="columns columns-code2">
+                <div class="left">
+                    <div>
+                        <div><a href="#"><img src="../images/文华学院微信.jpg" /></a></div>
+                        <span>文华官方微信</span>
+                    </div>
+                </div>
+                <div class="left">
+                    <div>
+                        <div><a href="#"><img src="../images/文华学院APP.jpg" /></a></div>
+                        <span>文华官方APP</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div id="go-top" style="dimsplay: block;"><a title="Back to Top" href="#">Go To Top</a></div> -->
+    </div>
+
+    <div class="fot-bot">
+        <div class="row">
+            <div class="copyright-f">
+
+
+                地址：武汉市东湖高新技术开发区文华园路8号  邮政编码：430074　电话：027-87599540 027-87599065              传真：027-87599540
+
+            </div>
+
+
+            <div class="copyright-to">
+
+
+                Copyright文华学院2016  鄂ICP备09023313号 总计访问：<a style="color:white" id="totalVisit"></a> 次 技术支持：<a href="http://yinhang.hustwenhua.net" style="color:white" target="_blank">引航团队</a>
+
+            </div>
+
+        </div>
+
+    </div>

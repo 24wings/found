@@ -1,0 +1,306 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+
+    <!--- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>文华学院</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/media-queries.css">
+    <link rel="stylesheet" type="text/css" href="../css/flexslider.css" />
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <!-- Script
+    ================================================== -->
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <link rel="shortcut icon" href="">
+    <script type="text/javascript">
+
+
+
+        function getUrlParam(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+            var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+            if (r != null) return unescape(r[2]); return null; //返回参数值
+        }
+
+        function bumenjianjie()
+        {
+            var InstitutionID = "";
+            if (getUrlParam("InstitutionID") != null)
+                InstitutionID = getUrlParam("InstitutionID");
+            else
+                InstitutionID = getUrlParam("ID");
+            location.href = "/Institution/More?type=1&InstitutionID="+InstitutionID;
+        }
+
+        function zhengcefagui() {
+            var InstitutionID = "";
+            if (getUrlParam("InstitutionID") != null)
+                InstitutionID = getUrlParam("InstitutionID");
+            else
+                InstitutionID = getUrlParam("ID");
+            location.href = "/Institution/More?type=2&InstitutionID=" + InstitutionID;
+        }
+
+        function gonggaotongzhi() {
+            var InstitutionID = "";
+            if (getUrlParam("InstitutionID") != null)
+                InstitutionID = getUrlParam("InstitutionID");
+            else
+                InstitutionID = getUrlParam("ID");
+            location.href = "/Institution/More?type=3&InstitutionID=" + InstitutionID;
+        }
+
+        function xinxifabu() {
+            var InstitutionID = "";
+            if (getUrlParam("InstitutionID") != null)
+                InstitutionID = getUrlParam("InstitutionID");
+            else
+                InstitutionID = getUrlParam("ID");
+            location.href = "/Institution/More?type=4&InstitutionID=" + InstitutionID;
+        }
+
+        function bumenshouye()
+        {
+            var InstitutionID = "";
+            if (getUrlParam("InstitutionID") != null)
+                InstitutionID = getUrlParam("InstitutionID");
+            else
+                InstitutionID = getUrlParam("ID");
+            location.href = "/Institution/Index?ID=" + InstitutionID;
+        }
+
+        $(function () {
+            var InstitutionID = "";
+            if (getUrlParam("InstitutionID") != null)
+                InstitutionID = getUrlParam("InstitutionID");
+            else
+                InstitutionID = getUrlParam("ID");
+            $.ajax({
+                url: "/All/GetVisitCount",
+                type: "POST",
+                data: {
+
+                },
+                success: function (resTxt) {
+                    $("#totalVisit").html(resTxt);
+                }
+            });
+        })
+
+        
+    </script>
+</head>
+<body style="background:#FFFFFF">
+    <!--  -->
+    <!--[if lte IE 8]>
+    <div id="ie6-warning">您正在使用 Internet Explorer 6，在本页面的显示效果可能有差异。建议您升级 <a href="http://windows.microsoft.com/zh-cn/internet-explorer/download-ie/" target="_blank">Internet Explorer </a> 或以下浏览器： <a href="http://www.mozillaonline.com/">Firefox</a> / <a href="http://www.google.com/chrome/?hl=zh-CN">Chrome</a> / <a href="http://www.apple.com.cn/safari/">Safari</a> / <a href="http://www.operachina.com/">Opera</a>
+    </div>
+    <script type="text/javascript">
+    function position_fixed(el, eltop, elleft){
+    // check if this is IE6
+    if(!window.XMLHttpRequest)
+    window.onscroll = function(){
+    el.style.top = (document.documentElement.scrollTop + eltop)+"px";
+    el.style.left = (document.documentElement.scrollLeft + elleft)+"px";
+    }
+    else el.style.position = "fixed";
+    }
+    position_fixed(document.getElementById("ie6-warning"),0, 0);
+    </script>
+    <![endif]-->
+    <!-- Header
+    ================================================== -->
+    <input type="hidden" id="hide">
+   <!-- Header End -->
+
+    
+
+
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+
+    <!--- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Blog Post</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/media-queries.css">
+
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <!-- Script
+    ================================================== -->
+    <script src="/js/modernizr.js"></script>
+    <script src="/js/Institution.js"></script>
+    <!-- Favicons
+     ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <style type="text/css">
+        table, tbody, tfoot, thead, tr, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="hidden" id="hide" />
+    <div class="header">
+        <div style="background: #FFF">
+            <div class="row" style="height:134px; ">
+                <div class="columns" style="padding:0;">
+                    <div class="logo2">
+                        <a href="/Wenhua/Index"><img alt="" src="../images/department_logo.png"></a>
+                    </div>
+                </div>
+                <div class="columns" style="padding:0;">
+                    <div class="logo2" style="padding-top: 64px;padding-left: 18px;">
+                        <a href="javascript:void(0)"><h2 id="headTitle"></h2></a>
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <div class="ss search02">
+                        <input type="text" value="" id="SearchText" placeholder="搜索" /><button onclick="Search()"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="background: #065AA9">
+            <div class="row">
+                <nav id="nav-wrap">
+                    
+
+                    <ul id="nav" class="nav"></ul> <!-- end #nav -->
+
+                </nav> <!-- end #nav-wrap -->
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="row">
+            <div class="news-linknav"><a href="/Institution/More?type=111&InstitutionID=6" style="color:black" id="TitleHref">资助信息</a><em>></em><a href="#" style="color:black">2016-2017学年优良学风班名单公示</a></div>
+            <div class="news-mainContent">
+                    <h2>2016-2017学年优良学风班名单公示</h2>
+                    <br />
+                <div class="markFrom">
+                    来源： &nbsp&nbsp&nbsp点击次数：839 次 &nbsp&nbsp&nbsp发布时间：2017-11-10 &nbsp&nbsp&nbsp编辑：
+                </div>
+                <p style="line-height: 47px"><strong><span style="font-size:21px;font-family:宋体">人文社会科学学部</span></strong><strong><span style="font-size:21px">&nbsp; </span></strong><strong><span style="font-size:21px;font-family:宋体">汉语言文学（本科）</span></strong><strong><span style="font-size:21px;font-family: 宋体">专业</span></strong><strong><span style="font-size:21px">2015</span></strong><strong><span style="font-size:21px;font-family:宋体">级</span></strong><strong><span style="font-size:21px">&nbsp;&nbsp; 2</span></strong><strong><span style="font-size:21px;font-family: 宋体">班</span></strong></p><p style="line-height: 47px"><strong><span style="font-size:21px;font-family:宋体">信息科学与技术学部</span></strong><strong><span style="font-size:21px">&nbsp; </span></strong><strong><span style="font-size:21px;font-family:宋体">通信工程（本科）</span></strong><strong><span style="font-size:21px;font-family: 宋体">专业</span></strong><strong><span style="font-size:21px">2016</span></strong><strong><span style="font-size:21px;font-family:宋体">级</span></strong><strong><span style="font-size:21px">&nbsp;&nbsp; 2</span></strong><strong><span style="font-size:21px;font-family: 宋体">班</span></strong><strong><span style="font-size:21px">&nbsp; </span></strong></p><p style="line-height: 47px"><strong><span style="font-size:21px;font-family:宋体">外语学部</span></strong><strong><span style="font-size:21px">&nbsp; </span></strong><strong><span style="font-size:21px;font-family:宋体">英语（本科）专业</span></strong><strong><span style="font-size:21px">2015</span></strong><strong><span style="font-size:21px;font-family: 宋体">级</span></strong><strong><span style="font-size:21px">5</span></strong><strong><span style="font-size:21px;font-family: 宋体">班</span></strong></p><p style="line-height: 47px"><strong><span style="font-size:21px;font-family:宋体">经济管理学部</span></strong><strong><span style="font-size:21px">&nbsp; </span></strong><strong><span style="font-size:21px;font-family:宋体">会计学（本科）专业</span></strong><strong><span style="font-size:21px">2015</span></strong><strong><span style="font-size:21px;font-family: 宋体">级</span></strong><strong><span style="font-size:21px">8</span></strong><strong><span style="font-size:21px;font-family: 宋体">班</span></strong></p><p style="line-height: 47px"><strong><span style="font-size:21px;font-family:宋体">经济管理学部</span></strong><strong><span style="font-size:21px">&nbsp; </span></strong><strong><span style="font-size:21px;font-family:宋体">国际经济与贸易（本科）专业</span></strong><strong><span style="font-size:21px">2016</span></strong><strong><span style="font-size:21px;font-family: 宋体">级</span></strong><strong><span style="font-size:21px">4</span></strong><strong><span style="font-size:21px;font-family: 宋体">班</span></strong></p><p style="line-height: 47px"><strong><span style="font-size:21px;font-family:宋体">机械与电气工程学部</span></strong><strong><span style="font-size:21px">&nbsp; </span></strong><strong><span style="font-size:21px;font-family:宋体">电气工程及其自动化（本科）专业</span></strong><strong><span style="font-size:21px">2016</span></strong><strong><span style="font-size:21px;font-family:宋体">级</span></strong><strong><span style="font-size:21px">3</span></strong><strong> </strong><strong><span style="font-size:21px;font-family:宋体">班</span></strong><strong><span style="font-size:21px"> </span></strong></p><p style="line-height: 47px"><strong><span style="font-size:21px;font-family:宋体">信息科学与技术学部</span></strong><strong><span style="font-size:21px">&nbsp; </span></strong><strong><span style="font-size:21px;font-family:宋体">光电信息科学与工程（本科）专业</span></strong><strong><span style="font-size:21px">2016</span></strong><strong><span style="font-size:21px;font-family:宋体">级</span></strong><strong><span style="font-size:21px">1</span></strong><strong><span style="font-size:21px;font-family:宋体">班</span></strong></p><p style="line-height: 47px"><strong><span style="font-size:21px;font-family:宋体">机械与电气工程学部</span></strong><strong><span style="font-size:21px">&nbsp; </span></strong><strong><span style="font-size:21px;font-family:宋体">电气工程及其自动化（本科）专业</span></strong><strong><span style="font-size:21px">2015</span></strong><strong><span style="font-size:21px;font-family:宋体">级</span></strong><strong><span style="font-size:21px">2</span></strong><strong><span style="font-size:21px;font-family:宋体">班</span></strong></p><p style="line-height: 47px"><strong><span style="font-size:21px;font-family:宋体">城市建设工程学部</span></strong><strong><span style="font-size:21px">&nbsp; </span></strong><strong><span style="font-size:21px;font-family:宋体">数字媒体艺术</span></strong><strong><span style="font-size:21px;font-family: 宋体">（本科）专业</span></strong><strong><span style="font-size:21px">2016</span></strong><strong><span style="font-size:21px;font-family: 宋体">级</span></strong><strong><span style="font-size:21px">1</span></strong><strong><span style="font-size:21px;font-family: 宋体">班</span></strong></p><p style="line-height: 47px"><strong><span style="font-size:21px;font-family:宋体">城市建设工程学部</span></strong><strong><span style="font-size:21px">&nbsp; </span></strong><strong><span style="font-size:21px;font-family:宋体">视觉传达设计</span></strong><strong><span style="font-size:21px;font-family: 宋体">（本科）专业</span></strong><strong><span style="font-size:21px">2015</span></strong><strong><span style="font-size:21px;font-family: 宋体">级</span></strong><strong><span style="font-size:21px">3</span></strong><strong><span style="font-size:21px;font-family: 宋体">班</span></strong></p><p style="text-indent:48px;line-height:20px"><strong><span style="font-size:24px">&nbsp;</span></strong></p><p style="text-indent:48px;line-height:47px"><strong><span style="font-size:24px;font-family:宋体">以上为我校优良学风班名单（共</span></strong><strong><span style="font-size:24px">10</span></strong><strong><span style="font-size:24px;font-family: 宋体">个），如有异议，请于</span></strong><strong><span style="font-size:24px">11</span></strong><strong><span style="font-size:24px;font-family:  宋体">月</span></strong><strong><span style="font-size:24px">17</span></strong><strong><span style="font-size:24px;font-family:  宋体">日</span></strong><strong><span style="font-size:24px">15</span></strong><strong><span style="font-size:24px;font-family: 宋体">：</span></strong><strong><span style="font-size:24px">00</span></strong><strong><span style="font-size:24px;font-family: 宋体">点前向学生工作处（部）反映。</span></strong></p><p style="text-indent:48px;line-height:20px"><strong><span style="font-size:24px">&nbsp;</span></strong></p><p style="text-indent:48px;line-height:47px"><strong><span style="font-size:24px;font-family:宋体">联系电话及传真：</span></strong><strong><span style="font-size:24px">027-87599723</span></strong></p><p style="text-indent:48px;line-height:47px"><span style=";position: absolute;z-index:-1;left:0px;margin-left:444px;margin-top:38px;width:160px;height:162px"><img width="160" height="162" src="http://www.hustwenhua.net/ueditor/themes/default/images/spacer.gif" word_img="file:///C:/Users/ADMINI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image002.jpg" style="background:url(http://www.hustwenhua.net/ueditor/lang/zh-cn/images/localimage.png) no-repeat center center;border:1px solid #ddd"/></span><strong><span style="font-size:24px;font-family:宋体">电子邮箱：</span></strong><strong><span style="font-size:24px"><a href="mailto:xsjz-wh@163.com">xsjz-wh@163.com</a></span></strong></p><p><br/></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/jquery-1.10.2.min.js"></script>
+
+    <script>window.jQuery || document.write('<script src="~/js/jquery-1.10.2.min.js"><\/script>')</script>
+
+   
+    <script src="/js/jquery.flexslider.js"></script>
+
+    <script src="/js/doubletaptogo.js"></script>
+
+    <script src="/js/init.js"></script>
+</body>
+</html>
+
+
+    <div class="fot-bot01">
+        <div class="row">
+            <div class="linksWrap">
+                <h2 class="often-linksTit">常用链接</h2>
+            </div>
+        </div>
+
+        <div class="row row002">
+            <div class="columns col-links">
+                <ul class="left">
+                    <li><a target="_blank" href="http://whlib.hustwenhua.net">图书馆</a></li>
+                    <li><a target="_blank" href="http://jwweb.hustwenhua.net">教务在线</a></li>
+                    <li><a target="_blank" href="http://hf.hustwenhua.net">红枫文化节</a></li>
+
+                    <li><a href="http://www.hustwenhua.net/Institution/Index?ID=6">学工在线</a></li>
+                </ul>
+                <ul class="left">
+                    <li><a href="../html/mailbox.html">学校信箱</a></li>
+                    <li><a href="#">文华青年</a></li>
+                    <li><a href="http://www.hustwenhua.net/Institution/Index?ID=7">收费公示</a></li>
+                    <li><a href="../html/wenhua_location.html">交通导航</a></li>
+                </ul>
+                <ul class="left">
+                    <li><a href="#">门户登入</a></li>
+                    
+                    <li><a target="_blank" href="http://ditu.wenhua.cc">文华漫游</a></li>
+                    <li><a target="_blank" href="http://sns.hustwenhua.net">互动文华</a></li>
+                    <li><a href="http://media.hustwenhua.net">文华媒体</a></li>
+                </ul>
+            </div>
+            <div class="columns columns-code2">
+                <div class="left">
+                    <div>
+                        <div><a href="#"><img src="../images/文华学院微信.jpg" /></a></div>
+                        <span>文华官方微信</span>
+                    </div>
+                </div>
+                <div class="left">
+                    <div>
+                        <div><a href="#"><img src="../images/文华学院APP.jpg" /></a></div>
+                        <span>文华官方APP</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div id="go-top" style="dimsplay: block;"><a title="Back to Top" href="#">Go To Top</a></div> -->
+    </div>
+
+    <div class="fot-bot">
+        <div class="row">
+            <div class="copyright-f">
+
+
+                地址：武汉市东湖高新技术开发区文华园路8号  邮政编码：430074　电话：027-87599540 027-87599065              传真：027-87599540
+
+            </div>
+
+
+            <div class="copyright-to">
+
+
+                Copyright文华学院2016  鄂ICP备09023313号 总计访问：<a style="color:white" id="totalVisit"></a> 次 技术支持：<a href="http://yinhang.hustwenhua.net" style="color:white" target="_blank">引航团队</a>
+
+            </div>
+
+        </div>
+
+    </div>

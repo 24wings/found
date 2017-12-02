@@ -1,0 +1,394 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+
+    <!--- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>文华学院</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <meta name="renderer" content="webkit">
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/media-queries.css">
+    <link href="/css/index.css" rel="stylesheet" />
+    <!-- Script
+    ================================================== -->
+    <script src="/js/modernizr.js"></script>
+    <!-- Favicons
+     ================================================== -->
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <style type="text/css">
+        #ie6-warning {
+            background: rgb(255,255,225) url("") no-repeat scroll 3px center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 12px;
+            color: #333;
+            width: 97%;
+            padding: 2px 15px 2px 23px;
+            text-align: left;
+        }
+
+            #ie6-warning a {
+                text-decoration: none;
+            }
+    </style>
+    <script type="text/javascript">
+        function Search() {
+            var searchTxt = $("#SearchText").val();
+            if (searchTxt == "") {
+                alert("搜索内容不能为空");
+                return;
+            }
+            location.href = "/Wenhua/Search?searchTxt=" + searchTxt;//跳转到站内搜索页面
+        }
+    </script>
+</head>
+
+
+<body>
+    <div class="header">
+
+        <div class="row" style="height:134px">
+            <div class="columns" style="padding:0;">
+                <div class="logo2">
+                    <a href="/Wenhua/Index"><img alt="" src="../images/logo.jpg"></a>
+                </div>
+            </div>
+            <div class="columns topNavList">
+                <div class="top-nav" id="top-nav">
+                    <a href="/html/visitLink-student.html">学生</a>
+                    <a href="/html/visitLink-staffTeacher.html">教职工</a>
+                    <a href="/html/visitLink-schoolfellow.html">校友</a>
+                    <a href="/html/visitLink-visitor.html">访客</a>
+                    
+                </div>
+                <div class="ss">
+                    <input type="text" value="" id="SearchText" placeholder="搜索" /><button onclick="Search()"></button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div id="nav-wrap">
+                <a class="mobile-btn" href="#nav-wrap" title="Show navigation"></a>
+                <a class="mobile-btn" href="#" title="Hide navigation"></a>
+                <ul id="nav" class="nav">
+                    <!--  <li class="current"><a href="index.htm">首页</a></li> -->
+                    <li>
+                        <a href="/Wenhua/Index">文华首页</a>
+                    </li>
+                    <li>
+                        <a href="#">文华概况</a>
+                        <ul class="select-bot">
+                            <li><a href="/Wenhua/Introduct">学校简介</a></li>
+                            <li><a href="/Wenhua/History">学校标识</a></li>
+                            <li><a href="/Wenhua/Leader">领导介绍</a></li>
+                            <li><a href="/Wenhua/SchoolView">校园风光</a></li>
+                            <li><a target="_blank" href="http://media.hustwenhua.net">文华媒体</a></li>
+                            <li><a href="/Wenhua/SchoolHistory">文华校史</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">学部设置</a>
+                        <ul class="select-bot">
+                            <li><a href="#">基础学部</a></li>
+                            <li><a target="_blank" href="http://wyweb.hustwenhua.net/">外语学部</a></li>
+                            <li><a target="_blank" href="http://jingguan.hustwenhua.net/index.html">经济管理学部</a></li>
+                            <li><a target="_blank" href="http://xinxi.hustwenhua.net">信息科学与技术学部</a></li>
+                            <li><a target="_blank" href="http://renwen.hustwenhua.net/">人文社会科学学部</a></li>
+                            <li><a target="_blank" href="http://jidian.hustwenhua.net/index.html">机械与电气工程学部</a></li>
+                            <li><a target="_blank" href="http://cj.hustwenhua.net/">城市建设工程学部</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">机构设置</a>
+                        <ul id="Institution" class="select-bot">
+                                        <li><a href="/Institution/Index?ID=1">董事会</a></li>
+                                        <li><a href="/Institution/Index?ID=2">党委办公室</a></li>
+                                        <li><a href="/Institution/Index?ID=3">校长办公室</a></li>
+                                        <li><a href="/Institution/Index?ID=23">纪委、监察、审计处</a></li>
+                                        <li><a href="/Institution/Index?ID=19">校工会</a></li>
+                                        <li><a href="/Institution/Index?ID=4">宣传策划处</a></li>
+                                        <li><a href="/Institution/Index?ID=6">学生工作处（部）</a></li>
+                                        <li><a href="/Institution/Index?ID=21">校团委</a></li>
+                                        <li><a href="/Institution/Index?ID=17">人力资源处（部）</a></li>
+                                        <li><a href="/Institution/Index?ID=25">教师教学发展中心</a></li>
+                                        <li><a href="/Institution/Index?ID=30">学术委员会</a></li>
+                                        <li><a target="_blank" href="http://ir.hustwenhua.net/">院校研究所</a></li>
+                                        <li><a target="_blank" href="http://jwweb.hustwenhua.net/">教务处</a></li>
+                                        <li><a href="/Institution/Index?ID=18">招生就业处</a></li>
+                                        <li><a target="_blank" href="http://kjc.hustwenhua.net/index.html">科学研究与技术开发处</a></li>
+                                        <li><a href="/Institution/Index?ID=12">国际交流处</a></li>
+                                        <li><a href="/Institution/Index?ID=11">资产管理处</a></li>
+                                        <li><a href="/Institution/Index?ID=7">财务处</a></li>
+                                        <li><a href="/Institution/Index?ID=8">后勤保卫处</a></li>
+                                        <li><a href="/Institution/Index?ID=10">信息化管理中心</a></li>
+                                        <li><a href="/Institution/Index?ID=20">图书馆</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">师资队伍</a>
+                        <ul class="select-bot">
+                            <li><a href="/TeacherTeam/TeacherIntroduct">师资介绍</a></li>
+                            <li><a href="/TeacherTeam/KeyTeacher">骨干教师</a></li>
+                            <li><a href="/TeacherTeam/FamousTeacher">教学名师</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">教育教学</a>
+                        <ul class="select-bot">
+                            <li><a target="_blank" href="http://jwweb.hustwenhua.net" />本科生教学</a></li>
+                            <li><a href="/EducationTeach/Index?typeName=个性化教育">个性化教育</a></li>
+                            <li><a href="/EducationTeach/Index?typeName=潜能教育">潜能教育</a></li>
+                            <li><a href="/EducationTeach/Index?typeName=立志教育">立志教育</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a target="_blank" href="http://kjc.hustwenhua.net/index.html">科学研究</a>
+                    </li>
+                    <li>
+                        <a href="#">招生就业</a>
+                        <ul class="select-bot">
+                            <li><a target="_blank" href="http://zhaosheng.hustwenhua.net/">招生</a></li>
+                            <li><a target="_blank" href="http://www.hustwenhua.net/Institution/Index?ID=18">就业</a></li>
+                        </ul>
+                    </li>               
+                    <li>
+                                    <a id="hezuojiaoliu" href="/Institution/Index?ID=12">合作交流</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://cxcy.hustwenhua.net">创新创业</a>
+                    </li>
+
+                    
+</ul> <!-- end #nav -->
+            </div> <!-- end #nav-wrap -->
+        </div>
+
+    </div>
+
+
+    <div>
+        
+
+
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+
+    <!--- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Style Guide Page</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/media-queries.css">
+    <link href="/css/flexslider.css" rel="stylesheet" />
+    <link href="/css/index.css" rel="stylesheet" />
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/TeacherTeam.js"></script>
+    <!-- Script
+    ================================================== -->
+    <!-- Favicons
+     ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico">
+
+</head>
+
+<body style="background:#FFFFFF">
+
+    <!-- Header
+    ================================================== -->
+    <!-- Header End -->
+    <!-- Page Title
+    ================================================== -->
+     <!-- Page Title End-->
+    <!-- Content
+    ================================================== -->
+    <div class="flexslider">
+        <ul class="slides">
+            <li>
+                <a href="#"><img src="../images/banner777.jpg" height="416" /></a>
+
+            </li>
+        </ul>
+    </div>
+
+
+    <section>
+        <div class="row samllNav" id="mao">
+           
+        </div>
+        <div class="row">
+            <div class="columns three leftNav">
+                <ul>
+                    <li><a href="/TeacherTeam/TeacherIntroduct#mao">师资介绍</a></li>
+                    <li class="active"><a href="javascript:void(0)">骨干教师</a></li>
+                    <li><a href="/TeacherTeam/FamousTeacher#mao">教学名师</a></li>
+                    <li><a id="rencaizhaopin" href="#">人才招聘</a></li>
+                </ul>
+            </div>
+            <div class="columns nine">
+                <h2 class="nav020-tit"><span>骨干教师<span></h2>
+                <div class="conent-js">
+<p style="text-align: center;"><strong><span style="font-size:24px;font-family:宋体">文华学院优秀中、青年骨干教师名单</span></strong></p><p style="margin-left:90px;line-height:150%"><span style="font-size:20px;font-family: 仿宋_GB2312">2009</span><span style="font-size:20px;font-family: 仿宋_GB2312">年：刘&nbsp; 江&nbsp; 阮正仪&nbsp; 高&nbsp; 洁&nbsp; 涂&nbsp; 平&nbsp; 李&nbsp; 勇&nbsp; 李素梅&nbsp;&nbsp; 高振峰&nbsp;&nbsp;&nbsp;&nbsp; 李江海&nbsp; 罗艳娥&nbsp; 姚&nbsp; 欢&nbsp; 王&nbsp; 燕&nbsp; 夏&nbsp; 璐&nbsp; 钟利平&nbsp; 张永花&nbsp;&nbsp; 曹惠雅&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 陈振云&nbsp; 饶志强</span></p><p style="margin-left:90px;line-height:150%"><span style="font-size:20px;font-family: 仿宋_GB2312">2010</span><span style="font-size:20px;font-family: 仿宋_GB2312">年：</span><span style="font-size:20px;font-family: 仿宋_GB2312;color:black">刘&nbsp; 伟&nbsp; 孙&nbsp; 跃&nbsp; 梅&nbsp; 琳&nbsp; 张&nbsp; 芳&nbsp; 程&nbsp; 伟&nbsp; 罗维安&nbsp; 殷&nbsp; 卉&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 黄&nbsp; 龙&nbsp; 方&nbsp; 蔚&nbsp; 万士保&nbsp; </span><span style="font-size:20px;font-family:仿宋_GB2312">谢柏林&nbsp; <span style="color:black">盛正尧&nbsp; 陈智芳&nbsp; 李&nbsp; 玲&nbsp; 夏云宏&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 肖艳梅&nbsp; </span>王&nbsp; 进&nbsp; 陈&nbsp; 维&nbsp; 廖剑锋&nbsp; 俞&nbsp; 侃&nbsp; </span><span style="font-size:20px;font-family: 仿宋_GB2312">范&nbsp; 娟&nbsp; 王晓娟</span></p><p style="margin-left:90px;line-height:150%"><span style="font-size:20px;font-family: 仿宋_GB2312">2011</span><span style="font-size:20px;font-family: 仿宋_GB2312">年：李江海 &nbsp;杨天中&nbsp; 易三军&nbsp; 高振峰&nbsp; </span><span style="font-size:20px;font-family:仿宋_GB2312;color:black">刘&nbsp; 江&nbsp; 高&nbsp; 洁 &nbsp;魏&nbsp; 柯 &nbsp;&nbsp;&nbsp; 吴&nbsp; 妍&nbsp; 李春梅 &nbsp;卢云芳&nbsp; 王丽明&nbsp; 杜俊伟&nbsp; 陈&nbsp; 奕&nbsp; 涂&nbsp; 平 &nbsp;李素梅&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 李&nbsp; 勇&nbsp; 杨&nbsp; 戟&nbsp; 钟利平 &nbsp;张永花&nbsp; 武&nbsp; 欣&nbsp; 夏&nbsp; 璐&nbsp; </span><span style="font-size:20px;font-family:仿宋_GB2312">张&nbsp; </span><span style="font-size:20px;font-family:宋体">畇</span><span style="font-size:20px;font-family:仿宋_GB2312">&nbsp; </span><span style="font-size:20px;font-family:仿宋_GB2312">曹海泉 &nbsp;&nbsp;&nbsp; 郭&nbsp; 胜&nbsp; 陈振云&nbsp; 翁广安&nbsp; 胡广义&nbsp; </span><span style="font-size:20px;font-family: 仿宋_GB2312">张新建&nbsp; 李海华 &nbsp;毕&nbsp; 艳</span></p><p style="margin-left:90px;line-height:150%"><span style="font-size:20px;font-family: 仿宋_GB2312">2012</span><span style="font-size:20px;font-family: 仿宋_GB2312">年：李&nbsp; 娜&nbsp; 罗维安&nbsp; 张&nbsp; 芳&nbsp; 程&nbsp; 伟&nbsp; 符&nbsp; 蓉&nbsp; 罗小涛&nbsp; 陈&nbsp; 艳&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 彭菊玲&nbsp; 万士保&nbsp; 谢柏林&nbsp; 孔&nbsp; 凌&nbsp; 史成虎&nbsp; 贺丽娟&nbsp; 王兴波&nbsp; 赵春艳&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 徐声星&nbsp; 刘&nbsp; 伟&nbsp; 林&nbsp; 青&nbsp; 梅&nbsp; 琳&nbsp; 罗艳娥&nbsp; 孙斐娟&nbsp; 黄&nbsp; 龙&nbsp; 芦&nbsp; 波&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 邓思思&nbsp; 雷&nbsp; 蕾&nbsp; </span><span style="font-size:20px;font-family:仿宋_GB2312;color:black">夏云宏&nbsp; 胡&nbsp; 燕&nbsp; 刘海红&nbsp; 刘丹黎&nbsp; 刘巧云</span><span style="font-size:20px;font-family: 仿宋_GB2312">&nbsp; 俞&nbsp; 侃&nbsp;&nbsp;&nbsp;&nbsp; 陈&nbsp; 维&nbsp; 廖剑锋&nbsp; 刘&nbsp; 健&nbsp; 李香春&nbsp; 严耀伟&nbsp; 陈&nbsp; 艳</span></p><p style="margin-left:90px;line-height:150%"><span style="font-size:20px;font-family: 仿宋_GB2312">2013</span><span style="font-size:20px;font-family:仿宋_GB2312">年：</span><span style="font-size:20px;font-family:仿宋_GB2312">张新建 &nbsp;毕&nbsp; 艳 &nbsp;李海华 &nbsp;李文慧 &nbsp;曹&nbsp; 娜&nbsp; 张亚兰&nbsp; 翁广安 &nbsp;&nbsp;&nbsp;&nbsp; 陈振云 &nbsp;郭&nbsp; 胜 &nbsp;曹海泉 &nbsp;胡广义 黄兆祥&nbsp; 曹惠雅 &nbsp;王&nbsp; 方 &nbsp;周俊杰&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 刘&nbsp; 江 &nbsp;高&nbsp; 洁 &nbsp;吴&nbsp; 妍 &nbsp;李湘梅 &nbsp;刘&nbsp; 寅&nbsp; 叶&nbsp; 菁&nbsp; 黄雁南 &nbsp;周&nbsp; 严 &nbsp;&nbsp;&nbsp;&nbsp; 连永梅 &nbsp;赵&nbsp; 婕&nbsp; 周文</span><span style="font-size:20px;font-family:宋体">昉</span><span style="font-size:20px;font-family:仿宋_GB2312">&nbsp; </span><span style="font-size:20px;font-family:仿宋_GB2312">易三军 &nbsp;李江海 &nbsp;杨天中 &nbsp;高振峰 &nbsp;孙&nbsp; 跃&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 滕姗姗&nbsp; 陈卓淳 &nbsp;沈&nbsp; 金 &nbsp;周&nbsp; 黎 &nbsp;易诗娇 陈媛媛&nbsp; 杜俊伟 &nbsp;陈&nbsp; 奕 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 李春梅 &nbsp;王丽明 &nbsp;卢云芳 殷&nbsp; 卉&nbsp; 程&nbsp; 炼 &nbsp;方&nbsp; 蔚&nbsp; 张永花 &nbsp;夏&nbsp; 璐 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 钟利平 &nbsp;张&nbsp; </span><span style="font-size:20px;font-family:宋体">畇</span><span style="font-size:20px;font-family:仿宋_GB2312"> &nbsp;李&nbsp; 玲&nbsp; 王&nbsp; 爽&nbsp; 鲁艺苗 &nbsp;叶知民 &nbsp;盛&nbsp; 艳 &nbsp;肖&nbsp; 琪&nbsp;&nbsp;&nbsp;&nbsp; 涂&nbsp; 平 &nbsp;李素梅 &nbsp;杨&nbsp; 戟 &nbsp;李&nbsp; 勇 &nbsp;王&nbsp; 霞&nbsp; 李传国&nbsp; 张&nbsp; 锴 &nbsp;马&nbsp; 玲 &nbsp;&nbsp;&nbsp;&nbsp; 杨玉亭 &nbsp;孙江涛</span><span style="font-size:20px;line-height: 150%;font-family:仿宋_GB2312"><br/></span></p><p style="margin-left:90px;line-height:150%"><span style="font-size:20px;line-height: 150%;font-family:仿宋_GB2312">2014</span><span style="font-size:20px;line-height:150%;font-family: 仿宋_GB2312">年：范&nbsp; 娟&nbsp; 孟超莹&nbsp; 樊&nbsp; 姗&nbsp; 陈丽湘&nbsp; 陈 &nbsp;艳&nbsp; 彭菊玲&nbsp; 鲁&nbsp; 丽&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 王丽君&nbsp; 顾念念&nbsp; 俞&nbsp; 侃&nbsp; 陈&nbsp; 维&nbsp; 陈&nbsp; 艳&nbsp; 刘&nbsp; 健&nbsp; 李香春&nbsp; 廖剑锋&nbsp;&nbsp;&nbsp;&nbsp; 鲁&nbsp; 群&nbsp; 张&nbsp; 燕&nbsp; 曾淑君&nbsp; 陈玉萍&nbsp; 郭&nbsp; 敏&nbsp; 李颖婷&nbsp; 李&nbsp; 娜&nbsp; 张&nbsp; 芳&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 罗维安&nbsp; 程&nbsp; 伟&nbsp; 张爱华&nbsp; 何&nbsp; 鹏&nbsp; 黎雪微&nbsp; 梅&nbsp; 琳&nbsp; 林&nbsp; 青&nbsp; 赵春艳&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 徐声星&nbsp; 罗艳娥&nbsp; 刘 &nbsp;伟&nbsp; 郑&nbsp; 潇&nbsp; 刘&nbsp; 晶&nbsp; 苏&nbsp; 征&nbsp; 黄&nbsp; 龙&nbsp; 孙斐娟&nbsp;&nbsp;&nbsp;&nbsp; 吴&nbsp; 颖&nbsp; 肖艳梅&nbsp; 徐若梦&nbsp; 姚&nbsp; 蕊&nbsp; 张&nbsp; 晓&nbsp; 袁&nbsp; 媛&nbsp; 张&nbsp; 丽&nbsp; 夏云宏&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 刘海红&nbsp; 冯丽明&nbsp; 林燕玲&nbsp; 孙&nbsp; 虹&nbsp; 力昌英&nbsp; 余昭炜&nbsp; 谢柏林&nbsp; 贺丽娟&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 史成虎&nbsp; 孔&nbsp; 凌</span></p><p style="margin-left:90px;line-height:150%"><span style="font-size:20px;line-height:150%;font-family: 仿宋_GB2312"><span style="font-size:20px;font-family: 仿宋_GB2312">2015</span><span style="font-size:20px;font-family: 仿宋_GB2312">年：张晓丹&nbsp; 张采芳&nbsp; 黄金刚&nbsp; 周&nbsp; 进&nbsp; 胡英帆&nbsp; 陈&nbsp; 静&nbsp; 陈沛晏&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 孙丰旋&nbsp; 易&nbsp; 俊&nbsp; 何&nbsp; 娟&nbsp; 李&nbsp; 建&nbsp; 秦梅玉&nbsp; 郭&nbsp; 鹏&nbsp; 鲁艳</span><span style="font-size:20px;font-family:宋体">旻&nbsp; </span><span style="font-size:20px;font-family:仿宋_GB2312">邓&nbsp; 佳&nbsp;&nbsp;&nbsp;&nbsp; 杨&nbsp; 帆&nbsp; 廖红燕&nbsp; 肖春英&nbsp; 肖&nbsp; 洁&nbsp; 吴&nbsp; 蕾&nbsp; 方玲玲&nbsp; 刘巧云&nbsp; 余&nbsp; 雯&nbsp;&nbsp;&nbsp;&nbsp; 韩&nbsp; 丹&nbsp; 陈智芳&nbsp; 杨&nbsp; 静 &nbsp;姚德超 &nbsp;丁&nbsp; 浩</span><br/></span></p><p><span style="font-size:20px;line-height: 150%;font-family:仿宋_GB2312"></span><span style="font-size:20px;font-family:仿宋_GB2312"><br/></span><br/></p><p><br/></p>                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="/js/jquery-1.10.2.min.js"></script>
+
+    <script>window.jQuery || document.write('<script src="~/js/jquery-1.10.2.min.js"><\/script>')</script>
+
+    <script src="/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="/js/jquery.flexslider.js"></script>
+
+    <script src="/js/doubletaptogo.js"></script>
+
+    <script src="/js/init.js"></script>
+</body>
+</html>
+    </div>
+
+    <div class="fot-bot01">
+        <div class="row">
+            <div class="linksWrap">
+                <h2 class="often-linksTit">常用链接</h2>
+            </div>
+        </div>
+
+        <div class="row row002">
+            <div class="columns col-links">
+                <ul class="left">
+                    <li><a target="_blank" href="http://whlib.hustwenhua.net">图书馆</a></li>
+                    <li><a target="_blank" href="http://jwweb.hustwenhua.net">教务在线</a></li>
+                    <li><a target="_blank" href="http://hf.hustwenhua.net">红枫文化节</a></li>
+
+                    <li><a href="http://www.hustwenhua.net/Institution/Index?ID=6">学工在线</a></li>
+                </ul>
+                <ul class="left">
+                    <li><a href="http://www.hustwenhua.net/html/mailbox.html">学校信箱</a></li>
+                    <li><a target="_blank" href="http://pinggu.hustwenhua.net">教学评估</a></li>
+                    <li><a href="http://www.hustwenhua.net/Institution/Index?ID=7">收费公示</a></li>
+                    <li><a href="http://www.hustwenhua.net/html/wenhua_location.html">交通导航</a></li>
+                </ul>
+                <ul class="left">
+                    <li><a target="_blank"  href="http://jpkc.hustwenhua.net">精品课程</a></li>
+                    
+                    <li><a target="_blank" href="http://ditu.wenhua.cc">文华漫游</a></li>
+                    <li><a target="_blank" href="http://sns.hustwenhua.net">互动文华</a></li>
+                    <li><a href="http://media.hustwenhua.net">文华媒体</a></li>
+                </ul>
+            </div>
+            <div class="columns columns-code2">
+                <div class="left">
+                    <div>
+                        <div><a href="#"><img src="../images/文华学院微信.jpg" /></a></div>
+                        <span>文华官方微信</span>
+                    </div>
+                </div>
+                <div class="left">
+                    <div>
+                        <div><a href="#"><img src="../images/文华学院APP.jpg" /></a></div>
+                        <span>文华官方APP</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div id="go-top" style="dimsplay: block;"><a title="Back to Top" href="#">Go To Top</a></div> -->
+    </div>
+
+    <div class="fot-bot">
+        <div class="row">
+            <div class="copyright-f">
+
+
+                地址：武汉市东湖高新技术开发区文华园路8号  邮政编码：430074　电话：027-87599540 027-87599065              传真：027-87599540
+
+            </div>
+
+
+            <div class="copyright-to">
+
+
+                Copyright文华学院2016  鄂ICP备09023313号 <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42011102000272" style="color:white" target="_blank">鄂公网安备42011102000272号</a> 总计访问：717028次 <div style="display:none"> <script src="http://s11.cnzz.com/z_stat.php?id=1261559137&web_id=1261559137" language="JavaScript"></script> </div>技术支持：<a href="http://yinhang.hustwenhua.net" style="color:white" target="_blank">引航团队</a>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="/js/jquery-1.10.2.min.js"></script>
+
+    <script>window.jQuery || document.write('<script src="~/js/jquery-1.10.2.min.js"><\/script>')</script>
+
+    <script src="/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="/js/jquery.flexslider.js"></script>
+
+    <script src="/js/doubletaptogo.js"></script>
+
+    <script src="/js/init.js"></script>
+    <script type="text/javascript">
+        $(".select-bot").mouseover(function () {
+            $(this).parent().addClass("active");
+        })
+        $(".select-bot").mouseout(function () {
+            $(this).parent().removeClass("active");
+        })
+        $(".ss input[type='text']").focus(function () {
+            $(this).css("background", "#FFF");
+        })
+
+
+        $(function () {
+            $(".flexslider").flexslider({
+                slideshowSpeed: 4000, //展示时间间隔ms
+                animationSpeed: 400, //滚动时间ms
+                touch: true //是否支持触屏滑动
+            });
+        });
+    </script>
+
+
+</body>
+</html>

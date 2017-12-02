@@ -1,0 +1,310 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>文华学院</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="../css/default.css">
+	<link rel="stylesheet" href="../css/layout.css">
+   <link rel="stylesheet" href="../css/media-queries.css">
+   <link rel="stylesheet" type="text/css" href="../css/flexslider.css" />
+   <link rel="stylesheet" type="text/css" href="../css/index.css"><style type="text/css">
+    html,body{margin:0;padding:0;background-color: #ffffff;}
+    .main{
+    	max-width: 960px;
+    	margin: 35px auto;
+    }
+	#wrap h5{
+		font-size: 16px;
+		color: #8C1413;
+	}
+	.amap-copyright{
+		display: none;
+	}
+
+    body { margin: 0; font: 13px/1.5 "Microsoft YaHei", "Helvetica Neue", "Sans-Serif"; min-height: 960px; min-width: 600px; }
+        .my-map { margin: 0 auto; width: 100%; height: 480px; }
+        .my-map .icon { background: url(http://lbs.amap.com/console/public/show/marker.png) no-repeat; }
+        .my-map .icon-cir { height: 31px; width: 28px; }
+        .my-map .icon-cir-red { background-position: -11px -5px; }
+        .amap-container{height: 100%;}
+</style>
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+    
+</head>
+<body>
+	<div class="header">
+      <div class="row" style="height:134px">
+         <div class="columns" style="padding:0;">
+            <div class="logo2">
+               <a href="/Wenhua/Index"><img alt="" src="../images/logo.jpg"></a>
+            </div>
+      </div>
+      <div class="columns">
+         <div class="top-nav" id="top-nav">
+             <a href="visitLink-student.html">学生</a>
+             <a href="visitLink-staffTeacher.html">教职工</a>
+             <a href="visitLink-schoolfellow.html">校友</a>
+             <a href="visitLink-visitor.html">访客</a>
+             <a href="#">旧版入口</a>
+            </div>
+         <div class="ss">
+            <input type="text" value="" id="SearchText" placeholder="搜索" /><button onclick="Search()"></button>
+         </div>
+      </div>
+   </div>
+        <div class="row">
+            <nav id="nav-wrap">
+                <!--<a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+             <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>-->
+
+                <ul id="nav" class="nav">
+
+                    <!--  <li class="current"><a href="index.htm">首页</a></li> -->
+                    <li>
+                        <a href="/Wenhua/Index">文华首页</a>
+
+                    </li>
+                    <li>
+                        <a href="#">文华概况</a>
+                        <ul class="select-bot">
+                            <li><a href="/Wenhua/Introduct">学校简介</a></li>
+                            <li><a href="/Wenhua/History">学校标识</a></li>
+                            <li><a href="/Wenhua/Leader">领导介绍</a></li>
+                            <li><a href="/Wenhua/SchoolView">校园风光</a></li>
+                            <li><a href="/Wenhua/SchoolHistory">文华校史</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">学部设置</a>
+                        <ul class="select-bot">
+                            <li><a href="#">基础学部</a></li>
+                            <li><a target="_blank" href="http://wyweb.hustwenhua.net/">外语学部</a></li>
+                            <li><a target="_blank" href="http://jingguan.hustwenhua.net/index.html">经济管理学部</a></li>
+                            <li><a target="_blank" href="http://xinxi.hustwenhua.net">信息科学与技术学部</a></li>
+                            <li><a target="_blank" href="http://renwen.hustwenhua.net/">人文社会科学学部</a></li>
+                            <li><a target="_blank" href="http://jidian.hustwenhua.net/index.html">机械与电气工程学部</a></li>
+                            <li><a target="_blank" href="http://cj.hustwenhua.net/">城市建设工程学部</a></li>
+                            <li><a href="#">继续教育学部</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">机构设置</a>
+                        <ul id="Institution" class="select-bot"></ul>
+                    </li>
+                    <li>
+                        <a href="#">师资队伍</a>
+                        <ul class="select-bot">
+                            <li><a href="/TeacherTeam/TeacherIntroduct">师资介绍</a></li>
+                            <li><a href="/TeacherTeam/KeyTeacher">骨干教师</a></li>
+                            <li><a href="/TeacherTeam/FamousTeacher">教学名师</a></li>
+                            <li><a id="rencaizhaopin" href="#">人才招聘</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">教育教学</a>
+                        <ul class="select-bot">
+                            <li><a target="_blank" href="http://jwweb.hustwenhua.net" />本科生教学</a></li>
+                            <li><a href="/EducationTeach/Index?typeName=个性化教育">个性化教育</a></li>
+                            <li><a href="/EducationTeach/Index?typeName=潜能教育">潜能教育</a></li>
+                            <li><a href="/EducationTeach/Index?typeName=立志教育">立志教育</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a target="_blank" href="http://kjc.hustwenhua.net/index.html">科学研究</a>
+                    </li>
+                    <li>
+                        <a href="#">招生就业</a>
+                        <ul class="select-bot">
+                            <li><a target="_blank" href="http://zhaosheng.hustwenhua.net/">招生</a></li>
+                            <li><a target="_blank" href="http://www2.hustwenhua.net/jgsz/xsgzc/jyxxw/">就业</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                    <li>
+                        <a id="hezuojiaoliu" href="#">合作交流</a>
+                    </li>
+
+li>
+                        <a target="_blank" href="http://cxcy.hustwenhua.net">创新创业</a>
+                    </li>
+                </ul> <!-- end #nav -->
+
+            </nav> <!-- end #nav-wrap -->
+        </div>
+   
+</div>
+
+	<!-- 高德地图容器 -->
+	<div id="wrap" class="my-map">
+        <div id="mapContainer"></div>
+    </div>
+
+	<div class="main">
+		<img src="../images/wenhua_location.jpg" alt="" class="firm-location">
+	</div> 
+
+
+	</div>
+
+	﻿<div class="fot-bot01">
+    <div class="row">
+      <div class="linksWrap">
+        <h2 class="often-linksTit">常用链接</h2>
+      </div>
+    </div>
+
+  <div class="row row002">
+     <div class="columns col-links">
+      <ul class="left">
+          <li><a href="http://whlib.hustwenhua.net">图书馆</a></li>
+          <li><a href="http://jwweb.hustwenhua.net">教务在线</a></li>
+        <li><a href="#">红枫文化节</a></li>
+        <li><a href="http://www.hustwenhua.net/Institution/Index?ID=6">学工在线</a></li>
+      </ul>
+      <ul class="left">
+        <li><a href="mailbox.html">校园信箱</a></li>
+        <li><a href="#">文华青年</a></li>
+        <li><a href="#">校园生活</a></li>
+        <li><a href="">交通导航</a></li>
+      </ul>
+      <ul class="left">
+        <li><a href="#">门户登入</a></li>
+        <li><a href="#">文华漫游</a></li>
+        <li><a href="#">网络应用</a></li>
+          <li><a href="#">文华媒体</a></li>
+      </ul>
+     </div>
+      <div class="columns columns-code2">
+          <div class="left">
+              <div>
+                  <div><a href="#"><img src="../images/文华学院微信.jpg" /></a></div>
+                  <span>文华官方微信</span>
+              </div>
+          </div>
+          <div class="left">
+              <div>
+                  <div><a href="#"><img src="../images/文华学院APP.jpg" /></a></div>
+                  <span>文华官方APP</span>
+              </div>
+          </div>
+      </div>
+  </div>
+     <!-- <div id="go-top" style="dimsplay: block;"><a title="Back to Top" href="#">Go To Top</a></div> -->
+</div>
+   <div class="fot-bot">
+  <div class="row">
+    <div class="copyright-f" >
+          
+           
+            地址：武汉市东湖高新技术开发区文华园路8号  邮政编码：430074　电话：027-87599540 027-87599065              传真：027-87599540
+           
+                 </div>
+
+
+      <div class="copyright-to">
+
+
+          Copyright文华学院2016  鄂ICP备09023313号 总计访问：<a style="color:white" id="totalVisit"></a> 次 技术支持：<a href="http://yinhang.hustwenhua.net" style="color:white" target="_blank">引航团队</a>
+
+      </div>
+          
+    </div>
+   
+</div>
+</body>
+<script src="../js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+
+    function Search() {
+        var searchTxt = $("#SearchText").val();
+        if (searchTxt == "") {
+            alert("搜索内容不能为空");
+            return;
+        }
+        location.href = "/Wenhua/Search?searchTxt=" + searchTxt;//跳转到站内搜索页面
+    }
+
+    $(function () {
+        $.ajax({
+            url: "/All/GetInstitution",
+            type: "POST",
+            data:
+                {
+
+                },
+            success: function (resTxt) {
+                $("#Institution").html("");
+                for (var i = 0; i < resTxt.length; i++) {
+                    if (resTxt[i].InstitutionName == "人力资源处")
+                    {
+                        $("#rencaizhaopin").attr("href", "/Institution/Index?ID=" + resTxt[i].ID);
+                    }
+                    $("#Institution").append('<li><a href="/Institution/Index?ID=' + resTxt[i].ID + '">' + resTxt[i].InstitutionName + '</a></li>')
+                }
+            }
+
+        });
+    })
+</script>
+
+<script src="http://webapi.amap.com/maps?v=1.3&key=8325164e247e15eea68b59e89200988b"></script>
+    <script>
+    !function(){
+        var infoWindow, map, level = 15,
+            center = {lng: 114.440084, lat: 30.49587},
+            features = [{type: "Marker", name: "文华学院（原 华中科技大学文华学院）", desc: "武汉市东湖高新技术开发区文华园路8号<br />电话：027-87599540<br />邮编：430074", color: "red", icon: "cir", offset: {x: -9, y: -31}, lnglat: {lng: 114.440084, lat: 30.49587}}];
+
+        function loadFeatures(){
+            for(var feature, data, i = 0, len = features.length, j, jl, path; i < len; i++){
+                data = features[i];
+                switch(data.type){
+                    case "Marker":
+                        feature = new AMap.Marker({ map: map, position: new AMap.LngLat(data.lnglat.lng, data.lnglat.lat),
+                            zIndex: 3, extData: data, offset: new AMap.Pixel(data.offset.x, data.offset.y), title: data.name,
+                            content: '<div class="icon icon-' + data.icon + ' icon-'+ data.icon +'-' + data.color +'"></div>' });
+                        break;
+                    case "Polyline":
+                        for(j = 0, jl = data.lnglat.length, path = []; j < jl; j++){
+                            path.push(new AMap.LngLat(data.lnglat[j].lng, data.lnglat[j].lat));
+                        }
+                        feature = new AMap.Polyline({ map: map, path: path, extData: data, zIndex: 2,
+                            strokeWeight: data.strokeWeight, strokeColor: data.strokeColor, strokeOpacity: data.strokeOpacity });
+                        break;
+                    case "Polygon":
+                        for(j = 0, jl = data.lnglat.length, path = []; j < jl; j++){
+                            path.push(new AMap.LngLat(data.lnglat[j].lng, data.lnglat[j].lat));
+                        }
+                        feature = new AMap.Polygon({ map: map, path: path, extData: data, zIndex: 1,
+                            strokeWeight: data.strokeWeight, strokeColor: data.strokeColor, strokeOpacity: data.strokeOpacity,
+                            fillColor: data.fillColor, fillOpacity: data.fillOpacity });
+                        break;
+                    default: feature = null;
+                }
+                if(feature){ AMap.event.addListener(feature, "click", mapFeatureClick); }
+            }
+        }
+
+        function mapFeatureClick(e){
+            if(!infoWindow){ infoWindow = new AMap.InfoWindow({autoMove: true}); }
+            var extData = e.target.getExtData();
+            infoWindow.setContent("<h5>" + extData.name + "</h5><div>" + extData.desc + "</div>");
+            infoWindow.open(map, e.lnglat);
+        }
+
+        map = new AMap.Map("mapContainer", {center: new AMap.LngLat(center.lng, center.lat), level: level});
+        
+        loadFeatures();
+
+        map.on('complete', function(){
+            map.plugin(["AMap.ToolBar", "AMap.OverView", "AMap.Scale"], function(){
+                map.addControl(new AMap.ToolBar);
+            map.addControl(new AMap.OverView({isOpen: true}));
+            map.addControl(new AMap.Scale);
+            }); 
+        })
+        
+    }();
+    </script>
+</html>

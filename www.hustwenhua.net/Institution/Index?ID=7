@@ -1,0 +1,498 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+
+    <!--- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>文华学院</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/media-queries.css">
+    <link rel="stylesheet" type="text/css" href="../css/flexslider.css" />
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <!-- Script
+    ================================================== -->
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <link rel="shortcut icon" href="">
+    <script type="text/javascript">
+
+
+
+        function getUrlParam(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+            var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+            if (r != null) return unescape(r[2]); return null; //返回参数值
+        }
+
+        function bumenjianjie()
+        {
+            var InstitutionID = "";
+            if (getUrlParam("InstitutionID") != null)
+                InstitutionID = getUrlParam("InstitutionID");
+            else
+                InstitutionID = getUrlParam("ID");
+            location.href = "/Institution/More?type=1&InstitutionID="+InstitutionID;
+        }
+
+        function zhengcefagui() {
+            var InstitutionID = "";
+            if (getUrlParam("InstitutionID") != null)
+                InstitutionID = getUrlParam("InstitutionID");
+            else
+                InstitutionID = getUrlParam("ID");
+            location.href = "/Institution/More?type=2&InstitutionID=" + InstitutionID;
+        }
+
+        function gonggaotongzhi() {
+            var InstitutionID = "";
+            if (getUrlParam("InstitutionID") != null)
+                InstitutionID = getUrlParam("InstitutionID");
+            else
+                InstitutionID = getUrlParam("ID");
+            location.href = "/Institution/More?type=3&InstitutionID=" + InstitutionID;
+        }
+
+        function xinxifabu() {
+            var InstitutionID = "";
+            if (getUrlParam("InstitutionID") != null)
+                InstitutionID = getUrlParam("InstitutionID");
+            else
+                InstitutionID = getUrlParam("ID");
+            location.href = "/Institution/More?type=4&InstitutionID=" + InstitutionID;
+        }
+
+        function bumenshouye()
+        {
+            var InstitutionID = "";
+            if (getUrlParam("InstitutionID") != null)
+                InstitutionID = getUrlParam("InstitutionID");
+            else
+                InstitutionID = getUrlParam("ID");
+            location.href = "/Institution/Index?ID=" + InstitutionID;
+        }
+
+        $(function () {
+            var InstitutionID = "";
+            if (getUrlParam("InstitutionID") != null)
+                InstitutionID = getUrlParam("InstitutionID");
+            else
+                InstitutionID = getUrlParam("ID");
+            $.ajax({
+                url: "/All/GetVisitCount",
+                type: "POST",
+                data: {
+
+                },
+                success: function (resTxt) {
+                    $("#totalVisit").html(resTxt);
+                }
+            });
+        })
+
+        
+    </script>
+</head>
+<body style="background:#FFFFFF">
+    <!--  -->
+    <!--[if lte IE 8]>
+    <div id="ie6-warning">您正在使用 Internet Explorer 6，在本页面的显示效果可能有差异。建议您升级 <a href="http://windows.microsoft.com/zh-cn/internet-explorer/download-ie/" target="_blank">Internet Explorer </a> 或以下浏览器： <a href="http://www.mozillaonline.com/">Firefox</a> / <a href="http://www.google.com/chrome/?hl=zh-CN">Chrome</a> / <a href="http://www.apple.com.cn/safari/">Safari</a> / <a href="http://www.operachina.com/">Opera</a>
+    </div>
+    <script type="text/javascript">
+    function position_fixed(el, eltop, elleft){
+    // check if this is IE6
+    if(!window.XMLHttpRequest)
+    window.onscroll = function(){
+    el.style.top = (document.documentElement.scrollTop + eltop)+"px";
+    el.style.left = (document.documentElement.scrollLeft + elleft)+"px";
+    }
+    else el.style.position = "fixed";
+    }
+    position_fixed(document.getElementById("ie6-warning"),0, 0);
+    </script>
+    <![endif]-->
+    <!-- Header
+    ================================================== -->
+    <input type="hidden" id="hide">
+   <!-- Header End -->
+
+    
+
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+
+    <!--- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>文华学院</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/media-queries.css">
+    <link rel="stylesheet" type="text/css" href="../css/flexslider.css" />
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <!-- Script
+    ================================================== -->
+
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <script src="/js/Institution.js"></script>
+    <script type="text/javascript">
+
+
+    </script>
+    <!-- 放小logo
+     ================================================== -->
+    <link rel="shortcut icon" href="">
+</head>
+<body style="background:#FFFFFF">
+
+    <!--  -->
+    <!--[if lte IE 8]>
+    <div id="ie6-warning">您正在使用 Internet Explorer 6，在本页面的显示效果可能有差异。建议您升级 <a href="http://windows.microsoft.com/zh-cn/internet-explorer/download-ie/" target="_blank">Internet Explorer </a> 或以下浏览器： <a href="http://www.mozillaonline.com/">Firefox</a> / <a href="http://www.google.com/chrome/?hl=zh-CN">Chrome</a> / <a href="http://www.apple.com.cn/safari/">Safari</a> / <a href="http://www.operachina.com/">Opera</a>
+    </div>
+    <script type="text/javascript">
+    function position_fixed(el, eltop, elleft){
+    // check if this is IE6
+    if(!window.XMLHttpRequest)
+    window.onscroll = function(){
+    el.style.top = (document.documentElement.scrollTop + eltop)+"px";
+    el.style.left = (document.documentElement.scrollLeft + elleft)+"px";
+    }
+    else el.style.position = "fixed";
+    }
+    position_fixed(document.getElementById("ie6-warning"),0, 0);
+    </script>
+    <![endif]-->
+    <!-- Header
+    ================================================== -->
+    <input type="hidden" id="hide" />
+    <div class="header">
+        <div style="background: #FFF">
+            <div class="row" style="height:134px; ">
+                <div class="columns" style="padding:0;">
+                    <div class="logo2">
+                        <a href="/Wenhua/Index"><img alt="" src="../images/department_logo.png"></a>
+                    </div>
+                </div>
+                <div class="columns" style="padding:0;">
+                    <div class="logo2" style="padding-top: 64px;padding-left: 18px;">
+                        <a href="javascript:void(0)"><h2 id="headTitle"></h2></a>
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <div class="ss search02">
+                        <input type="text" value="" id="SearchText" placeholder="搜索" /><button onclick="Search()"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="background: #065AA9; height: 34px; overflow: hidden;">
+            <div class="row">
+                <nav id="nav-wrap">
+                    
+
+                    <ul id="nav" class="nav">
+
+                        <!--  <li class="current"><a href="index.htm">首页</a></li> -->
+                        
+                    </ul> <!-- end #nav -->
+
+                </nav> <!-- end #nav-wrap -->
+            </div>
+        </div>
+    </div>
+
+    <div class="flexslider" style="border:none;">
+        <ul class="slides">
+            <li>
+                <a href="#"><img src="../images/banner777.jpg" height="416" /></a>
+
+            </li>
+        </ul>
+    </div>
+
+    <div id="info-mainOf" class="info01 info002">
+            <div class="row">
+                <div class="focus-header">
+
+                                <div class="columns columns2">
+                                    <h2 class="main-lumpTit">
+                                        机构设置 <a href="/Institution/More?type=121&InstitutionID=7">更多 >></a>                                    </h2>
+                                    <ul class="inform-list inform-list02">
+                                                <li>
+                                                    <a href="/Institution/Detail?ID=29461&type=121&InstitutionID=7" class="left">
+ 收费中心部门职责                                                    </a><span class="right">2016/<em>08/01</em></span>
+                                                </li>
+                                                <li>
+                                                    <a href="/Institution/Detail?ID=29460&type=121&InstitutionID=7" class="left">
+ 核算科部门职责                                                    </a><span class="right">2016/<em>08/01</em></span>
+                                                </li>
+                                                <li>
+                                                    <a href="/Institution/Detail?ID=29459&type=121&InstitutionID=7" class="left">
+ 管理科部门职责                                                    </a><span class="right">2016/<em>08/01</em></span>
+                                                </li>
+                                                <li>
+                                                    <a href="/Institution/Detail?ID=29458&type=121&InstitutionID=7" class="left">
+ 财务处主要职责                                                    </a><span class="right">2016/<em>08/01</em></span>
+                                                </li>
+                                    </ul>
+                                </div>
+                                <div class="columns">
+                                    <h2 class="main-lumpTit">
+                                        服务指南 <a href="/Institution/More?type=120&InstitutionID=7">更多 >></a>                                    </h2>
+                                    <ul class="inform-list inform-list02">
+                                                <li>
+                                                    <a href="/Institution/Detail?ID=29462&type=120&InstitutionID=7" class="left">
+ 联系方式                                                    </a><span class="right">2016/<em>08/01</em></span>
+                                                </li>
+                                    </ul>
+                                </div>
+                                <div class="columns columns2">
+                                    <h2 class="main-lumpTit">
+                                        收费信息 <a href="/Institution/More?type=119&InstitutionID=7">更多 >></a>                                    </h2>
+                                    <ul class="inform-list inform-list02">
+                                                <li>
+                                                    <a href="/Institution/Detail?ID=31127&type=119&InstitutionID=7" class="left">
+ 关于确定2018年度城乡居民基本医疗                                                    </a><span class="right">2017/<em>08/07</em></span>
+                                                </li>
+                                                <li>
+                                                    <a href="/Institution/Detail?ID=31061&type=119&InstitutionID=7" class="left">
+ 文华学院2014—2017年度收费目                                                    </a><span class="right">2017/<em>06/22</em></span>
+                                                </li>
+                                                <li>
+                                                    <a href="/Institution/Detail?ID=29411&type=119&InstitutionID=7" class="left">
+ 文华学院2013—2016年度收费目                                                    </a><span class="right">2016/<em>07/08</em></span>
+                                                </li>
+                                    </ul>
+                                </div>
+                                <div class="columns">
+                                    <h2 class="main-lumpTit">
+                                        财务通知 <a href="/Institution/More?type=118&InstitutionID=7">更多 >></a>                                    </h2>
+                                    <ul class="inform-list inform-list02">
+                                                <li>
+                                                    <a href="/Institution/Detail?ID=31083&type=118&InstitutionID=7" class="left">
+ 关于2017年暑期值班安排的通知                                                    </a><span class="right">2017/<em>06/29</em></span>
+                                                </li>
+                                                <li>
+                                                    <a href="/Institution/Detail?ID=31053&type=118&InstitutionID=7" class="left">
+ 转发国家税务总局《关于增值税发票开具                                                    </a><span class="right">2017/<em>06/21</em></span>
+                                                </li>
+                                                <li>
+                                                    <a href="/Institution/Detail?ID=30898&type=118&InstitutionID=7" class="left">
+ 关于报送2017年学校收费项目及收费                                                    </a><span class="right">2017/<em>05/19</em></span>
+                                                </li>
+                                                <li>
+                                                    <a href="/Institution/Detail?ID=29412&type=118&InstitutionID=7" class="left">
+ 关于2016年暑期财务值班安排的通知                                                    </a><span class="right">2016/<em>07/08</em></span>
+                                                </li>
+                                                <li>
+                                                    <a href="/Institution/Detail?ID=30628&type=118&InstitutionID=7" class="left">
+ 关于个人网上办税应用平台上线运行使用                                                    </a><span class="right">2017/<em>04/12</em></span>
+                                                </li>
+                                    </ul>
+                                </div>
+                                <div class="columns columns2">
+                                    <h2 class="main-lumpTit">
+                                        国家财经制度和法规 <a href="/Institution/More?type=117&InstitutionID=7">更多 >></a>                                    </h2>
+                                    <ul class="inform-list inform-list02">
+                                                <li>
+                                                    <a href="/Institution/Detail?ID=29418&type=117&InstitutionID=7" class="left">
+ 中华人民共和国个人所得税法                                                    </a><span class="right">2016/<em>07/08</em></span>
+                                                </li>
+                                                <li>
+                                                    <a href="/Institution/Detail?ID=29417&type=117&InstitutionID=7" class="left">
+ 湖北省党政机关国内公务接待管理办法                                                    </a><span class="right">2016/<em>07/08</em></span>
+                                                </li>
+                                                <li>
+                                                    <a href="/Institution/Detail?ID=29416&type=117&InstitutionID=7" class="left">
+ 中央和国家机关会议费管理办法                                                    </a><span class="right">2016/<em>07/08</em></span>
+                                                </li>
+                                                <li>
+                                                    <a href="/Institution/Detail?ID=29415&type=117&InstitutionID=7" class="left">
+ 中央和国家机关培训费管理办法                                                    </a><span class="right">2016/<em>07/08</em></span>
+                                                </li>
+                                                <li>
+                                                    <a href="/Institution/Detail?ID=29414&type=117&InstitutionID=7" class="left">
+ 高等学校会计制度                                                    </a><span class="right">2016/<em>07/08</em></span>
+                                                </li>
+                                    </ul>
+                                </div>
+                                <div class="columns">
+                                    <h2 class="main-lumpTit">
+                                        学校财务规章制度 <a href="/Institution/More?type=116&InstitutionID=7">更多 >></a>                                    </h2>
+                                    <ul class="inform-list inform-list02">
+                                                <li>
+                                                    <a href="/Institution/Detail?ID=31152&type=116&InstitutionID=7" class="left">
+ 文华学院收退费管理办法                                                    </a><span class="right">2017/<em>09/05</em></span>
+                                                </li>
+                                                <li>
+                                                    <a href="/Institution/Detail?ID=29423&type=116&InstitutionID=7" class="left">
+ 文华学院经费支出审批权限规定                                                    </a><span class="right">2016/<em>07/08</em></span>
+                                                </li>
+                                                <li>
+                                                    <a href="/Institution/Detail?ID=29422&type=116&InstitutionID=7" class="left">
+ 文华学院差旅费管理办法                                                    </a><span class="right">2016/<em>07/08</em></span>
+                                                </li>
+                                                <li>
+                                                    <a href="/Institution/Detail?ID=29421&type=116&InstitutionID=7" class="left">
+ 文华学院各项经费开支管理办法                                                    </a><span class="right">2016/<em>07/08</em></span>
+                                                </li>
+                                                <li>
+                                                    <a href="/Institution/Detail?ID=29420&type=116&InstitutionID=7" class="left">
+ 文华学院公务卡管理办法                                                    </a><span class="right">2016/<em>07/08</em></span>
+                                                </li>
+                                    </ul>
+                                </div>
+                             <div class="columns" style="float:left">
+                                    <h2 class="main-lumpTit">
+                                        下载专区 <a href="/Institution/More?type=115&InstitutionID=7">更多 >></a>                                    </h2>
+                                    <ul class="inform-list inform-list02">
+                                                <li>
+                                                    <a href="/Institution/Detail?ID=29410&type=115&InstitutionID=7" class="left">
+ 科研课题结题结账申请表                                                    </a><span class="right">2016/<em>07/08</em></span>
+                                                </li>
+                                                <li>
+                                                    <a href="/Institution/Detail?ID=29409&type=115&InstitutionID=7" class="left">
+ 文华学院经费委托授权书                                                    </a><span class="right">2016/<em>07/08</em></span>
+                                                </li>
+                                                <li>
+                                                    <a href="/Institution/Detail?ID=29408&type=115&InstitutionID=7" class="left">
+ 文华学院预借票据申请表                                                    </a><span class="right">2016/<em>07/08</em></span>
+                                                </li>
+                                                <li>
+                                                    <a href="/Institution/Detail?ID=30629&type=115&InstitutionID=7" class="left">
+ 湖北省个人网上办税应用平台用户手册                                                    </a><span class="right">2017/<em>04/12</em></span>
+                                                </li>
+                                    </ul>
+                                </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+
+
+        
+        
+
+        
+
+        
+
+
+
+
+        <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+       
+        <script type="text/javascript">
+            $(".select-bot").mouseover(function () {
+                $(this).parent().addClass("active");
+            })
+            $(".select-bot").mouseout(function () {
+                $(this).parent().removeClass("active");
+            })
+            $(".ss input[type='text']").focus(function () {
+                $(this).css("background", "#FFF");
+            })
+        </script>
+    </body>
+</html>
+
+    <div class="fot-bot01">
+        <div class="row">
+            <div class="linksWrap">
+                <h2 class="often-linksTit">常用链接</h2>
+            </div>
+        </div>
+
+        <div class="row row002">
+            <div class="columns col-links">
+                <ul class="left">
+                    <li><a target="_blank" href="http://whlib.hustwenhua.net">图书馆</a></li>
+                    <li><a target="_blank" href="http://jwweb.hustwenhua.net">教务在线</a></li>
+                    <li><a target="_blank" href="http://hf.hustwenhua.net">红枫文化节</a></li>
+
+                    <li><a href="http://www.hustwenhua.net/Institution/Index?ID=6">学工在线</a></li>
+                </ul>
+                <ul class="left">
+                    <li><a href="../html/mailbox.html">学校信箱</a></li>
+                    <li><a href="#">文华青年</a></li>
+                    <li><a href="http://www.hustwenhua.net/Institution/Index?ID=7">收费公示</a></li>
+                    <li><a href="../html/wenhua_location.html">交通导航</a></li>
+                </ul>
+                <ul class="left">
+                    <li><a href="#">门户登入</a></li>
+                    
+                    <li><a target="_blank" href="http://ditu.wenhua.cc">文华漫游</a></li>
+                    <li><a target="_blank" href="http://sns.hustwenhua.net">互动文华</a></li>
+                    <li><a href="http://media.hustwenhua.net">文华媒体</a></li>
+                </ul>
+            </div>
+            <div class="columns columns-code2">
+                <div class="left">
+                    <div>
+                        <div><a href="#"><img src="../images/文华学院微信.jpg" /></a></div>
+                        <span>文华官方微信</span>
+                    </div>
+                </div>
+                <div class="left">
+                    <div>
+                        <div><a href="#"><img src="../images/文华学院APP.jpg" /></a></div>
+                        <span>文华官方APP</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div id="go-top" style="dimsplay: block;"><a title="Back to Top" href="#">Go To Top</a></div> -->
+    </div>
+
+    <div class="fot-bot">
+        <div class="row">
+            <div class="copyright-f">
+
+
+                地址：武汉市东湖高新技术开发区文华园路8号  邮政编码：430074　电话：027-87599540 027-87599065              传真：027-87599540
+
+            </div>
+
+
+            <div class="copyright-to">
+
+
+                Copyright文华学院2016  鄂ICP备09023313号 总计访问：<a style="color:white" id="totalVisit"></a> 次 技术支持：<a href="http://yinhang.hustwenhua.net" style="color:white" target="_blank">引航团队</a>
+
+            </div>
+
+        </div>
+
+    </div>

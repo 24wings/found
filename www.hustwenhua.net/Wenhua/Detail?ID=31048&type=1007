@@ -1,0 +1,284 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+
+    <!--- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>文华新闻网</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="/css/default.css" rel="stylesheet" />
+
+    <link href="/css/layout.css" rel="stylesheet" />
+
+    <link href="/css/media-queries.css" rel="stylesheet" />
+
+    <link href="/css/flexslider.css" rel="stylesheet" />
+
+    <link href="/css/index.css" rel="stylesheet" />
+    <script src="/js/modernizr.js"></script>
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <!-- 放小logo
+     ================================================== -->
+    <link rel="shortcut icon" href="">
+
+
+    <style type="text/css">
+
+    </style>
+    <script type="text/javascript">
+        $(function () {
+           
+            $.ajax({
+                url: "/All/GetVisitCount",
+                type: "POST",
+                data: {
+
+                },
+                success: function (resTxt) {
+                    $("#totalVisit").html(resTxt);
+                }
+            });
+        })
+    </script>
+</head>
+
+<body style="background: #FFFFFF">
+    <div class="header-news">
+        <div style="background: #FFF">
+            <div class="row">
+                <div class="columns" style="padding:0; width:100%;">
+                    <div class="logo02">
+                        <a href="/Wenhua/Index"><img src="../images/logoBg.jpg"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="background: #065AA9">
+            <div class="row">
+                <nav id="nav-wrap">
+                        
+
+                    <ul id="nav" class="nav">
+
+                        <!--  <li class="current"><a href="index.htm">首页</a></li> -->
+                        <li>
+                            <a href="/News/Index">新闻网首页</a>
+
+                        </li>
+                        <li>
+                            <a href="/More/Index?type=1">文华要闻</a>
+
+                        </li>
+                        <li>
+                            <a href="/More/Index?type=4">综合新闻</a>
+                        </li>
+                        <li>
+                            <a href="/More/Index?type=1011">公告通知</a>
+
+                        </li>
+                        <li>
+                            <a href="/More/Index?type=1010">思政教育</a>
+
+                        </li>
+                        <li>
+                            <a href="/More/Index?type=7">文华撷英</a>
+                        </li>
+                        <li>
+                            <a href="/More/Index?type=1006">媒体文华</a>
+                        </li>
+                        <li>
+                            <a href="/More/Index?type=1007">图说文华</a>
+                        </li>
+                        <li>
+                            <a href="/More/Index?type=1009">视频空间</a>
+                        </li>
+                    </ul> <!-- end #nav -->
+
+                </nav> <!-- end #nav-wrap -->
+            </div>
+        </div>
+
+    </div> <!-- Header End -->
+    <div>
+        
+
+
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+
+    <!--- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Blog Post</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/media-queries.css">
+    <script src="/js/jquery.min.js"></script>
+    <!-- Script
+    ================================================== -->
+    <script src="/js/modernizr.js"></script>
+
+    <!-- Favicons
+     ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <script type="text/javascript">
+        $(function () {
+
+        })
+    </script>
+    <style type="text/css">
+        table, tbody, tfoot, thead, tr, th, td {
+            border: 1px solid black;
+        }
+        span img{
+            margin-left:-40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header
+    ================================================== -->
+    <!-- Header End -->
+    <!-- Page Title
+    ================================================== -->
+     <!-- Page Title End-->
+    <!-- Content
+    ================================================== -->
+    <div>
+
+        <div class="row">
+
+            <div class="news-linknav"><a style="color:black" href="/More/Index?type=1007">图说文华</a><em>></em><a style="color:black" href="#">文华学院3D漫游图</a></div>
+            <div class="news-mainContent">
+                    <h2 style="border-bottom:none">文华学院3D漫游图</h2>
+                    <h2 style="font-size:20px;">       </h2>
+                    <br />
+                <div class="markFrom">
+                    来源： &nbsp&nbsp&nbsp点击次数：14298 次 &nbsp&nbsp&nbsp发布时间：2017-06-21 &nbsp&nbsp&nbsp作者：
+                </div>
+                <p style="text-indent: 37px;"><br/></p><p style="text-indent: 37px;"><strong><span style="font-family: 宋体; font-size: 20px;"><a href="http://ditu.wenhua.cc/" target="_self">文华学院3D漫游</a><br/></span></strong><br/></p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Content End-->
+    <!-- Tweets Section
+    ================================================== -->
+    
+    <!--
+    <li>
+       <span>
+       This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+       Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum
+       <a href="#">http://t.co/CGIrdxIlI3</a>
+       </span>
+       <b><a href="#">3 Days Ago</a></b>
+    </li>
+    -->
+     <!-- Tweet Section End-->
+    <!-- footer
+    ================================================== -->
+    <!-- Footer End-->
+    <!-- Java Script
+    ================================================== -->
+    <script src="/js/jquery-1.10.2.min.js"></script>
+
+    <script>window.jQuery || document.write('<script src="~/js/jquery-1.10.2.min.js"><\/script>')</script>
+
+    <script src="/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="/js/jquery.flexslider.js"></script>
+
+    <script src="/js/doubletaptogo.js"></script>
+
+    <script src="/js/init.js"></script>
+</body>
+</html>
+
+    </div>
+    <div class="fot-bot01 fot-bot01-1">
+        <div class="row">
+            <div class="linksWrap">
+                <h2 class="often-linksTit">联系我们</h2>
+            </div>
+        </div>
+
+        <div class="row row002">
+            <div class="columns connect-us">
+                <ul class="tel-listNew">
+                    <li><em>投稿地址：</em><span>文华学院宣传策划处</span>&nbsp;&nbsp;<span>027-87599739</span></li>
+                    
+                    <li><em>投稿邮箱：</em><span>454440506@qq.com</span>&nbsp;&nbsp;</li>
+                    <li><em>投稿须知：</em><span>1、提交的新闻稿由部门负责人审核，对稿件真实性、客观性负责。</span></li>
+                    <li><em class="visibility-h">投稿须知：</em><span>2、摄影和艺术设计类配图稿件，若需图片处理请联系引航团队。</span></li>
+                    <li><em class="visibility-h">投稿须知：</em><span>3、首页轮播图要求图片像素1380*460以上，并保证图片质量。</span></li>
+                    <li><em class="visibility-h">投稿须知：</em><span>4、新闻网对来稿有修改权，公平对待每一篇投稿，以质论稿。</span></li>
+                </ul>
+            </div>
+            <div class="columns columns-code2">
+                <div class="left">
+                    <div>
+                        <div><a href="#"><img src="../images/文华学院微信.jpg" /></a></div>
+                        <span>文华官方微信</span>
+                    </div>
+                </div>
+                <div class="left">
+                    <div>
+                        <div><a href="#"><img src="../images/文华学院APP.jpg" /></a></div>
+                        <span>文华官方APP</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div id="go-top" style="dimsplay: block;"><a title="Back to Top" href="#">Go To Top</a></div> -->
+    </div>
+    <div class="fot-bot">
+        <div class="row">
+            <div class="copyright-f">
+
+
+                地址：武汉市东湖高新技术开发区文华园路8号  邮政编码：430074　电话：027-87599540 027-87599065              传真：027-87599540
+
+            </div>
+
+
+            <div class="copyright-to">
+
+
+                Copyright文华学院2016  鄂ICP备09023313号 总计访问：<a style="color:white" id="totalVisit"></a> 次 技术支持：<a href="http://yinhang.hustwenhua.net" style="color:white" target="_blank">引航团队</a>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

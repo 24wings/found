@@ -1,0 +1,284 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+
+    <!--- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>文华新闻网</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="/css/default.css" rel="stylesheet" />
+
+    <link href="/css/layout.css" rel="stylesheet" />
+
+    <link href="/css/media-queries.css" rel="stylesheet" />
+
+    <link href="/css/flexslider.css" rel="stylesheet" />
+
+    <link href="/css/index.css" rel="stylesheet" />
+    <script src="/js/modernizr.js"></script>
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <!-- 放小logo
+     ================================================== -->
+    <link rel="shortcut icon" href="">
+
+
+    <style type="text/css">
+
+    </style>
+    <script type="text/javascript">
+        $(function () {
+           
+            $.ajax({
+                url: "/All/GetVisitCount",
+                type: "POST",
+                data: {
+
+                },
+                success: function (resTxt) {
+                    $("#totalVisit").html(resTxt);
+                }
+            });
+        })
+    </script>
+</head>
+
+<body style="background: #FFFFFF">
+    <div class="header-news">
+        <div style="background: #FFF">
+            <div class="row">
+                <div class="columns" style="padding:0; width:100%;">
+                    <div class="logo02">
+                        <a href="/Wenhua/Index"><img src="../images/logoBg.jpg"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="background: #065AA9">
+            <div class="row">
+                <nav id="nav-wrap">
+                        
+
+                    <ul id="nav" class="nav">
+
+                        <!--  <li class="current"><a href="index.htm">首页</a></li> -->
+                        <li>
+                            <a href="/News/Index">新闻网首页</a>
+
+                        </li>
+                        <li>
+                            <a href="/More/Index?type=1">文华要闻</a>
+
+                        </li>
+                        <li>
+                            <a href="/More/Index?type=4">综合新闻</a>
+                        </li>
+                        <li>
+                            <a href="/More/Index?type=1011">公告通知</a>
+
+                        </li>
+                        <li>
+                            <a href="/More/Index?type=1010">思政教育</a>
+
+                        </li>
+                        <li>
+                            <a href="/More/Index?type=7">文华撷英</a>
+                        </li>
+                        <li>
+                            <a href="/More/Index?type=1006">媒体文华</a>
+                        </li>
+                        <li>
+                            <a href="/More/Index?type=1007">图说文华</a>
+                        </li>
+                        <li>
+                            <a href="/More/Index?type=1009">视频空间</a>
+                        </li>
+                    </ul> <!-- end #nav -->
+
+                </nav> <!-- end #nav-wrap -->
+            </div>
+        </div>
+
+    </div> <!-- Header End -->
+    <div>
+        
+
+
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+
+    <!--- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Blog Post</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/media-queries.css">
+    <script src="/js/jquery.min.js"></script>
+    <!-- Script
+    ================================================== -->
+    <script src="/js/modernizr.js"></script>
+
+    <!-- Favicons
+     ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <script type="text/javascript">
+        $(function () {
+
+        })
+    </script>
+    <style type="text/css">
+        table, tbody, tfoot, thead, tr, th, td {
+            border: 1px solid black;
+        }
+        span img{
+            margin-left:-40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header
+    ================================================== -->
+    <!-- Header End -->
+    <!-- Page Title
+    ================================================== -->
+     <!-- Page Title End-->
+    <!-- Content
+    ================================================== -->
+    <div>
+
+        <div class="row">
+
+            <div class="news-linknav"><a style="color:black" href="/More/Index?type=4">综合新闻</a><em>></em><a style="color:black" href="#">我校第四届红枫文化节盛大开幕 非物质文化遗产走进校园</a></div>
+            <div class="news-mainContent">
+                    <h2 style="border-bottom:none">我校第四届红枫文化节盛大开幕 非物质文化遗产走进校园</h2>
+                    <h2 style="font-size:20px;">   </h2>
+                    <br />
+                <div class="markFrom">
+                    来源： &nbsp&nbsp&nbsp点击次数：102 次 &nbsp&nbsp&nbsp发布时间：2017-12-01 &nbsp&nbsp&nbsp作者：本网讯（文新社实习记者 韩晨菲 张沁怡/文）
+                </div>
+                <p style="text-indent: 28px"><span style=";font-family:宋体;font-size:19px">&nbsp;11月25日</span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">上午</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">，湖北省高校第三届红枫论坛暨文华学院第四届红枫文化节在操场</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">盛大</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">开幕。</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">此次活动旨在使学子</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">感受</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">优秀</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">传统文化的魅力，</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">继承和弘扬</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">优秀传统文化。</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">开幕式上</span>17个节目，以民族舞蹈，民歌，传统服装秀等各色形式，展示了我国优秀的非物质文化遗产，体现了中华传统文化魅力。</span></p><p style="text-indent: 37px"><span style=";font-family:宋体;font-size:19px">&nbsp;</span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">继</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">暖场</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">舞蹈</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">啦啦操</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">过</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">后，一支拉丁舞拉开</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">了</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">活动序幕。</span>6</span><span style=";font-family:宋体;font-size:19px">0</span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">名</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">男女</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">生身着</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">统一的白衣</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">、</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">黑裤和白鞋，</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">队形</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">交错成</span></span><span style=";font-family:宋体;font-size:19px">10</span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">列</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">，</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">显得十分整齐且富有青春气息</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">。</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">他们</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">的</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">动作铿锵有力，</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">跟随着</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">音乐的律动一拍一动</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">，</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">整支</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">队形变化有序</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">。</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">在音乐结束时</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">舞蹈演员</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">迅速集中成圈，</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">以</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">一个</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">高难度的</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">托举动作完美</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">谢幕</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">，场下掌声雷动。</span></span></p><p style="text-indent:37px"><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">在随后的京剧秀表演结束后，展现在观众眼前的是汉服秀表演。</span></span><span style=";font-family:宋体;font-size:19px">2</span><span style=";font-family:宋体;font-size:19px">0</span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">名演员</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">伴着古色古香的音乐依次出场，身穿绿色和红色曲裾的两名女子款款上前，扬臂转圈，展示衣物，行礼</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">而退</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">。</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">接着</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">4名穿着大氅</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">、</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">带着书生帽的男子</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">向观众</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">弯腰行礼</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">，</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">尽显古代文人之雅。</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">带有浓厚文化氛围的京剧秀和汉服秀表演一下子将观众带入了中华优秀传统文化的静谧氛围之中，一幕幕经典的戏剧和优雅的服装将非遗风采展现在观众眼前。</span></span></p><p style="text-indent:37px"><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">而接下来的</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">民族舞</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">蹈</span>“</span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">马意飞腾</span></span><span style=";font-family:宋体;font-size:19px">”</span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">，</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">不仅展现了蒙古族人民的热情与奔放，同样也展示出了我国优秀的非遗文化。</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">舞蹈演员们先排成两排，双手在胸前，一手前一手后做出骑马状</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">，</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">而后</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">随着音乐节奏的加快，</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">演员的</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">动作也</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">俞渐</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">复杂</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">。只见两名舞蹈</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">演员在中</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">央</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">对立站着，将双手</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">攀附</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">在对方的肩上，同时跳起</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">在空中划过一条圆弧</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">，</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">紧</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">接着全体</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">演员</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">俯身向前结束舞蹈</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">，</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">用高难度的舞蹈动作体现蒙古汉子的勇猛之姿</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">。</span></span></p><p style="text-indent: 37px"><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">开幕式后，副校长陈思中</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">表示</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">，</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">这一以</span>“红枫”为主题的活动，</span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">已</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">形成了我校校园文化的一</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">大</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">特色。</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">而开幕式上展示的非物质文化遗产，也使我校学子对中华优秀传统文化产生了浓厚的兴趣，</span></span><span style=";font-family:宋体;font-size:19px">2017级网络与新媒体专业的林雪莹说道：“这次活动让我充分体会到了我国传统文化的丰富多彩，开阔了我的视野。”她还表示，自己以后会多参加与民族文化有关的活动，为传承与弘扬传统文化贡献自己的一份力量。</span></p><p style="text-indent: 37px;"><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">（</span></span><span style=";font-family:宋体;font-size:19px"><span style="font-family:宋体">文字编辑：罗丹霓）</span></span></p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Content End-->
+    <!-- Tweets Section
+    ================================================== -->
+    
+    <!--
+    <li>
+       <span>
+       This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+       Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum
+       <a href="#">http://t.co/CGIrdxIlI3</a>
+       </span>
+       <b><a href="#">3 Days Ago</a></b>
+    </li>
+    -->
+     <!-- Tweet Section End-->
+    <!-- footer
+    ================================================== -->
+    <!-- Footer End-->
+    <!-- Java Script
+    ================================================== -->
+    <script src="/js/jquery-1.10.2.min.js"></script>
+
+    <script>window.jQuery || document.write('<script src="~/js/jquery-1.10.2.min.js"><\/script>')</script>
+
+    <script src="/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="/js/jquery.flexslider.js"></script>
+
+    <script src="/js/doubletaptogo.js"></script>
+
+    <script src="/js/init.js"></script>
+</body>
+</html>
+
+    </div>
+    <div class="fot-bot01 fot-bot01-1">
+        <div class="row">
+            <div class="linksWrap">
+                <h2 class="often-linksTit">联系我们</h2>
+            </div>
+        </div>
+
+        <div class="row row002">
+            <div class="columns connect-us">
+                <ul class="tel-listNew">
+                    <li><em>投稿地址：</em><span>文华学院宣传策划处</span>&nbsp;&nbsp;<span>027-87599739</span></li>
+                    
+                    <li><em>投稿邮箱：</em><span>454440506@qq.com</span>&nbsp;&nbsp;</li>
+                    <li><em>投稿须知：</em><span>1、提交的新闻稿由部门负责人审核，对稿件真实性、客观性负责。</span></li>
+                    <li><em class="visibility-h">投稿须知：</em><span>2、摄影和艺术设计类配图稿件，若需图片处理请联系引航团队。</span></li>
+                    <li><em class="visibility-h">投稿须知：</em><span>3、首页轮播图要求图片像素1380*460以上，并保证图片质量。</span></li>
+                    <li><em class="visibility-h">投稿须知：</em><span>4、新闻网对来稿有修改权，公平对待每一篇投稿，以质论稿。</span></li>
+                </ul>
+            </div>
+            <div class="columns columns-code2">
+                <div class="left">
+                    <div>
+                        <div><a href="#"><img src="../images/文华学院微信.jpg" /></a></div>
+                        <span>文华官方微信</span>
+                    </div>
+                </div>
+                <div class="left">
+                    <div>
+                        <div><a href="#"><img src="../images/文华学院APP.jpg" /></a></div>
+                        <span>文华官方APP</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div id="go-top" style="dimsplay: block;"><a title="Back to Top" href="#">Go To Top</a></div> -->
+    </div>
+    <div class="fot-bot">
+        <div class="row">
+            <div class="copyright-f">
+
+
+                地址：武汉市东湖高新技术开发区文华园路8号  邮政编码：430074　电话：027-87599540 027-87599065              传真：027-87599540
+
+            </div>
+
+
+            <div class="copyright-to">
+
+
+                Copyright文华学院2016  鄂ICP备09023313号 总计访问：<a style="color:white" id="totalVisit"></a> 次 技术支持：<a href="http://yinhang.hustwenhua.net" style="color:white" target="_blank">引航团队</a>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

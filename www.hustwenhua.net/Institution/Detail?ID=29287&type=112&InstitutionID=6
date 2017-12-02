@@ -1,0 +1,349 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+
+    <!--- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>文华学院</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/media-queries.css">
+    <link rel="stylesheet" type="text/css" href="../css/flexslider.css" />
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <!-- Script
+    ================================================== -->
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <link rel="shortcut icon" href="">
+    <script type="text/javascript">
+
+
+
+        function getUrlParam(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+            var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+            if (r != null) return unescape(r[2]); return null; //返回参数值
+        }
+
+        function bumenjianjie()
+        {
+            var InstitutionID = "";
+            if (getUrlParam("InstitutionID") != null)
+                InstitutionID = getUrlParam("InstitutionID");
+            else
+                InstitutionID = getUrlParam("ID");
+            location.href = "/Institution/More?type=1&InstitutionID="+InstitutionID;
+        }
+
+        function zhengcefagui() {
+            var InstitutionID = "";
+            if (getUrlParam("InstitutionID") != null)
+                InstitutionID = getUrlParam("InstitutionID");
+            else
+                InstitutionID = getUrlParam("ID");
+            location.href = "/Institution/More?type=2&InstitutionID=" + InstitutionID;
+        }
+
+        function gonggaotongzhi() {
+            var InstitutionID = "";
+            if (getUrlParam("InstitutionID") != null)
+                InstitutionID = getUrlParam("InstitutionID");
+            else
+                InstitutionID = getUrlParam("ID");
+            location.href = "/Institution/More?type=3&InstitutionID=" + InstitutionID;
+        }
+
+        function xinxifabu() {
+            var InstitutionID = "";
+            if (getUrlParam("InstitutionID") != null)
+                InstitutionID = getUrlParam("InstitutionID");
+            else
+                InstitutionID = getUrlParam("ID");
+            location.href = "/Institution/More?type=4&InstitutionID=" + InstitutionID;
+        }
+
+        function bumenshouye()
+        {
+            var InstitutionID = "";
+            if (getUrlParam("InstitutionID") != null)
+                InstitutionID = getUrlParam("InstitutionID");
+            else
+                InstitutionID = getUrlParam("ID");
+            location.href = "/Institution/Index?ID=" + InstitutionID;
+        }
+
+        $(function () {
+            var InstitutionID = "";
+            if (getUrlParam("InstitutionID") != null)
+                InstitutionID = getUrlParam("InstitutionID");
+            else
+                InstitutionID = getUrlParam("ID");
+            $.ajax({
+                url: "/All/GetVisitCount",
+                type: "POST",
+                data: {
+
+                },
+                success: function (resTxt) {
+                    $("#totalVisit").html(resTxt);
+                }
+            });
+        })
+
+        
+    </script>
+</head>
+<body style="background:#FFFFFF">
+    <!--  -->
+    <!--[if lte IE 8]>
+    <div id="ie6-warning">您正在使用 Internet Explorer 6，在本页面的显示效果可能有差异。建议您升级 <a href="http://windows.microsoft.com/zh-cn/internet-explorer/download-ie/" target="_blank">Internet Explorer </a> 或以下浏览器： <a href="http://www.mozillaonline.com/">Firefox</a> / <a href="http://www.google.com/chrome/?hl=zh-CN">Chrome</a> / <a href="http://www.apple.com.cn/safari/">Safari</a> / <a href="http://www.operachina.com/">Opera</a>
+    </div>
+    <script type="text/javascript">
+    function position_fixed(el, eltop, elleft){
+    // check if this is IE6
+    if(!window.XMLHttpRequest)
+    window.onscroll = function(){
+    el.style.top = (document.documentElement.scrollTop + eltop)+"px";
+    el.style.left = (document.documentElement.scrollLeft + elleft)+"px";
+    }
+    else el.style.position = "fixed";
+    }
+    position_fixed(document.getElementById("ie6-warning"),0, 0);
+    </script>
+    <![endif]-->
+    <!-- Header
+    ================================================== -->
+    <input type="hidden" id="hide">
+   <!-- Header End -->
+
+    
+
+
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+
+    <!--- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Blog Post</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/media-queries.css">
+
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <!-- Script
+    ================================================== -->
+    <script src="/js/modernizr.js"></script>
+    <script src="/js/Institution.js"></script>
+    <!-- Favicons
+     ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <style type="text/css">
+        table, tbody, tfoot, thead, tr, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="hidden" id="hide" />
+    <div class="header">
+        <div style="background: #FFF">
+            <div class="row" style="height:134px; ">
+                <div class="columns" style="padding:0;">
+                    <div class="logo2">
+                        <a href="/Wenhua/Index"><img alt="" src="../images/department_logo.png"></a>
+                    </div>
+                </div>
+                <div class="columns" style="padding:0;">
+                    <div class="logo2" style="padding-top: 64px;padding-left: 18px;">
+                        <a href="javascript:void(0)"><h2 id="headTitle"></h2></a>
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <div class="ss search02">
+                        <input type="text" value="" id="SearchText" placeholder="搜索" /><button onclick="Search()"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="background: #065AA9">
+            <div class="row">
+                <nav id="nav-wrap">
+                    
+
+                    <ul id="nav" class="nav"></ul> <!-- end #nav -->
+
+                </nav> <!-- end #nav-wrap -->
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="row">
+            <div class="news-linknav"><a href="/Institution/More?type=112&InstitutionID=6" style="color:black" id="TitleHref">通知公告</a><em>></em><a href="#" style="color:black">华中科技大学文华学院二〇一〇年学生工作计划</a></div>
+            <div class="news-mainContent">
+                    <h2 style="border-bottom:none">华中科技大学文华学院二〇一〇年学生工作计划</h2>
+                    <h2 style="font-size:25px;"> </h2>
+                    <br />
+                <div class="markFrom">
+                    来源： &nbsp&nbsp&nbsp点击次数：7196 次 &nbsp&nbsp&nbsp发布时间：2010-03-23 &nbsp&nbsp&nbsp编辑：学生工作处
+                </div>
+                <DIV>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2010年，学生工作将继续坚持以邓小平理论和“三个代表”重要思想为指导，深入贯彻落实科学发展观，全面落实中共中央16号文件精神，紧密围绕学校中心任务，坚持“育人为本，质量第一”的办学宗旨，把社会主义核心价值观融入教育的全过程，把以人为本的教育理念融入到学生工作的各个方面，不断探索个性化教育特色的新思路，积极面对新形势、新情况和新任务，大胆探索新方法、新途径和新规律，促进大学生全面发展，着力提高学生服务国家人民的社会责任，努力开创我院学生思想政治教育和管理的新局面。</DIV>
+<DIV>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 本学期，我院学生工作在做好日常工作的基础上，将重点做好以下工作。</DIV>
+<DIV><B>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 一、进一步深入贯彻落实16号文件精神，加强学生思想政治教育工作。</B></DIV>
+<DIV>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1、在学院党委的领导下，积极配合各学部党总支做好党员发展与教育工作，重点抓好党建进宿舍，充分发挥学生党员在大学生思想政治教育中的骨干带头作用和先锋模范作用。</DIV>
+<DIV>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2、围绕以学生的成长发展为本，提升学生的自律自强意识，增强社会责任感的思政教育主题，以“五·四”、 “十·一”、 “一二·九”等重大节气和纪念日为契机，举行形式多样的庆祝和纪念活动，广泛开展主题明确、形式多样的大学生理想信念教育、爱国主义教育以及价值观教育活动，培养大学生诚信、责任、践行意识；针对贫困生、新生、毕业生、女生、心理障碍生、成绩差异生等分层、分级分别开展不同形式、不同内容的专题教育活动，做好不同类型学生的思想政治教育工作。</DIV>
+<DIV>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3、重视调查、研究，分析学生思想状况和学生关心的热点问题，开展经常性的调研活动，及时掌握学生的思想动态，切实解决学生的实际困难，不断增强思想政治工作和德育工作的针对性和实效性。</DIV>
+<DIV>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4、积极配合潜能导师委员会做好潜能导师试行工作的进一步推进实施，加强对学生职业生涯规划的指导，积极探索和最大限度地发挥每名学生优势潜能的新方法与新途径，并认真做好我院潜能导师座谈会和经验交流会准备工作。</DIV>
+<DIV><B>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 二、强化学生教育管理，在全院形成良好的学习秩序。</B></DIV>
+<DIV>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1、重点加强两个建设，即班级建设和学风建设。督促各学部进一步完善班级建设制度体系，充分发挥班级干部的领导作用和学生自我教育、自我管理的作用；继续抓好学风建设的长效机制，落实晨读、早、晚自习制度，进一步抓好学风的检查和督促，特别是学生良好学习习惯的养成；继续做好十佳、百优文明寝室、文明课堂的评选工作。</DIV>
+<DIV>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2、认真组织做好本学期先进集体、先进个人评选工作，通过“学子讲坛”，积极组织先进事迹报告团广泛开展先进事迹宣讲活动；承前出版《文华青年》，编发《春华秋实——文华优秀学子事迹汇编Ⅱ》等材料，加强宣传，充分发挥先进集体与先进个人的典型示范作用；通过开展申优创优活动，帮助学生树立明确的学习目标，调动广大学生的学习动力与积极性，促进学生成长成才。</DIV>
+<DIV>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3、加强学生骨干培养，充分发挥学生党员、入党积极分子和学生干部在校风、学风和班风建设中的模范带头作用，树立学生骨干典型，带动全体学生逐步实现“自我教育、自我管理、自我服务”。</DIV>
+<DIV><B>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 三、加强辅导员队伍建设，进一步落实规范管理。</B></DIV>
+<DIV>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1、坚持不懈的抓好思政工作队伍建设，挖掘辅导员先进事迹，广泛进行宣传、推广和交流；根据辅导员工作时间、所带学生类别和分工内容的不同有针对性地开展学生工作队伍的培训和交流，利用各种渠道鼓励思政工作队伍探索适合我院的个性化学生工作方法，以便更好地推进学生管理指导和服务的专业化。</DIV>
+<DIV>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2、进一步明确学生工作干部和辅导员的职责和岗位要求，进一步修改完善学生工作考核办法，组织做好暑期辅导员重新竞聘、岗位调整等工作。</DIV>
+<DIV>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3、进一步探索对辅导员自身发展有利的激励机制，充分调动辅导员的工作积极性。&nbsp;</DIV>
+<DIV><B>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 四、做好学生宿舍管理工作，维护校园稳定。</B></DIV>
+<DIV>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1、做好宿舍调整、分配工作，主要包括： 2010届毕业生离校后，制定并完成2009级学生寝室搬迁方案；制定2010级新生入住方案，保证2010级新生的顺利入住。</DIV>
+<DIV>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2、积极推进党建进宿舍工作，学院为每一个有党员的寝室进行“党员寝室”挂牌，一个党员寝室联系2—3个非党员寝室，提出“有困难，找党员”的口号，充分发挥学生党员的模范作用，通过这种方式督促学生党员保持自身的先进性。</DIV>
+<DIV>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3、开展防火、防盗、节水、节电、卫生、低碳生活等系列主题宣传教育活动，进一步提高学生的安全防范意识、保洁意识、节约意识、环保意识，倡导文明健康的生活方式。</DIV>
+<DIV><B>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 五、</B><B>加强党建带团建，</B><B>充分发挥共青团助手作用，努力做好共青团各项工作。</B><B> </B></DIV>
+<DIV>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1、配合党委积极做好学生团员教育、管理与推优工作。规范团籍管理、团员档案管理，做好“推优入党”工作，不断提高“推优”工作质量；以实施“青年马克思主义者培养工程”和“红网工程”为重点，把引导青年学生坚定跟党走中国特色社会主义道路作为核心目标，创新方式方法，进一步提高思想引领的能力和水平。</DIV>
+<DIV>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2、广泛开展形式多样的主题教育活动。抓住五四青年节、十一国庆节等契机，广泛开展“我与祖国共奋进”主题教育活动，进一步激发青年学生成才报国的情怀。切实抓好基层团支部团日活动、团组织生活。在五四青年节前后，举行“红歌大家唱”活动。在毕业生离校前夕，举办2010届毕业生送别晚会等。</DIV>
+<DIV>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3、进一步繁荣校园文化建设工作。围绕“育人为本，质量第一”的办学宗旨，坚持以人为本，体现“个性化教育”特色，把增强文华学子就业创业能力作为重中之重，努力营造创新型人才成长的校园文化氛围。不断优化、完善大学生素质拓展计划工作体系，着眼于提高学生的就业创业能力，广泛开展大学生暑期“三下乡”和“四进社区”社会实践活动；鼓励、组织学生参加2010年全国大学生英语竞赛、第六届“挑战杯”全国大学生创业计划竞赛，从更高层次培养大学生创新、创业的能力；精心办好“第三届大学生女生节”、“第七届大学生文化艺术节”等校园传统科技文化活动。</DIV>
+<DIV>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4、狠抓团的自身建设工作。以力争实现“青年两个全体”为目标，以“探索新形势下进一步增强团支部吸引力、凝聚力和组织活力的有效途径”为核心，以工作内容、组织建设和运行机制创新为重点，全力推进基层组织建设和基层工作；进一步规范学生社团建设，重点扶持建立一批红色理论学习型与学术创新型学生社团；重点建设发展一批管理规范、活动突出、学生和会员满意度高、在校内外都具有良好口碑的学生社团；重点整改一批管理疏漏、制度不全、学生和会员意见突出的学生社团，积极推进“一团一品”工程。</DIV>
+<DIV>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5、进一步加大对各级学生干部的培养，以团学干部为重点巩固网络舆情信息员队伍，适时开展学生思想状况调研。</DIV>
+<DIV><B>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 六、认真做好招生、就业与学生档案管理工作。</B></DIV>
+<DIV>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1、总结经验，开拓创新，努力完成2010年的招生工作任务。重点加大专业的调研，加强招生与就业工作的互动，提高就业前景好、后劲足专业的招生计划；控制就业岗位少、发展后劲不足专业的招生计划。</DIV>
+<DIV>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2、加强招生宣传工作，积极创建招生宣传新模式。充分利用互联网技术开展招生工作，对学院招生网页进行改版，并在招生录取期间开通QQ在线聊天平台，开展网络咨询服务。</DIV>
+<DIV>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3、按照学院年度就业率目标，加强整改力度，不断提高就业工作水平。进一步落实好就业工作“一把手”工程，形成“学校就业工作领导小组——各学部就业工作领导小组——辅导员、学生组织”上下联动的工作体系，形成全员参与就业工作的良好局面。规范就业指导队伍建设，建立一支稳定、工作能力强、工作思路清晰的就业指导教师队伍。有计划的选送一批业务骨干参加各级理论学习，提高就业工作人员业务水平。</DIV>
+<DIV>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4、加强就业指导课程建设。认真组织“职业生涯规划与就业指导”教材的编写和课程的教学工作，组织好教研、集体备课、说课等活动。</DIV>
+<DIV>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5、开辟就业市场，培植就业基地，适时召开“双选会”，为毕业生就业搭建互动平台。</DIV>
+<DIV>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6、加强毕业生就业信息化的建设。包括网站建设、就业信息简报的编辑、出版工作，并充分利用学院就业工作QQ群、就业专用电子显示屏等信息化手段，为毕业生提供全方位的就业资讯服务。</DIV>
+<DIV>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 7、不断完善毕业生就业质量跟踪调查管理工作，建立健全校友联系制度。做好毕业生专项调查活动，了解毕业生的需求，做到有针对性地开展毕业生就业指导。调查项目包括：毕业生问卷调查、用人单位调查、家长意见调查、人才市场需求调查等。建立健全校友联系制度，在有条件的地区建立校友会，定期开展校友联谊活动。</DIV>
+<DIV>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8、精心整理、规范管理，认真做好学生档案管理工作。落实教育部和国家档案局《高等学校档案管理办法》。贯彻执行有关档案、保密的法规和制度，严密保管，确保学生档案的齐全、完整、准确与安全，有利于学生档案的利用，同时结合学院实际，进一步完善与学生档案管理相配套的制度建设，保障学生档案工作顺利开展。</DIV>
+<DIV>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9、夯实学生档案基础工作，进一步加强学生档案管理。制定详细的工作流程和时间安排，完善2010年毕业生档案，在接收、鉴定、整理、转递等各个环节精心组织，严格把关，保障每一个材料、每一份档案都不出错。及时将毕业生档案转移至新的管理单位，为用人单位全面了解、选拔使用人才提供依据，提高我院的就业率。</DIV>
+<DIV><B>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 七、重视工作研究，创新学生管理制度，积极探索有利于学生个性发展的校园文化体系。</B></DIV>
+<DIV>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 从服务学生发展与成人成才的工作理念出发，积极开展学生工作研究，加强工作创新，努力改变传统的学生管理方式；会同教务处、党委办公室、院长办公室建立有利于学生个性发展的管理制度，积极营造尊重学生人格、帮助学生挖掘潜能、发展个性的创新型人才成长的校园文化氛围。</DIV>
+<P><B>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 八、积极配合评估办公室做好学生获奖、科研、招生、就业等相关数据信息的统计、动态完善等工作，坚持以评促建，认真做好相关工作的进一步完善，建立科学的信息统计工作机制。</B></P>
+<P><STRONG></STRONG>&nbsp;</P>
+<P align=left><STRONG>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;附件：2010年上半年工作日程推进安排表（点击下载：<A href="http://www.hustwenhua.net/downLoad.do?exportfilepath=Njc6NTk6MEY6NEY6QzM6OEY6QjA6Qjk6NDU6MTk6RjE6RjY6MTc6M0Q6OTc6NTQ6RjA6QTM6NUI6RTU6QzQ6Njg6NjM6RkE6Qzc6MDA6M0E6ODg6RUU6MkY6N0Q6MTg6NTg6MkE6QjY6QjQ6RjE6RkE6Nzk6QzU6ODk6M0Y6RTA6OTM6NEE6QjY6RUE6RTU6RjE6MzA6MTA6Rjc6RUM6OEY6OUQ6MDc6QUE6MjY6NjM6NDM6NzQ6MkI6QjM6MzU6N0E6RjE6MDQ6MzY6QkY6RDA6NEQ6OUU6NEY6QjQ6QkU6RjM6MTM6Qzc6NDM6RTY6MDg6QUY6ODY6NTM6Mzk6RjU6Q0Y6RDQ6NTk6MkU6N0U6Q0E6MEI6NUE6QUQ6OUU_.doc" target=_blank>二〇一〇年学生工作计划.doc</A>）</STRONG></P>
+<P align=left>&nbsp;</P>
+<P align=right><STRONG>学生工作处</STRONG></P>
+<P align=right><STRONG>2010年3月</STRONG></P>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/jquery-1.10.2.min.js"></script>
+
+    <script>window.jQuery || document.write('<script src="~/js/jquery-1.10.2.min.js"><\/script>')</script>
+
+   
+    <script src="/js/jquery.flexslider.js"></script>
+
+    <script src="/js/doubletaptogo.js"></script>
+
+    <script src="/js/init.js"></script>
+</body>
+</html>
+
+
+    <div class="fot-bot01">
+        <div class="row">
+            <div class="linksWrap">
+                <h2 class="often-linksTit">常用链接</h2>
+            </div>
+        </div>
+
+        <div class="row row002">
+            <div class="columns col-links">
+                <ul class="left">
+                    <li><a target="_blank" href="http://whlib.hustwenhua.net">图书馆</a></li>
+                    <li><a target="_blank" href="http://jwweb.hustwenhua.net">教务在线</a></li>
+                    <li><a target="_blank" href="http://hf.hustwenhua.net">红枫文化节</a></li>
+
+                    <li><a href="http://www.hustwenhua.net/Institution/Index?ID=6">学工在线</a></li>
+                </ul>
+                <ul class="left">
+                    <li><a href="../html/mailbox.html">学校信箱</a></li>
+                    <li><a href="#">文华青年</a></li>
+                    <li><a href="http://www.hustwenhua.net/Institution/Index?ID=7">收费公示</a></li>
+                    <li><a href="../html/wenhua_location.html">交通导航</a></li>
+                </ul>
+                <ul class="left">
+                    <li><a href="#">门户登入</a></li>
+                    
+                    <li><a target="_blank" href="http://ditu.wenhua.cc">文华漫游</a></li>
+                    <li><a target="_blank" href="http://sns.hustwenhua.net">互动文华</a></li>
+                    <li><a href="http://media.hustwenhua.net">文华媒体</a></li>
+                </ul>
+            </div>
+            <div class="columns columns-code2">
+                <div class="left">
+                    <div>
+                        <div><a href="#"><img src="../images/文华学院微信.jpg" /></a></div>
+                        <span>文华官方微信</span>
+                    </div>
+                </div>
+                <div class="left">
+                    <div>
+                        <div><a href="#"><img src="../images/文华学院APP.jpg" /></a></div>
+                        <span>文华官方APP</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div id="go-top" style="dimsplay: block;"><a title="Back to Top" href="#">Go To Top</a></div> -->
+    </div>
+
+    <div class="fot-bot">
+        <div class="row">
+            <div class="copyright-f">
+
+
+                地址：武汉市东湖高新技术开发区文华园路8号  邮政编码：430074　电话：027-87599540 027-87599065              传真：027-87599540
+
+            </div>
+
+
+            <div class="copyright-to">
+
+
+                Copyright文华学院2016  鄂ICP备09023313号 总计访问：<a style="color:white" id="totalVisit"></a> 次 技术支持：<a href="http://yinhang.hustwenhua.net" style="color:white" target="_blank">引航团队</a>
+
+            </div>
+
+        </div>
+
+    </div>

@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>信箱</title>
+	<link rel="stylesheet" href="../css/default.css">
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
+    <script src="../Scripts/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $.ajax({
+                url: "/All/GetVisitCount",
+                type: "POST",
+                data: {
+
+                },
+                success: function (resTxt) {
+                    $("#totalVisit").html(resTxt);
+                }
+            });
+        })
+    </script>
+</head>
+<body>
+
+<div class="mailHeader">
+	<a href="/Wenhua/Index"></a>
+</div>
+
+    <div class="row">
+        <div class="offset-2">
+            <div class="bossMailList">
+               
+                <dl>
+                    <dt class="left"><img src="../images/刘献君.jpg" width="90" /></dt>
+                    <dd class="leaderIntroduce">
+                        <em>刘献君 文华学院校长</em>
+                        <span>主持学校行政全面工作。</span>
+                        <br />
+                        <a href="javascript:{ location.href =encodeURI(encodeURI('mailTalk.html?name=刘献君'))}">我要给刘献君校长写信</a>
+                    </dd>
+                </dl>
+ <dl>
+                    <dt class="left"><img src="../images/于清双.png" width="90" /></dt>
+                    <dd class="leaderIntroduce">
+                        <em>于清双 文华学院党委书记</em>
+                        <span>主持党委全面工作，负责学生工作。</span>
+                        <br />
+                        <a href="javascript:{ location.href =encodeURI(encodeURI('mailTalk.html?name=于清双'))}">我要给于清双书记写信</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt class="left"><img src="../images/刘太林.jpg" width="90" /></dt>
+                    <dd class="leaderIntroduce">
+                        <em>刘太林 文华学院常务副校长</em>
+                        <span>负责学校常务工作。</span>
+                        <br />
+                        <a href="javascript:{ location.href =encodeURI(encodeURI('mailTalk.html?name=刘太林'))}">我要给刘太林副校长写信</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt class="left"><img src="../images/严国萍.png" width="90" /></dt>
+                    <dd class="leaderIntroduce">
+                        <em>严国萍 文华学院副校长</em>
+                        <span>分管学校教学工作。</span>
+                        <br />
+                        <a href="javascript:{ location.href =encodeURI(encodeURI('mailTalk.html?name=严国萍'))}">我要给严国萍副校长写信</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt class="left"><img src="../images/张七一.png" width="90" /></dt>
+                    <dd class="leaderIntroduce">
+                        <em>张七一 文华学院副校长</em>
+                        <span>分管学校人事工作。</span>
+                        <br />
+                        <a href="javascript:{ location.href =encodeURI(encodeURI('mailTalk.html?name=张七一'))}">我要给张七一副校长写信</a>
+                    </dd>
+                </dl>
+ <dl>
+                    <dt class="left"><img src="../images/陈思中.png" width="90" /></dt>
+                    <dd class="leaderIntroduce">
+                        <em>陈思中 文华学院副校长、纪委书记 洪山区人大代表</em>
+                        <span>分管学校宣传、纪委工作。</span>
+                        <br />
+                        <a href="javascript:{ location.href =encodeURI(encodeURI('mailTalk.html?name=陈思中'))}">我要给陈思中副校长写信</a>
+                    </dd>
+                </dl>
+ <dl>
+                    <dt class="left"><img src="../images/程红.png" width="90" /></dt>
+                    <dd class="leaderIntroduce">
+                        <em>程红 文华学院副校长</em>
+                        <span>分管学校科研、图书馆工作。</span>
+                        <br />
+                        <a href="javascript:{ location.href =encodeURI(encodeURI('mailTalk.html?name=程红'))}">我要给程红副校长写信</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt class="left"><img src="../images/xieying.jpg" width="90" /></dt>
+                    <dd class="leaderIntroduce">
+                        <em>袁国祥 文华学院副校长</em>
+                        <span>分管学校工会、后勤、保卫、对外联络工作。</span>
+                        <br />
+                        <a href="javascript:{ location.href =encodeURI(encodeURI('mailTalk.html?name=袁国祥'))}">我要给袁国祥副校长写信</a>
+                    </dd>
+                </dl>
+               
+               
+            </div>
+        </div>
+    </div>
+
+
+<div class="fot-bot">
+	<div class="row">
+		<div class="copyright-f" >
+	        
+	         
+	         	地址：武汉市东湖高新技术开发区文华园路8号  邮政编码：430074　电话：027-87599540 027-87599065              传真：027-87599540
+	         
+                 </div>
+
+
+        <div class="copyright-to">
+
+
+            Copyright文华学院2016  鄂ICP备09023313号 总计访问：<a style="color:white" id="totalVisit"></a> 次 技术支持：<a href="http://yinhang.hustwenhua.net" style="color:white" target="_blank">引航团队</a>
+
+        </div>
+	        
+  	</div>
+	 
+</div>
+
+</body>
+</html>

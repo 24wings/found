@@ -1,0 +1,329 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+
+    <!--- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>文华学院</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/media-queries.css">
+    <link rel="stylesheet" type="text/css" href="../css/flexslider.css" />
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <!-- Script
+    ================================================== -->
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <link rel="shortcut icon" href="">
+    <script type="text/javascript">
+
+
+
+        function getUrlParam(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+            var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+            if (r != null) return unescape(r[2]); return null; //返回参数值
+        }
+
+        function bumenjianjie()
+        {
+            var InstitutionID = "";
+            if (getUrlParam("InstitutionID") != null)
+                InstitutionID = getUrlParam("InstitutionID");
+            else
+                InstitutionID = getUrlParam("ID");
+            location.href = "/Institution/More?type=1&InstitutionID="+InstitutionID;
+        }
+
+        function zhengcefagui() {
+            var InstitutionID = "";
+            if (getUrlParam("InstitutionID") != null)
+                InstitutionID = getUrlParam("InstitutionID");
+            else
+                InstitutionID = getUrlParam("ID");
+            location.href = "/Institution/More?type=2&InstitutionID=" + InstitutionID;
+        }
+
+        function gonggaotongzhi() {
+            var InstitutionID = "";
+            if (getUrlParam("InstitutionID") != null)
+                InstitutionID = getUrlParam("InstitutionID");
+            else
+                InstitutionID = getUrlParam("ID");
+            location.href = "/Institution/More?type=3&InstitutionID=" + InstitutionID;
+        }
+
+        function xinxifabu() {
+            var InstitutionID = "";
+            if (getUrlParam("InstitutionID") != null)
+                InstitutionID = getUrlParam("InstitutionID");
+            else
+                InstitutionID = getUrlParam("ID");
+            location.href = "/Institution/More?type=4&InstitutionID=" + InstitutionID;
+        }
+
+        function bumenshouye()
+        {
+            var InstitutionID = "";
+            if (getUrlParam("InstitutionID") != null)
+                InstitutionID = getUrlParam("InstitutionID");
+            else
+                InstitutionID = getUrlParam("ID");
+            location.href = "/Institution/Index?ID=" + InstitutionID;
+        }
+
+        $(function () {
+            var InstitutionID = "";
+            if (getUrlParam("InstitutionID") != null)
+                InstitutionID = getUrlParam("InstitutionID");
+            else
+                InstitutionID = getUrlParam("ID");
+            $.ajax({
+                url: "/All/GetVisitCount",
+                type: "POST",
+                data: {
+
+                },
+                success: function (resTxt) {
+                    $("#totalVisit").html(resTxt);
+                }
+            });
+        })
+
+        
+    </script>
+</head>
+<body style="background:#FFFFFF">
+    <!--  -->
+    <!--[if lte IE 8]>
+    <div id="ie6-warning">您正在使用 Internet Explorer 6，在本页面的显示效果可能有差异。建议您升级 <a href="http://windows.microsoft.com/zh-cn/internet-explorer/download-ie/" target="_blank">Internet Explorer </a> 或以下浏览器： <a href="http://www.mozillaonline.com/">Firefox</a> / <a href="http://www.google.com/chrome/?hl=zh-CN">Chrome</a> / <a href="http://www.apple.com.cn/safari/">Safari</a> / <a href="http://www.operachina.com/">Opera</a>
+    </div>
+    <script type="text/javascript">
+    function position_fixed(el, eltop, elleft){
+    // check if this is IE6
+    if(!window.XMLHttpRequest)
+    window.onscroll = function(){
+    el.style.top = (document.documentElement.scrollTop + eltop)+"px";
+    el.style.left = (document.documentElement.scrollLeft + elleft)+"px";
+    }
+    else el.style.position = "fixed";
+    }
+    position_fixed(document.getElementById("ie6-warning"),0, 0);
+    </script>
+    <![endif]-->
+    <!-- Header
+    ================================================== -->
+    <input type="hidden" id="hide">
+   <!-- Header End -->
+
+    
+
+
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+
+    <!--- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Blog Post</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/media-queries.css">
+
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <!-- Script
+    ================================================== -->
+    <script src="/js/modernizr.js"></script>
+    <script src="/js/Institution.js"></script>
+    <!-- Favicons
+     ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <style type="text/css">
+        table, tbody, tfoot, thead, tr, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="hidden" id="hide" />
+    <div class="header">
+        <div style="background: #FFF">
+            <div class="row" style="height:134px; ">
+                <div class="columns" style="padding:0;">
+                    <div class="logo2">
+                        <a href="/Wenhua/Index"><img alt="" src="../images/department_logo.png"></a>
+                    </div>
+                </div>
+                <div class="columns" style="padding:0;">
+                    <div class="logo2" style="padding-top: 64px;padding-left: 18px;">
+                        <a href="javascript:void(0)"><h2 id="headTitle"></h2></a>
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <div class="ss search02">
+                        <input type="text" value="" id="SearchText" placeholder="搜索" /><button onclick="Search()"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="background: #065AA9">
+            <div class="row">
+                <nav id="nav-wrap">
+                    
+
+                    <ul id="nav" class="nav"></ul> <!-- end #nav -->
+
+                </nav> <!-- end #nav-wrap -->
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="row">
+            <div class="news-linknav"><a href="/Institution/More?type=112&InstitutionID=6" style="color:black" id="TitleHref">通知公告</a><em>></em><a href="#" style="color:black">关于做好我院学生2009年秋季开学甲型H1N1流感防控工作的通知</a></div>
+            <div class="news-mainContent">
+                    <h2 style="border-bottom:none">关于做好我院学生2009年秋季开学甲型H1N1流感防控工作的通知</h2>
+                    <h2 style="font-size:25px;"> </h2>
+                    <br />
+                <div class="markFrom">
+                    来源： &nbsp&nbsp&nbsp点击次数：7058 次 &nbsp&nbsp&nbsp发布时间：2009-12-23 &nbsp&nbsp&nbsp编辑：学生工作处
+                </div>
+                <DIV align=left><STRONG>各学部学工组：</STRONG></DIV>
+<DIV>&nbsp;&nbsp;&nbsp; 根据《省教育厅、省卫生厅关于做好秋季开学甲型H1N1流感防控工作的紧急通知》（鄂教体艺[2009]20号）文件的精神和要求，为加强甲型H1N1流感防控工作，防范秋季开学后甲型H1N1流感在校内的暴发流行，维护正常教学秩序，保障广大师生的身体健康和生命安全，特提出以下要求：</DIV>
+<DIV>&nbsp;&nbsp;&nbsp; 一、各学部要组织学习《教育部办公厅&nbsp; 卫生部办公厅关于做好学校秋季开学甲型H1N1流感防控工作的意见》（教体艺厅[2009]7号）。根据相关文件要求，各学部应制定甲型H1N1流感防控预案并建立完善防控甲型H1N1流感工作领导小组，由各学部党总支（副）书记负总责，将甲型H1N1流感防控工作落实到每个班级，务必做到分工明确，责任到人，工作有序，措施落实。<BR></DIV>
+<DIV>&nbsp;&nbsp;&nbsp; 二、切实做好甲型H1N1流感疫情的监测和防控工作。</DIV>
+<DIV>&nbsp;&nbsp;&nbsp; 1、把有关甲型H1N1流感等呼吸道传染病的防控知识的健康教育作为开学后的一堂课，增强学生自我防护意识和能力，争取学生积极配合学院防控措施落实。特别要教育学生尽量避免到校内、外人群聚集性场所，注意日常个人卫生，养成良好的卫生习惯。 </DIV>
+<DIV>&nbsp;&nbsp;&nbsp; 2、各年级专业要指定责任人，负责疫情收集、报告和健康提示工作；每个班级指定1名卫生监督员，负责收集与记录本班级学生发病与就诊时间、就诊医院、诊断、因病缺课等情况。</DIV>
+<DIV>&nbsp;&nbsp;&nbsp; 3、实行逐级报告制度。开学后1周内，由班级卫生监督员将记录报各专业责任人，各专业责任人将信息报学部防控甲型H1N1流感工作领导小组。对具有流感样症状或有甲型H1N1流感病人密切接触史的学生应及时报学院。</DIV>
+<DIV>&nbsp;&nbsp;&nbsp; 4、辅导员要负责做好所带专业学生的健康提示工作。</DIV>
+<DIV>&nbsp;&nbsp;&nbsp;&nbsp; （1）要求7天内来自甲流感疫情严重地区的学生，每天到班级卫生监督员处测量体温。</DIV>
+<DIV>&nbsp;&nbsp;&nbsp;&nbsp; （2）提示学生在返校近7日内，如有发热或流感样症状须立即就诊。</DIV>
+<DIV>&nbsp;&nbsp;&nbsp; （3）要求学生减少外出，近期内尽量减少室内集体活动，加强室内通风和个人卫生，避免接触流感样症状（发热、咳嗽、咽痛等）或肺炎等呼吸道病人；咳嗽或打喷嚏时用纸巾遮住口鼻，然后将纸巾丢进垃圾桶；经常使用肥皂和流动水洗手，尤其在咳嗽、打喷嚏或接触过公共物品后，要先洗手再触摸自己的眼、鼻、口。<BR></DIV>
+<DIV>&nbsp;&nbsp;&nbsp; 三、做好2009级新生报到、军训期间甲型H1N1流感防控工作。</DIV>
+<DIV>&nbsp;&nbsp;&nbsp; 1、新生接待尽量安排在室外空旷或室内通风的场所，避免人员聚集，确保空气流通。</DIV>
+<DIV>&nbsp;&nbsp;&nbsp; 2、各学部迎新人员要及时告知陪同学生的家长或亲友减少在校园内逗留时间，提示有流感样症状的陪同人员要及时就医。</DIV>
+<DIV>&nbsp;&nbsp;&nbsp; 3、辅导员及班级卫生监督员要及时收集、记录新生健康状况，发现有流感样症状的学生，要督促其及时就医。对来自疫区的学生要给予高度关注，每天测量体温。</DIV>
+<DIV>&nbsp;&nbsp;&nbsp; 4、在入学一周内尽量减少或停止举办校内各种大型集会和会议等活动。</DIV>
+<DIV>&nbsp;&nbsp;&nbsp; 5、入校体检时增加体温监测项目，对发热病人按照甲型H1N1流感防控的有关要求进行预检分诊和处理；</DIV>
+<DIV>&nbsp;&nbsp;&nbsp; 6、把甲型H1N1流感及其他传染病的预防作为新生入学教育的重要内容之一。教育学生日常个人卫生知识，使之养成良好的卫生习惯，增强自我防护意识和能力。教育学生积极配合学校落实有关防控措施，一旦出现流感样症状，应及时报告辅导员或班级卫生监督员，并到校医院就诊。<BR></DIV>
+<DIV>&nbsp;&nbsp;&nbsp; 四、其他工作：</DIV>
+<DIV align=left>&nbsp;&nbsp;&nbsp; 1、请各学部将甲型H1N1流感防控预案及《华中科技大学文华学院防控甲型H1N1流感工作责任人名单》（附件1），于9月3日前交学生工作处。</DIV>
+<DIV>&nbsp;&nbsp;&nbsp; 2、请各学部组织学生如实填写《华中科技大学文华学学院2009年秋季开学学生健康状况登记表》（附件2）。如近一周内有甲型H1N1流感病人密切接触史、有发热、鼻塞、咽痛、咳嗽等流感样症状，请各学部做好登记、统计后于9月5日前交学生工作处。</DIV>
+<DIV>&nbsp;&nbsp;&nbsp; 3、请各学部做好应急物资、人员等准备。确保一旦发现疫情，能在第一时间应急响应。</DIV>
+<DIV>&nbsp;&nbsp;&nbsp; 4、新生军训期间的甲型H1N1流感防控工作按《华中科技大学文华学学院2009级新生军训甲型H1N1流感防控预案》（附件3）的要求执行。</DIV>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/jquery-1.10.2.min.js"></script>
+
+    <script>window.jQuery || document.write('<script src="~/js/jquery-1.10.2.min.js"><\/script>')</script>
+
+   
+    <script src="/js/jquery.flexslider.js"></script>
+
+    <script src="/js/doubletaptogo.js"></script>
+
+    <script src="/js/init.js"></script>
+</body>
+</html>
+
+
+    <div class="fot-bot01">
+        <div class="row">
+            <div class="linksWrap">
+                <h2 class="often-linksTit">常用链接</h2>
+            </div>
+        </div>
+
+        <div class="row row002">
+            <div class="columns col-links">
+                <ul class="left">
+                    <li><a target="_blank" href="http://whlib.hustwenhua.net">图书馆</a></li>
+                    <li><a target="_blank" href="http://jwweb.hustwenhua.net">教务在线</a></li>
+                    <li><a target="_blank" href="http://hf.hustwenhua.net">红枫文化节</a></li>
+
+                    <li><a href="http://www.hustwenhua.net/Institution/Index?ID=6">学工在线</a></li>
+                </ul>
+                <ul class="left">
+                    <li><a href="../html/mailbox.html">学校信箱</a></li>
+                    <li><a href="#">文华青年</a></li>
+                    <li><a href="http://www.hustwenhua.net/Institution/Index?ID=7">收费公示</a></li>
+                    <li><a href="../html/wenhua_location.html">交通导航</a></li>
+                </ul>
+                <ul class="left">
+                    <li><a href="#">门户登入</a></li>
+                    
+                    <li><a target="_blank" href="http://ditu.wenhua.cc">文华漫游</a></li>
+                    <li><a target="_blank" href="http://sns.hustwenhua.net">互动文华</a></li>
+                    <li><a href="http://media.hustwenhua.net">文华媒体</a></li>
+                </ul>
+            </div>
+            <div class="columns columns-code2">
+                <div class="left">
+                    <div>
+                        <div><a href="#"><img src="../images/文华学院微信.jpg" /></a></div>
+                        <span>文华官方微信</span>
+                    </div>
+                </div>
+                <div class="left">
+                    <div>
+                        <div><a href="#"><img src="../images/文华学院APP.jpg" /></a></div>
+                        <span>文华官方APP</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div id="go-top" style="dimsplay: block;"><a title="Back to Top" href="#">Go To Top</a></div> -->
+    </div>
+
+    <div class="fot-bot">
+        <div class="row">
+            <div class="copyright-f">
+
+
+                地址：武汉市东湖高新技术开发区文华园路8号  邮政编码：430074　电话：027-87599540 027-87599065              传真：027-87599540
+
+            </div>
+
+
+            <div class="copyright-to">
+
+
+                Copyright文华学院2016  鄂ICP备09023313号 总计访问：<a style="color:white" id="totalVisit"></a> 次 技术支持：<a href="http://yinhang.hustwenhua.net" style="color:white" target="_blank">引航团队</a>
+
+            </div>
+
+        </div>
+
+    </div>
